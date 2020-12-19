@@ -9,7 +9,8 @@ It uses MD5 as hashing algorithm.
 
 The objective is to modify Jack Frosts block back from Nice to Naughty and to make available the hidden PDF pages by changing only four bytes.
 MD5 works using chunks of 64 bytes. It is possible increase a value at offset #n of block #m without changing the MD5 hash by also decreasing the value at offset #n of block #m+1 (entangled values).
-With this information the naughty/nice value can be changed from "1" (Nice) to "0" (Na
+With this information the naughty/nice value can be changed from "1" (Nice) to "0" (Naughty) and one specific value in the PDF document from "2" to "3".
+As compensating measure (to have the 
 
 
 Tampering the Naughty/Nice value
@@ -33,6 +34,6 @@ and the entangled value with an offset of 64 bytes
 > 163170 03 b9 ef 95 99 **1b** 5b 49 9f 86 dc 85 39 85 90 99
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjcwMTExODYsLTU5NDE5MDUyMSw5Mz
+eyJoaXN0b3J5IjpbLTEwMDYyODg3MDcsLTU5NDE5MDUyMSw5Mz
 k0NTM4NzQsMzcwMjUyNjc0XX0=
 -->
