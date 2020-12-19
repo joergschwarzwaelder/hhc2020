@@ -43,7 +43,7 @@ and the entangled value with an offset of 64 bytes
 
 > 163170 03 b9 ef 95 99 **1b** 5b 49 9f 86 dc 85 39 85 90 99
 
-Basically for tampering the PDF document it would also have been possible to use the position in the previous 64 byte block as entangled value. Unfortunately this position holds the lowest digit of the length field for the PDF document, so changing *only* this value would destroy the Blockchain.
+Basically for tampering the PDF document it would also have been possible to use the position in the previous 64 byte block as entangled value. Unfortunately this position holds the lowest byte of the length field for the PDF document, so changing *only* this value would destroy the Blockchain.
 
 
 
@@ -57,7 +57,7 @@ In addition the [hex dump diff](https://github.com/joergschwarzwaelder/hhc2020/b
 |[PDF](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/000000000001f9b3-1-nice.pdf) |[PDF](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/000000000001f9b3-1-naughty.pdf) |
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0MDU3NjkzNiwxMjE0ODYxNDIyLDczMj
+eyJoaXN0b3J5IjpbLTM4MDQ0NTA5NSwxMjE0ODYxNDIyLDczMj
 U4OTg4MCwzNjE1MDQzMjAsLTU5NDE5MDUyMSw5Mzk0NTM4NzQs
 MzcwMjUyNjc0XX0=
 -->
