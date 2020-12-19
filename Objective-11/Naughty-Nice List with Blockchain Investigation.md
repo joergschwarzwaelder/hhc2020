@@ -44,7 +44,7 @@ and the entangled value with an offset of 64 bytes
 
 > 163170 03 b9 ef 95 99 **1b** 5b 49 9f 86 dc 85 39 85 90 99
 
-Basically for tampering the PDF document it would also have been possible to use the position in the previous 64 byte block as entangled value. Unfortunately this position holds the lowest byte of the length field for the PDF document, so changing *only* this value would destroy the Blockchain.
+Basically for tampering the PDF document it would also have been possible to use the position in the previous 64 byte block as entangled value. Unfortunately this position holds the lowest byte of the length field for the PDF document, so changing *only* this value (as an entangled value) would destroy the Blockchain.
 
 The original and reverted files can be found in the below table.
 In addition the [hex dump diff](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/blockchain-naughty-nice-diff.dump) is provided.
@@ -61,9 +61,9 @@ A [toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective
 Screenshot of the toolbox:
 ![toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/Frostys-Toolbox.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzAwNjgzODgsLTE1MDcwODQ2MDYsMTA1Mj
-g2NDE1LC04ODAwNDg0NzYsLTEzNDc5NjI1MTcsLTE1MDczODQz
-MTcsLTM4MDQ0NTA5NSwxMjE0ODYxNDIyLDczMjU4OTg4MCwzNj
-E1MDQzMjAsLTU5NDE5MDUyMSw5Mzk0NTM4NzQsMzcwMjUyNjc0
-XX0=
+eyJoaXN0b3J5IjpbMTc1NTg4ODU3MSwzMDA2ODM4OCwtMTUwNz
+A4NDYwNiwxMDUyODY0MTUsLTg4MDA0ODQ3NiwtMTM0Nzk2MjUx
+NywtMTUwNzM4NDMxNywtMzgwNDQ1MDk1LDEyMTQ4NjE0MjIsNz
+MyNTg5ODgwLDM2MTUwNDMyMCwtNTk0MTkwNTIxLDkzOTQ1Mzg3
+NCwzNzAyNTI2NzRdfQ==
 -->
