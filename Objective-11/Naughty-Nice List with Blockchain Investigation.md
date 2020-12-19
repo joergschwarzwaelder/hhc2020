@@ -11,7 +11,7 @@ In the hints for this objective is a [talk of Tom Liston covering Mersenne Twist
 As the nonces in the Blockchain are 64bit it was found they were created by creating two 32bit random values (first one for the lower 32bit, second one for the upper 32bit).
 The prediction works just the same: The nonces of the last 312 blocks of the Blockchain were split into lower and upper half and pre-loaded into the Mersenne Twister.
 The next 6 32bit random values out of this prepared PRNG are part of the nonces for #129997-#129999.
-Then finally the next two are lower and upper half of the nonce for block #130000 -> 57066318 f32f729d
+Then finally the next two are lower and upper half of the nonce for block #130000 -> **57066318 f32f729d**
 
 
 ## 11b: Part 2
@@ -43,6 +43,10 @@ and the entangled value with an offset of 64 bytes
 
 > 163170 03 b9 ef 95 99 **1b** 5b 49 9f 86 dc 85 39 85 90 99
 
+
+
+
+
 The original and reverted files can be found in the below table.
 In addition the [hex dump diff](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/blockchain-naughty-nice-diff.dump) is provided.
 
@@ -53,7 +57,7 @@ In addition the [hex dump diff](https://github.com/joergschwarzwaelder/hhc2020/b
 |[PDF](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/000000000001f9b3-1-nice.pdf) |[PDF](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/000000000001f9b3-1-naughty.pdf) |
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjI5OTY4NzEsMTIxNDg2MTQyMiw3Mz
+eyJoaXN0b3J5IjpbLTEzNDAxMjI1MTEsMTIxNDg2MTQyMiw3Mz
 I1ODk4ODAsMzYxNTA0MzIwLC01OTQxOTA1MjEsOTM5NDUzODc0
 LDM3MDI1MjY3NF19
 -->
