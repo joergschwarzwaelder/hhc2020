@@ -12,7 +12,7 @@ MD5 works using chunks of 64 bytes. It is possible increase a value at offset #n
 With this information the naughty/nice value can be changed from "1" (Nice) to "0" (Naughty) and one specific value in the PDF document from "2" to "3".
 As compensating measure (to have the MD5 hash stay the same) the entangled values have to be changed accordingly.
 
-A [toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/Frostys-Toolbox.html) for analyzing and tampering this Blockchain (which also allows the download of the full tampered Blockchain and every single evidence) is available
+A [toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/Frostys-Toolbox.html) for analyzing and tampering this Blockchain (which also allows the download of the full tampered Blockchain and every single evidence) is available; also hosted [here](https://joergschwarzwaelder.github.io/d93ad9aa555b3b01a32fb0d102509bae8f3080072892b667298c089c0baa1244/Objective11/Frostys-Toolbox.html) for easy use.
 
 Tampering the Naughty/Nice value
 > 163070 66 66 66 66 66 **31** 66 66 30 30 30 30 30 30 36 63
@@ -35,6 +35,6 @@ and the entangled value with an offset of 64 bytes
 > 163170 03 b9 ef 95 99 **1b** 5b 49 9f 86 dc 85 39 85 90 99
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDc3NzE2NDcsMzYxNTA0MzIwLC01OT
-QxOTA1MjEsOTM5NDUzODc0LDM3MDI1MjY3NF19
+eyJoaXN0b3J5IjpbNDEwNTc5MDc0LDM2MTUwNDMyMCwtNTk0MT
+kwNTIxLDkzOTQ1Mzg3NCwzNzAyNTI2NzRdfQ==
 -->
