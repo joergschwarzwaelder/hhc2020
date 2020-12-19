@@ -57,11 +57,12 @@ In addition the [hex dump diff](https://github.com/joergschwarzwaelder/hhc2020/b
 |[Blockchain Hexdump](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/blockchain.dump) |[Blockchain Hexdump](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/blockchain-back-to-original.dump) |
 |[PDF](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/000000000001f9b3-1-nice.pdf) |[PDF](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/000000000001f9b3-1-naughty.pdf) |
 
+A [toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/Frostys-Toolbox.html) for analyzing and tampering this Blockchain (which also allows the download of the full tampered Blockchain and every single evidence) is available; also hosted [here](https://joergschwarzwaelder.github.io/d93ad9aa555b3b01a32fb0d102509bae8f3080072892b667298c089c0baa1244/Objective11/Frostys-Toolbox.html) for easy use.
 Screenshot of the toolbox:
 ![toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/Frostys-Toolbox.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTM3MzIyOTIsLTEzNDc5NjI1MTcsLT
-E1MDczODQzMTcsLTM4MDQ0NTA5NSwxMjE0ODYxNDIyLDczMjU4
-OTg4MCwzNjE1MDQzMjAsLTU5NDE5MDUyMSw5Mzk0NTM4NzQsMz
-cwMjUyNjc0XX0=
+eyJoaXN0b3J5IjpbLTg4MDA0ODQ3NiwtMTM0Nzk2MjUxNywtMT
+UwNzM4NDMxNywtMzgwNDQ1MDk1LDEyMTQ4NjE0MjIsNzMyNTg5
+ODgwLDM2MTUwNDMyMCwtNTk0MTkwNTIxLDkzOTQ1Mzg3NCwzNz
+AyNTI2NzRdfQ==
 -->
