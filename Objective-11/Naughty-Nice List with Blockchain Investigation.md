@@ -50,14 +50,14 @@ Basically for tampering the PDF document it would also have been possible to use
 The original and reverted files can be found in the below table.
 In addition the [hex dump diff](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/blockchain-naughty-nice-diff.dump) is provided.
 
-|Original(Nice)|Reverted(Naughty)  |
+|Original (Nice)|Reverted (Naughty)  |
 |--|--|
 |[Blockchain](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/blockchain.dat)  |[Blockchain](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/blockchain-back-to-original.dat)  |
 |[Blockchain Hexdump](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/blockchain.dump) |[Blockchain Hexdump](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/blockchain-back-to-original.dump) |
 |[PDF](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/000000000001f9b3-1-nice.pdf) |[PDF](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/000000000001f9b3-1-naughty.pdf) |
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4MDQ0NTA5NSwxMjE0ODYxNDIyLDczMj
-U4OTg4MCwzNjE1MDQzMjAsLTU5NDE5MDUyMSw5Mzk0NTM4NzQs
-MzcwMjUyNjc0XX0=
+eyJoaXN0b3J5IjpbLTE1MDczODQzMTcsLTM4MDQ0NTA5NSwxMj
+E0ODYxNDIyLDczMjU4OTg4MCwzNjE1MDQzMjAsLTU5NDE5MDUy
+MSw5Mzk0NTM4NzQsMzcwMjUyNjc0XX0=
 -->
