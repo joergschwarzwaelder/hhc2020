@@ -42,7 +42,9 @@ and the entangled value with an offset of 64 bytes
 
 > 163170 03 b9 ef 95 99 **1b** 5b 49 9f 86 dc 85 39 85 90 99
 
-The [original](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/blockchain.dat) and the [reverted](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/blockchain-back-to-original.dat) Blockchain are available along with hex dumps ([original](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/blockchain.dump) and [reverted](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/blockchain-back-to-original.dump)) and the [diff](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/blockchain-naughty-nice-diff.dump) between these two.
+The original and reverted files can be found in the below table.
+In addition the [hex dump diff](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/blockchain-naughty-nice-diff.dump) is provided.
+
 |Original(Nice)|Reverted(Naughty)  |
 |--|--|
 |[Blockchain](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/blockchain.dat)  |[Blockchain](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/blockchain-back-to-original.dat)  |
@@ -50,7 +52,7 @@ The [original](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Object
 |[PDF](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/000000000001f9b3-1-nice.pdf) |[PDF](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/000000000001f9b3-1-naughty.pdf) |
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjQ0ODE3MiwxMjE0ODYxNDIyLDczMj
+eyJoaXN0b3J5IjpbMTE4NDI4NTI2MSwxMjE0ODYxNDIyLDczMj
 U4OTg4MCwzNjE1MDQzMjAsLTU5NDE5MDUyMSw5Mzk0NTM4NzQs
 MzcwMjUyNjc0XX0=
 -->
