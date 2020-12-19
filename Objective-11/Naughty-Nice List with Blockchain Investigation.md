@@ -46,11 +46,11 @@ The [original](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Object
 |Original(Nice)|Reverted(Naughty)  |
 |--|--|
 |[Blockchain](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/blockchain.dat)  |[Blockchain](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/blockchain-back-to-original.dat)  |
-|Blockchain Hexdump |Blockchain Hexdump |
-|PDF |PDF |
+|[Blockchain Hexdump](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/blockchain.dump) |[Blockchain Hexdump](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/blockchain-back-to-original.dump) |
+|[PDF](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/000000000001f9b3-1-nice.pdf) |[PDF](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/000000000001f9b3-1-naughty.pdf) |
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzk3MTYzMTcxLDEyMTQ4NjE0MjIsNzMyNT
-g5ODgwLDM2MTUwNDMyMCwtNTk0MTkwNTIxLDkzOTQ1Mzg3NCwz
-NzAyNTI2NzRdfQ==
+eyJoaXN0b3J5IjpbLTE0NjQ0ODE3MiwxMjE0ODYxNDIyLDczMj
+U4OTg4MCwzNjE1MDQzMjAsLTU5NDE5MDUyMSw5Mzk0NTM4NzQs
+MzcwMjUyNjc0XX0=
 -->
