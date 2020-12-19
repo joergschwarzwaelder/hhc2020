@@ -5,9 +5,10 @@ It uses MD5 as hashing algorithm. Some Elves saw that Jack Frost's entry in this
 
 
 ## 11a: Part 1
+
 The provided Blockchain data contains the blocks with serials #128449-#129996. The objective is to predict the nonce of block #130000.
 In the hints for this objective is a [talk of Tom Liston covering Mersenne Twister based PRNG ](https://www.youtube.com/watch?v=Jo5Nlbqd-Vg) along with [sample Python code](https://github.com/tliston/mt19937) for predicting the next random values if you know the last 624 ones (covering 32bit PRNG).
-As the nonces in the Blockchain are 64bit it was found they were created by creating 2 32bit random values (first one for the lower 32bit, second one for the upper 32bit).
+As the nonces in the Blockchain are 64bit it was found they were created by creating two 32bit random values (first one for the lower 32bit, second one for the upper 32bit).
 The prediction works just the same: The nonces of the last 312 blocks of the Blockchain were split into lower and upper half and pre-loaded into the Mersenne Twister.
 The next 6 32bit random values out of this prepared PRNG are part of the nonces for #129997-#129999.
 Then finally the next two are lower and upper half of the nonce for block #130000 -> 57066318 f32f729d
@@ -52,7 +53,7 @@ In addition the [hex dump diff](https://github.com/joergschwarzwaelder/hhc2020/b
 |[PDF](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/000000000001f9b3-1-nice.pdf) |[PDF](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/000000000001f9b3-1-naughty.pdf) |
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyNTYzMzAyMywxMjE0ODYxNDIyLDczMj
-U4OTg4MCwzNjE1MDQzMjAsLTU5NDE5MDUyMSw5Mzk0NTM4NzQs
-MzcwMjUyNjc0XX0=
+eyJoaXN0b3J5IjpbLTE4MjI5OTY4NzEsMTIxNDg2MTQyMiw3Mz
+I1ODk4ODAsMzYxNTA0MzIwLC01OTQxOTA1MjEsOTM5NDUzODc0
+LDM3MDI1MjY3NF19
 -->
