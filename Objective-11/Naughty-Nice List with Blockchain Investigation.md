@@ -9,8 +9,8 @@ The provided Blockchain data contains the blocks with serials #128449-#129996. T
 In the hints for this objective is a [talk of Tom Liston covering Mersenne Twister based PRNG ](https://www.youtube.com/watch?v=Jo5Nlbqd-Vg) along with [sample Python code](https://github.com/tliston/mt19937) for predicting the next random values if you know the last 624 ones (covering 32bit PRNG).
 As the nonces in the Blockchain are 64bit it was found they were created by creating 2 32bit random values (first one for the lower 32bit, second one for the upper 32bit).
 The prediction works just the same: The nonces of the last 312 blocks of the Blockchain were split into lower and upper half and pre-loaded into the Mersenne Twister.
-The next 6 32bit random values out of this prepared PRNG are part of the nonces for 
-
+The next 6 32bit random values out of this prepared PRNG are part of the nonces for #129997-#129999.
+Then finally the next two are lower and upper half of the nonce for block #130000 -> 57066318 f32f729d
 
 
 ## 11b: Part 2
@@ -42,8 +42,9 @@ and the entangled value with an offset of 64 bytes
 
 > 163170 03 b9 ef 95 99 **1b** 5b 49 9f 86 dc 85 39 85 90 99
 
+The 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDc4MDA2NTQ5LDczMjU4OTg4MCwzNjE1MD
-QzMjAsLTU5NDE5MDUyMSw5Mzk0NTM4NzQsMzcwMjUyNjc0XX0=
+eyJoaXN0b3J5IjpbMTg5MDgxNTk5NCw3MzI1ODk4ODAsMzYxNT
+A0MzIwLC01OTQxOTA1MjEsOTM5NDUzODc0LDM3MDI1MjY3NF19
 
 -->
