@@ -3,6 +3,7 @@
 The Blockchain to be investigated was provided by an Elf.
 It uses MD5 as hashing algorithm. Some Elves saw that Jack Frost's entry in this Blockchain was set to "Naughty" in the past and now it is set to "Nice". They suppose that Jack tampered his Block on the Blockchain.
 Each single block has this data structure:
+
 ![data structure ](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/Blockchain%20Definition.png)
 
 
@@ -59,7 +60,7 @@ In addition the [hex dump diff](https://github.com/joergschwarzwaelder/hhc2020/b
 |[PDF](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/000000000001f9b3-1-nice.pdf) |[PDF](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/000000000001f9b3-1-naughty.pdf) |
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyOTk2MjIzNywtMTUwNzM4NDMxNywtMz
-gwNDQ1MDk1LDEyMTQ4NjE0MjIsNzMyNTg5ODgwLDM2MTUwNDMy
-MCwtNTk0MTkwNTIxLDkzOTQ1Mzg3NCwzNzAyNTI2NzRdfQ==
+eyJoaXN0b3J5IjpbLTEzNDc5NjI1MTcsLTE1MDczODQzMTcsLT
+M4MDQ0NTA5NSwxMjE0ODYxNDIyLDczMjU4OTg4MCwzNjE1MDQz
+MjAsLTU5NDE5MDUyMSw5Mzk0NTM4NzQsMzcwMjUyNjc0XX0=
 -->
