@@ -2,7 +2,9 @@
 
 The Blockchain to be investigated was provided by an Elf.
 It uses MD5 as hashing algorithm. Some Elves saw that JAck Frosts entry in this Blockchain was set to "Naughty" in the past and now it is "Nice". They suppose that Jack tampered his Block on the Blockchain.
-The provided Blockchain data contains the blocks with serials #128449-#129996. The objective is to predict the nonce of block #
+The provided Blockchain data contains the blocks with serials #128449-#129996. The objective is to predict the nonce of block #130000.
+In the hints for this objective 
+https://github.com/tliston/mt19937
 
 ## 11a: Part 1
 The objective is to predict
@@ -37,6 +39,6 @@ and the entangled value with an offset of 64 bytes
 > 163170 03 b9 ef 95 99 **1b** 5b 49 9f 86 dc 85 39 85 90 99
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQ0ODYyMTQ0LDM2MTUwNDMyMCwtNTk0MT
+eyJoaXN0b3J5IjpbNzMyNTg5ODgwLDM2MTUwNDMyMCwtNTk0MT
 kwNTIxLDkzOTQ1Mzg3NCwzNzAyNTI2NzRdfQ==
 -->
