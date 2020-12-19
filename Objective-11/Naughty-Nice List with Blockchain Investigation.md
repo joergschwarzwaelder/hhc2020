@@ -1,7 +1,7 @@
 # Objective 11: Naughty/Nice List with Blockchain Investigation
 
 The Blockchain to be investigated was provided by an Elf.
-It uses MD5 as hashing algorithm. Some Elves saw that Jack Frost's entry in this Blockchain was set to "Naughty" in the past and now it is "Nice". They suppose that Jack tampered his Block on the Blockchain.
+It uses MD5 as hashing algorithm. Some Elves saw that Jack Frost's entry in this Blockchain was set to "Naughty" in the past and now it is set to "Nice". They suppose that Jack tampered his Block on the Blockchain.
 
 
 ## 11a: Part 1
@@ -52,7 +52,7 @@ In addition the [hex dump diff](https://github.com/joergschwarzwaelder/hhc2020/b
 |[PDF](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/000000000001f9b3-1-nice.pdf) |[PDF](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/000000000001f9b3-1-naughty.pdf) |
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTIyMzkzNzgsMTIxNDg2MTQyMiw3Mz
-I1ODk4ODAsMzYxNTA0MzIwLC01OTQxOTA1MjEsOTM5NDUzODc0
-LDM3MDI1MjY3NF19
+eyJoaXN0b3J5IjpbLTMyNTYzMzAyMywxMjE0ODYxNDIyLDczMj
+U4OTg4MCwzNjE1MDQzMjAsLTU5NDE5MDUyMSw5Mzk0NTM4NzQs
+MzcwMjUyNjc0XX0=
 -->
