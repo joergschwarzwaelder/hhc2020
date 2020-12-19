@@ -46,8 +46,6 @@ and the entangled value with an offset of 64 bytes
 
 Basically for tampering the PDF document it would also have been possible to use the position in the previous 64 byte block as entangled value. Unfortunately this position holds the lowest byte of the length field for the PDF document, so changing *only* this value would destroy the Blockchain.
 
-
-
 The original and reverted files can be found in the below table.
 In addition the [hex dump diff](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/blockchain-naughty-nice-diff.dump) is provided.
 
@@ -57,12 +55,14 @@ In addition the [hex dump diff](https://github.com/joergschwarzwaelder/hhc2020/b
 |[Blockchain Hexdump](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/blockchain.dump) |[Blockchain Hexdump](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/blockchain-back-to-original.dump) |
 |[PDF](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/000000000001f9b3-1-nice.pdf) |[PDF](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/000000000001f9b3-1-naughty.pdf) |
 
+The modified block (#1234) has the same MD5 hash (so that the Blockchain is still healthy) and the new SHA256 hash of **58a3b9335a6ceb0234c12d35a0564c4ef0e90152d0eb2ce2082383b38028a90f**
+
 A [toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/Frostys-Toolbox.html) for analyzing and tampering this Blockchain (which also allows the download of the full tampered Blockchain and every single evidence) is available; also hosted [here](https://joergschwarzwaelder.github.io/d93ad9aa555b3b01a32fb0d102509bae8f3080072892b667298c089c0baa1244/Objective11/Frostys-Toolbox.html) for easy use.
 Screenshot of the toolbox:
 ![toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/Frostys-Toolbox.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4MDA0ODQ3NiwtMTM0Nzk2MjUxNywtMT
-UwNzM4NDMxNywtMzgwNDQ1MDk1LDEyMTQ4NjE0MjIsNzMyNTg5
-ODgwLDM2MTUwNDMyMCwtNTk0MTkwNTIxLDkzOTQ1Mzg3NCwzNz
-AyNTI2NzRdfQ==
+eyJoaXN0b3J5IjpbMTgyOTg3OTE1OSwtODgwMDQ4NDc2LC0xMz
+Q3OTYyNTE3LC0xNTA3Mzg0MzE3LC0zODA0NDUwOTUsMTIxNDg2
+MTQyMiw3MzI1ODk4ODAsMzYxNTA0MzIwLC01OTQxOTA1MjEsOT
+M5NDUzODc0LDM3MDI1MjY3NF19
 -->
