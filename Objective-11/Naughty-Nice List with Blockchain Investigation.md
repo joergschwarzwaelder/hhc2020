@@ -43,8 +43,13 @@ and the entangled value with an offset of 64 bytes
 > 163170 03 b9 ef 95 99 **1b** 5b 49 9f 86 dc 85 39 85 90 99
 
 The [original](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/blockchain.dat) and the [reverted](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/blockchain-back-to-original.dat) Blockchain are available along with hex dumps ([original](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/blockchain.dump) and [reverted](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/blockchain-back-to-original.dump)) and the [diff](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/blockchain-naughty-nice-diff.dump) between these two.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxNDg2MTQyMiw3MzI1ODk4ODAsMzYxNT
-A0MzIwLC01OTQxOTA1MjEsOTM5NDUzODc0LDM3MDI1MjY3NF19
+|Original|Reverted  |
+|--|--|
+|Blockchain  |Blockchain  |
+|Blockchain Dump |Blockchain Dump |
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMjA4NTA3NDY5OCwxMjE0ODYxNDIyLDczMj
+U4OTg4MCwzNjE1MDQzMjAsLTU5NDE5MDUyMSw5Mzk0NTM4NzQs
+MzcwMjUyNjc0XX0=
 -->
