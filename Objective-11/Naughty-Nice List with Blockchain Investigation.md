@@ -1,11 +1,12 @@
-Objective 11: Naughty/Nice List with Blockchain Investigation
+# Objective 11: Naughty/Nice List with Blockchain Investigation
 
 The Blockchain to be investigated was provided by an Elf.
-It uses MD5 as hashing algorithm.
+It uses MD5 as hashing algorithm. Some Elves 
+
+## 11a: Part 1
 
 
-
-11b: Part 2
+## 11b: Part 2
 
 The objective is to modify Jack Frosts block back from Nice to Naughty and to make available the hidden PDF pages by changing only four bytes.
 MD5 works using chunks of 64 bytes. It is possible increase a value at offset #n of block #m without changing the MD5 hash by also decreasing the value at offset #n of block #m+1 (entangled values).
@@ -35,6 +36,6 @@ and the entangled value with an offset of 64 bytes
 > 163170 03 b9 ef 95 99 **1b** 5b 49 9f 86 dc 85 39 85 90 99
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDEwNTc5MDc0LDM2MTUwNDMyMCwtNTk0MT
-kwNTIxLDkzOTQ1Mzg3NCwzNzAyNTI2NzRdfQ==
+eyJoaXN0b3J5IjpbLTE1MjE2MDMxOTksMzYxNTA0MzIwLC01OT
+QxOTA1MjEsOTM5NDUzODc0LDM3MDI1MjY3NF19
 -->
