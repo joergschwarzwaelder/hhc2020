@@ -14,8 +14,11 @@ The following badges were found in game:
 lf hid sim -r <id>
 Netwars: checked
 Talks floor: checked
+Wrapping room/wortkshop checked
+courtyard checked
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzNTY0ODQ5Niw2MjI5OTQ5NTVdfQ==
+eyJoaXN0b3J5IjpbLTQ4ODg5Nzc1OCwtNDM1NjQ4NDk2LDYyMj
+k5NDk1NV19
 -->
