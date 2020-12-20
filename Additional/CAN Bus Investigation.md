@@ -1,5 +1,6 @@
 ## CAN Bus Investigation
-Using grep it is possible to determine that " 19B" is the LOCK/UNLOCK signal.
+Using cut it is possible to determine that " 19B" is the LOCK/UNLOCK signal which is supposed to appear three times in the log .
+
 
     elf@7b2ad8c74795:~$ grep ' 19B' candump.log**
     (1608926664.626448) vcan0 19B#000000000000
@@ -8,5 +9,6 @@ Using grep it is possible to determine that " 19B" is the LOCK/UNLOCK signal.
 
 As the objective says that there are one UNLOCK and two LOCK signals, the decimal portion to be submitted is **122520**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxMjYwODY4MywxNTc2MDY3NTEwXX0=
+eyJoaXN0b3J5IjpbLTkyMDAzNTAxMywtODEyNjA4NjgzLDE1Nz
+YwNjc1MTBdfQ==
 -->
