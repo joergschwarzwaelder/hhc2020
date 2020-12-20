@@ -30,8 +30,10 @@ So the password is **Computer-TurnLightsOn**
 The password which has to be used is stored encoded in the file "vending-machines.json": LVEdQPpBwr. When the file is deleted it is possible to set a new password and to learn about the encoding method.
 It was foud that:
 
- - The clear text and the enco
+ - The clear text and the encoded password always have the same length
+ - Same characters on the same position are encoded to the same character in the same position
+ - The encoding 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjY3NzExNDIwLC0zMDkyNjk2OTNdfQ==
+eyJoaXN0b3J5IjpbMTQzODgyMDEyMSwtMzA5MjY5NjkzXX0=
 -->
