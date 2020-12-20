@@ -7,7 +7,14 @@ By setting the filters and operating the sleigh it was possible to find the foll
 |Type|ID  |
 |--|--|
 |Lock  | 19B#000000000000 |
+|Unlock  | 19B#00000F000000 |
+|Stop  | 02A#0000FF |
+|Start  | 02A#00FF00 |
+|Revolutions  | 244#0000000000 |
+|SteeringRevolutions  | 244#0000000000 |
+|Revolutions  | 244#0000000000 |
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzMTQ3MjE1Miw1Njg2MDIwNTddfQ==
+eyJoaXN0b3J5IjpbODk4MDU2NjkzLDU2ODYwMjA1N119
 -->
