@@ -22,7 +22,7 @@ In addition these unknown messages were seen on the bus:
 
 Finally "Brake" messages with a negative value were seen on the bus.
 By excluding the unknown "19B" message and the "080" messages with a negative value it was possible to get the Sleigh operational again.
-
+![CAN Bus filter](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-7/can-bus-filter.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODI3MDExMjQ3LDU2ODYwMjA1N119
+eyJoaXN0b3J5IjpbLTYyNzYxMzU3Myw1Njg2MDIwNTddfQ==
 -->
