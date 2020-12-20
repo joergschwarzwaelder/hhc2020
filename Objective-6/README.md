@@ -1,6 +1,8 @@
-# Objective 6: Investigate S3 Bucket
+# Objective 6: Splunk Challenge
 
-To be completed
+Splunk Training Questions:
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTE2ODUxNDJdfQ==
+eyJoaXN0b3J5IjpbLTE5NTIzNTA3NTQsLTE1NTE2ODUxNDJdfQ
+==
 -->
