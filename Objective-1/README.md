@@ -1,6 +1,7 @@
 # Objective 1: Uncover Santa's Gift List
 
-The Blockchain to be inv
+A photo of a desk was provided 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTYyNDM2NTQsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMTkwNzQzNDk4MCwtMTgxNjI0MzY1NCw3Mz
+A5OTgxMTZdfQ==
 -->
