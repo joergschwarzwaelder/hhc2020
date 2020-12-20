@@ -32,13 +32,9 @@ I can't believe the Splunk folks put it in their talk!
 
 The reference to RFC 7464 (
 RFC 7565(Prohibiting RC4 Cipher Suites) give an idea on the used Cipher. The KringleCon [Splunk talk](https://youtu.be/RxVgEFt08kU?t=1121) show the passphrase.
-Decoding in [CyberChef](https://gchq.github.io/CyberChef/#recipe=From_Base64('A-Za-z0-9%2B/%3D',true)RC4(%7B'option':'UTF8','string':'Stay%20Frosty'%7D,'Latin1','Latin1')&input=N0ZYalAxbHlmS2J5REsvTUNoeWYzNmg3](https://gchq.github.io/CyberChef/#recipe=From_Base64('A-Za-z0-9%2B/%3D',true)RC4(%7B'option':'UTF8','string':'Stay%20Frosty'%7D,'Latin1','Latin1')&input=N0ZYalAxbHlmS2J5REsvTUNoeWYzNmg3)
-
-  
-
-The Lollipop Guild
+Decoding in [CyberChef](https://gchq.github.io/CyberChef/#recipe=From_Base64%28%27A-Za-z0-9+/=%27,true%29RC4%28%7B%27option%27:%27UTF8%27,%27string%27:%27Stay%20Frosty%27%7D,%27Latin1%27,%27Latin1%27%29&input=N0ZYalAxbHlmS2J5REsvTUNoeWYzNmg3) shows the solution: **The Lollipop Guild**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjI1ODE5OTQsMjcwMjA3OTc3LC0xOT
-UyMzUwNzU0LC0xNTUxNjg1MTQyXX0=
+eyJoaXN0b3J5IjpbMTA3NDA3ODE4NiwyNzAyMDc5NzcsLTE5NT
+IzNTA3NTQsLTE1NTE2ODUxNDJdfQ==
 -->
