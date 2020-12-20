@@ -28,7 +28,7 @@ So the password is **Computer-TurnLightsOn**
 
 ## vending-machines
 The password which has to be used is stored encoded in the file "vending-machines.json": LVEdQPpBwr. When the file is deleted it is possible to set a new password and to learn about the encoding method.
-It was foud that:
+It was found that:
 
  - The clear text and the encoded password always have the same length
  - Same characters on the same position are encoded to the same character in the same position
@@ -36,14 +36,15 @@ It was foud that:
  
 |clear text|encoded|
 |--|--|
-| josh|ajPg
-|iosh|MjPg
-|ajosh: 98fno
-|joshi:ajPg4
-|aaaaaaaaaa:9Vbtacpg9V
-|eeeeeeeeee:wcZQAYuewc |  |
+| josh|ajPg|
+|iosh|MjPg|
+|ajosh| 98fno|
+|joshi|ajPg4|
+|aaaaaaaaaa|9Vbtacpg9V|
+|eeeeeeeeee|wcZQAYuewc | 
 
-
+To get hold of the clear text
+[vending-passwor](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/vending-password.sh)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDQ5ODM4MTksLTMwOTI2OTY5M119
+eyJoaXN0b3J5IjpbLTE2Njc0MDg2MTYsLTMwOTI2OTY5M119
 -->
