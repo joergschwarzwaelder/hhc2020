@@ -26,11 +26,12 @@ The last command in this batch file is
 
 Final question:
 This last one is encrypted using your favorite phrase! The base64 encoded ciphertext is: 7FXjP1lyfKbyDK/MChyf36h7
-It's encrypted with an old algorithm that uses a key. We don't care about RFC 7565 up here! I leave it to the elves to determine which one!
+It's encrypted with an old algorithm that uses a key. We don't care about RFC 7465 up here! I leave it to the elves to determine which one!
 
 I can't believe the Splunk folks put it in their talk!
 
-RFC 7565
+The reference to RFC 7464 (
+RFC 7565(Prohibiting RC4 Cipher Suites) give an idea on the used Cipher. The KringleCon
 
 [https://gchq.github.io/CyberChef/#recipe=From_Base64('A-Za-z0-9%2B/%3D',true)RC4(%7B'option':'UTF8','string':'Stay%20Frosty'%7D,'Latin1','Latin1')&input=N0ZYalAxbHlmS2J5REsvTUNoeWYzNmg3](https://gchq.github.io/CyberChef/#recipe=From_Base64('A-Za-z0-9%2B/%3D',true)RC4(%7B'option':'UTF8','string':'Stay%20Frosty'%7D,'Latin1','Latin1')&input=N0ZYalAxbHlmS2J5REsvTUNoeWYzNmg3)
 
@@ -39,6 +40,6 @@ RFC 7565
 The Lollipop Guild
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjcwMjA3OTc3LC0xOTUyMzUwNzU0LC0xNT
-UxNjg1MTQyXX0=
+eyJoaXN0b3J5IjpbLTIwMTQ2Mjc3MTQsMjcwMjA3OTc3LC0xOT
+UyMzUwNzU0LC0xNTUxNjg1MTQyXX0=
 -->
