@@ -3,18 +3,19 @@
 The objective is to get hold of the file /NORTH_POLE_Land_Use_Board_Meeting_Minutes.txt on a remote host using ARP  and DNS spoofing.
 
 Exercise setup:
-||Local Host|Remote Host  |
-|--|--|--|
+||Local Host|Remote Host  |Spoofed Host|
+|--|--|--|--|
 |MAC|02:42:0a:06:00:02  | 4c:24:57ab:ed:84 |
 |IP| 10.6.0.2 | 10.6.6.35 |
 
-A Python Scapy script was prepared to spoof ARP replies for the host 10.6.6.53 redirecting the traffic to the local host.
+A [Python Scapy script](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-9/arp_resp-py) was prepared to spoof ARP replies for the host 10.6.6.53 redirecting the traffic to the local host.
 
 Capture of ARP spoofing success with following DNS query:
 
     15:57:47.028750 ARP, Reply 10.6.6.53 is-at 02:42:0a:06:00:02, length 28
     15:57:47.057274 IP 10.6.6.35.27609 > 10.6.6.53.53: 0+ A? ftp.osuosl.org. (32)`
 
+Next Python Scapy script was prepared to send DNS replies
 Capture of ARP and DNS spoofing with following HTTP request:
 
     17:27:16.968588 ARP, Request who-has 10.6.6.53 tell 10.6.6.35, length 28
@@ -40,6 +41,6 @@ That way the remote device would download this package and install it. In course
 to receive the [text](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-9/NORTH_POLE_Land_Use_Board_Meeting_Minutes.txt).
 In this file can be found that **Tanta Kringle** recused herself from the vote.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0NTUwNTI3MSwtODc4MzkyMjE2LDUxND
-IwOTE1OV19
+eyJoaXN0b3J5IjpbLTEwNDMyOTYxNjMsLTg3ODM5MjIxNiw1MT
+QyMDkxNTldfQ==
 -->
