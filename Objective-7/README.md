@@ -14,13 +14,14 @@ By setting the filters and operating the sleigh it was possible to find the foll
 |Steering Wheel  | 019#00000000 |positive and negative hex values|
 |Brake  | 080#000000 |non negative hex values |
 
-In addition these 
-|Type|ID  |Comment|
-|--|--|--|
-|Lock  | 19B#000000000000 ||
+In addition these unknown messages were seen on the bus:
+|ID  |
+|--|
+| 19B#0000000F2057 |
+| 188#00000000 |
 
-
+Finally "Brake" messages wi
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDM0MTU5Njg2LDU2ODYwMjA1N119
+eyJoaXN0b3J5IjpbMTQ2OTc4NjQ1Miw1Njg2MDIwNTddfQ==
 -->
