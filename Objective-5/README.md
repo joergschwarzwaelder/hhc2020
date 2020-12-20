@@ -2,6 +2,14 @@
 The Proxmark reader can be operated with the command "lf hid read" to read out badges in proximity.
 
 The following badges were found in game:
+|Elf  |Where  |Tag|
+|--|--|--|
+|Bow Ninecandle  | Talks ||
+|Sparkle Redberry  | Lobby  ||
+|Holly Evergreen  |  ||
+|Bow Ninecandle  |  ||
+|Shinny Upatree  |  ||
+
 Bow Ninecandle (Talks): (opens HID lock in workshop)
 #db# TAG ID: 2006e22f0e (6023) - Format Len: 26 bit - FC: 113 - Card: 6023
 Sparkle Redberry (Lobby)
@@ -11,5 +19,5 @@ Holly Evergreen (behind Lobby)
 Shinny Upatree (outside)
 #db# TAG ID: 2006e22f13 (6025) - Format Len: 26 bit - FC: 113 - Card: 6025
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0MjQwNDYsNjIyOTk0OTU1XX0=
+eyJoaXN0b3J5IjpbLTE2NzUwOTIwNDQsNjIyOTk0OTU1XX0=
 -->
