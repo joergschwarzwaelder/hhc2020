@@ -9,6 +9,12 @@ The following badges were found in game:
 |Holly Evergreen  |behind Lobby  |#db# TAG ID: 2006e22f10 (6024) - Format Len: 26 bit - FC: 113 - Card: 6024|
 |Shinny Upatree  |outside  |#db# TAG ID: 2006e22f13 (6025) - Format Len: 26 bit - FC: 113 - Card: 6025|
 
+
+lf hid sim -r <id>
+**N****etwars: checked**
+**Talks floor: checked**
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTYxOTc0NDAsNjIyOTk0OTU1XX0=
+eyJoaXN0b3J5IjpbMTY1Mjk3ODAwNyw2MjI5OTQ5NTVdfQ==
 -->
