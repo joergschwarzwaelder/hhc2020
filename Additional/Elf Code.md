@@ -1,4 +1,4 @@
-# Elf Code
+# Elf C0de
 The objective is to navigate the Elf using Javascript through each level.
 
 ## Level 1
@@ -100,5 +100,5 @@ The objective is to navigate the Elf using Javascript through each level.
     }
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDIwNTI5MzZdfQ==
+eyJoaXN0b3J5IjpbOTc2OTIwODksLTE0MDIwNTI5MzZdfQ==
 -->
