@@ -23,7 +23,18 @@ The last command in this batch file is
 7. According to x509 certificate events captured by Zeek (formerly Bro), what is the serial number of the TLS certificate assigned to the Windows domain controller in the attack range?
 → `index=* *serial*`
 **55FCEEBB21270D9249E86F4B9DC7AA60**
+
+Final question:
+This last one is encrypted using your favorite phrase! The base64 encoded ciphertext is: 7FXjP1lyfKbyDK/MChyf36h7
+
+
+[https://gchq.github.io/CyberChef/#recipe=From_Base64('A-Za-z0-9%2B/%3D',true)RC4(%7B'option':'UTF8','string':'Stay%20Frosty'%7D,'Latin1','Latin1')&input=N0ZYalAxbHlmS2J5REsvTUNoeWYzNmg3](https://gchq.github.io/CyberChef/#recipe=From_Base64('A-Za-z0-9%2B/%3D',true)RC4(%7B'option':'UTF8','string':'Stay%20Frosty'%7D,'Latin1','Latin1')&input=N0ZYalAxbHlmS2J5REsvTUNoeWYzNmg3)
+
+  
+
+The Lollipop Guild
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTY0NDI0OTAsLTE5NTIzNTA3NTQsLT
-E1NTE2ODUxNDJdfQ==
+eyJoaXN0b3J5IjpbNDk4OTk2MTQ5LC0xOTUyMzUwNzU0LC0xNT
+UxNjg1MTQyXX0=
 -->
