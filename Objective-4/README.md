@@ -2,7 +2,7 @@
 
 To operate the Santavator some tools are required:
 
- - Key
+ - Santavator Key
  - three coloured Bulbs
  - a Hex Nut
  - a Rubber Ball
@@ -11,6 +11,6 @@ There are also other items lying on the floor, but these do not seem to be requi
 
 ![Santavator](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-4/Santavator.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzM3NzEwNTIsLTE4NjU3OTcyMDIsMT
-YzMTY3NjcwMSwtMTQ5NzI5MjI0NF19
+eyJoaXN0b3J5IjpbMTI0NDI5NTM5MywtMTg2NTc5NzIwMiwxNj
+MxNjc2NzAxLC0xNDk3MjkyMjQ0XX0=
 -->
