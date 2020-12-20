@@ -1,6 +1,7 @@
-# Objective 7: Investigate S3 Bucket
+# Objective 7: Solve the Sleigh's CAN-D-BUS Problem
 
-To be completed
+Santa's sleigh behaves strange and is hard to operate.
+The objective is to analyze the CAN-D-Bus messages and filter out messages which seem to be 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTY4NjAyMDU3XX0=
+eyJoaXN0b3J5IjpbMTMzMTEyODI5Miw1Njg2MDIwNTddfQ==
 -->
