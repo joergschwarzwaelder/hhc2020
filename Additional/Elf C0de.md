@@ -68,51 +68,52 @@ for (var i = 0; i < 2; i++) {
 elf.moveUp(2)
 elf.moveLeft(4)
 elf.tell_munch(s)
- elf.moveUp(1)
+elf.moveUp(1)
 
-    function step(f,a,b) {
-      f(a)
-      elf.pull_lever(b)
-    }
+function step(f,a,b) {
+  f(a)
+  elf.pull_lever(b)
+}
 
-    function sm(total, a) {
-      return (typeof(a) === "object") ? total + a.reduce(sm, 0) : total + (a === parseInt(a, 10) ? a : 0);
-    }
+function sm(total, a) {
+  return (typeof(a) === "object") ? total + a.reduce(sm, 0) : total + (a === parseInt(a, 10) ? a : 0);
+}
 
-    function s(a) {
-      return a.reduce(sm, 0)
-    }
+function s(a) {
+  return a.reduce(sm, 0)
+}
 ```
 
 ## Level 8
-    var lv = 0;
-    for (var i = 0; i < 3; i++) {
-      lv = me(lv, 2 * i, elf.moveRight, 4 * i + 1)
-      lv = me(lv, 2 * i + 1, elf.moveLeft, 4 * i + 3)
-    }
-    var a = elf.ask_munch(0)
-    elf.tell_munch(scan)
-    elf.moveRight(11)
+```
+var lv = 0;
+for (var i = 0; i < 3; i++) {
+  lv = me(lv, 2 * i, elf.moveRight, 4 * i + 1)
+  lv = me(lv, 2 * i + 1, elf.moveLeft, 4 * i + 3)
+}
+var a = elf.ask_munch(0)
+elf.tell_munch(scan)
+elf.moveRight(11)
 
-    function me(lv, i1, f, i2) {
-      lv += elf.get_lever(i1)
-      f(i2)
-      elf.pull_lever(lv)
-      elf.moveUp(2)
-      return lv
-    }
+function me(lv, i1, f, i2) {
+  lv += elf.get_lever(i1)
+  f(i2)
+  elf.pull_lever(lv)
+  elf.moveUp(2)
+  return lv
+}
 
-    function lp(val, a) {
-      for (key in a) {
-        if (a[key] === "lollipop") return key
-      }
-      return val
-    }
+function lp(val, a) {
+  for (key in a) {
+    if (a[key] === "lollipop") return key
+  }
+  return val
+}
 
-    function scan(a) {
-      return a.reduce(lp, undefined)
-    }
-
+function scan(a) {
+  return a.reduce(lp, undefined)
+}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTE3Mjg3MjEsOTc2OTIwODldfQ==
+eyJoaXN0b3J5IjpbNjg2MDE5MzcxLDk3NjkyMDg5XX0=
 -->
