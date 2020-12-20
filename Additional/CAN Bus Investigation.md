@@ -6,7 +6,7 @@ Using grep it is possible to determine that " 19B" is the LOCK/UNLOCK signal.
     (1608926671.122520) vcan0 19B#00000F000000
     (1608926674.092148) vcan0 19B#000000000000
 
-As the objective says that there are one UNLOCK and two LOCK signals, 
+As the objective says that there are one UNLOCK and two LOCK signals, the decimal portion to be submitted is **122520**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjAwMjI1LDE1NzYwNjc1MTBdfQ==
+eyJoaXN0b3J5IjpbLTgxMjYwODY4MywxNTc2MDY3NTEwXX0=
 -->
