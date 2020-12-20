@@ -7,7 +7,7 @@ Each single block has this data structure:
 ![data structure ](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/Blockchain%20Definition.png)
 
 
-## 11a: Part 1
+## Objective 11a: Part 1
 
 The provided Blockchain data contains the blocks with serials #128449-#129996. The objective is to predict the nonce of block #130000.
 In the hints for this objective is a [talk of Tom Liston covering Mersenne Twister based PRNG ](https://www.youtube.com/watch?v=Jo5Nlbqd-Vg) along with [sample Python code](https://github.com/tliston/mt19937) for predicting the next random values if you know the last 624 ones (covering 32bit PRNG).
@@ -17,7 +17,7 @@ The next 6 32bit random values out of this prepared PRNG are part of the nonces 
 Then finally the next two are lower and upper half of the nonce for block #130000 -> **57066318 f32f729d**
 
 
-## 11b: Part 2
+## Objective 11b: Part 2
 
 The objective is to modify Jack Frosts block back from Nice to Naughty and to make available the hidden PDF pages by changing only four bytes.
 MD5 works using chunks of 64 bytes. It is possible increase a value at offset #n of block #m without changing the MD5 hash by also decreasing the value at offset #n of block #m+1 (entangled values).
@@ -61,5 +61,6 @@ A [toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective
 Screenshot of the toolbox:
 ![toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/Frostys-Toolbox.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyNzcyMjQ3NiwxNzU1ODg4NTcxXX0=
+eyJoaXN0b3J5IjpbODc4OTUwNjY4LDExMjc3MjI0NzYsMTc1NT
+g4ODU3MV19
 -->
