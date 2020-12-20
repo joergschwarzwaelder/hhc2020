@@ -10,20 +10,11 @@ The following badges were found in game:
 |Shinny Upatree  |outside  |#db# TAG ID: 2006e22f13 (6025) - Format Len: 26 bit - FC: 113 - Card: 6025|
 |Noel Boetie  |Wrapping Room  |#db# TAG ID: 2006e22ee1 (6000) - Format Len: 26 bit - FC: 113 - Card: 6000|
 
-
-
-
-lf hid sim -r <id>
-Netwars: checked
-Talks floor: checked
-Wrapping room/wortkshop checked
-courtyard checked
-grwat room checked
-dining room checked
+The Proxmark device is then able to simulate a badge using "lf hid sim -r <id>"
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDU0NzQ5NjYsLTQzNTY0ODQ5Niw2Mj
-I5OTQ5NTVdfQ==
+eyJoaXN0b3J5IjpbMjExNjU3OTM0LC0xODA1NDc0OTY2LC00Mz
+U2NDg0OTYsNjIyOTk0OTU1XX0=
 -->
