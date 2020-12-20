@@ -2,19 +2,23 @@
 The objective is to navigate the Elf using Javascript through each level.
 
 ## Level 1
-    elf.moveLeft(10)
-    elf.moveUp(10)
+```
+elf.moveLeft(10)
+elf.moveUp(10)
+```
 ## Level 2
-    elf.moveLeft(6)
-    var s=elf.get_lever(0)+2
-    elf.pull_lever(s)
-    elf.moveLeft(4)
-    elf.moveUp(10)
+```
+elf.moveLeft(6)
+var s=elf.get_lever(0)+2
+elf.pull_lever(s)
+elf.moveLeft(4)
+elf.moveUp(10)
+```
 ## Level 3
-    elf.moveTo(lollipop[0])
-    elf.moveTo(lollipop[1])
-    elf.moveTo(lollipop[2])
-    elf.moveUp(1)
+```elf.moveTo(lollipop[0])
+elf.moveTo(lollipop[1])
+elf.moveTo(lollipop[2])
+elf.moveUp(1)
 ## Level 4
     for (var i = 0; i < 2; i++) {
       elf.moveLeft(3)
@@ -100,5 +104,5 @@ The objective is to navigate the Elf using Javascript through each level.
     }
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTc2OTIwODldfQ==
+eyJoaXN0b3J5IjpbMTkyMzYyMjYxMSw5NzY5MjA4OV19
 -->
