@@ -8,7 +8,7 @@ Splunk Training Questions:
 2. What are the names of the two indexes that contain the results of emulating Enterprise ATT&CK technique 1059.003? (Put them in alphabetical order and separate them with a space)
 **t1059.003-main t1059.003-win**
 3. One technique that Santa had us simulate deals with 'system information discovery'. What is the full name of the registry key that is queried to determine the MachineGuid?
-→ "system information discovery" is t1082 in the MITRA ATT&CK techniques
+→ "system information discovery" is t1082 in the MITRA ATT&CK techniques, `index=t1082-win *MachineGuid*`
 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography**
 4. According to events recorded by the Splunk Attack Range, when was the OSTAP related atomic test executed? (Please provide the alphanumeric UTC timestamp.)
 → `index=attack`
@@ -34,6 +34,7 @@ The reference to RFC 7465 (Prohibiting RC4 Cipher Suites) gives an idea on the u
 Decoding in [CyberChef](https://gchq.github.io/CyberChef/#recipe=From_Base64%28%27A-Za-z0-9+/=%27,true%29RC4%28%7B%27option%27:%27UTF8%27,%27string%27:%27Stay%20Frosty%27%7D,%27Latin1%27,%27Latin1%27%29&input=N0ZYalAxbHlmS2J5REsvTUNoeWYzNmg3) shows the solution: **The Lollipop Guild**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzMTE1MDg4MCw2MzY2MzMwODMsMjcwMj
-A3OTc3LC0xOTUyMzUwNzU0LC0xNTUxNjg1MTQyXX0=
+eyJoaXN0b3J5IjpbMTQ1ODYyNTUyOSwtNDMxMTUwODgwLDYzNj
+YzMzA4MywyNzAyMDc5NzcsLTE5NTIzNTA3NTQsLTE1NTE2ODUx
+NDJdfQ==
 -->
