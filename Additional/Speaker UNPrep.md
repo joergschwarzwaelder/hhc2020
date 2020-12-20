@@ -10,7 +10,6 @@ This is an indicator that this application does not hash the passwords - they ar
 
 By using the script get_lights_password.sh is was possible to dump the process memory and to find the password in clear text.
 
-    enter code here
 
 > f8887c0c000-7f8887c0e000 rw-p 001ba000 08:01 2495947                    /lib/x86_64-linux
 -gnu/libc-2.28.so
@@ -26,8 +25,9 @@ By using the script get_lights_password.sh is was possible to dump the process m
 > e7a37d000 rw-p 00000000 00:0
 
 So the password is **Computer-TurnLightsOn**
+
 ## vending-machines
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4NzA4NTQ4MCwtMzA5MjY5NjkzXX0=
+eyJoaXN0b3J5IjpbMTEzMjA0ODUxMywtMzA5MjY5NjkzXX0=
 -->
