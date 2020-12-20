@@ -10,11 +10,14 @@ The following badges were found in game:
 |Shinny Upatree  |outside  |#db# TAG ID: 2006e22f13 (6025) - Format Len: 26 bit - FC: 113 - Card: 6025|
 |Noel Boetie  |Wrapping Room  |#db# TAG ID: 2006e22ee1 (6000) - Format Len: 26 bit - FC: 113 - Card: 6000|
 
-The Proxmark device is then able to simulate a badge using "lf hid sim -r <id>"
+The Proxmark device is then able to simulate a badge using 
 
+    lf hid sim -r <id>
+
+It was found that the badge of Bow Ninecandle opens the HID lock in the workshop.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExNjU3OTM0LC0xODA1NDc0OTY2LC00Mz
-U2NDg0OTYsNjIyOTk0OTU1XX0=
+eyJoaXN0b3J5IjpbLTExMTI5NDg2ODIsLTE4MDU0NzQ5NjYsLT
+QzNTY0ODQ5Niw2MjI5OTQ5NTVdfQ==
 -->
