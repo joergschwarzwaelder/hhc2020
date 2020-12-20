@@ -30,11 +30,10 @@ It's encrypted with an old algorithm that uses a key. We don't care about RFC 74
 
 I can't believe the Splunk folks put it in their talk!
 
-The reference to RFC 7464 (
-RFC 7565(Prohibiting RC4 Cipher Suites) give an idea on the used Cipher. The KringleCon [Splunk talk](https://youtu.be/RxVgEFt08kU?t=1121) show the passphrase.
+The reference to RFC 7465 (Prohibiting RC4 Cipher Suites) gives an idea on the used Cipher. The KringleCon [Splunk talk](https://youtu.be/RxVgEFt08kU?t=1121) show the passphrase.
 Decoding in [CyberChef](https://gchq.github.io/CyberChef/#recipe=From_Base64%28%27A-Za-z0-9+/=%27,true%29RC4%28%7B%27option%27:%27UTF8%27,%27string%27:%27Stay%20Frosty%27%7D,%27Latin1%27,%27Latin1%27%29&input=N0ZYalAxbHlmS2J5REsvTUNoeWYzNmg3) shows the solution: **The Lollipop Guild**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3NDA3ODE4NiwyNzAyMDc5NzcsLTE5NT
-IzNTA3NTQsLTE1NTE2ODUxNDJdfQ==
+eyJoaXN0b3J5IjpbLTE2MjY0ODI5MDIsMjcwMjA3OTc3LC0xOT
+UyMzUwNzU0LC0xNTUxNjg1MTQyXX0=
 -->
