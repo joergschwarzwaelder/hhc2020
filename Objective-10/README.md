@@ -3,7 +3,7 @@
 The objective is to enter Santa's office by defeating the fingerprint sensor in the Santavator.
 The sensor status is evaluated in the browser in a Javascript:
 ![pre-change](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-10/pre-change.png)
-By changing line 354 of app.js it is possible to use the Santavator without having Santa's fingerprint.
+By changing line 354 of app.js in the Browser it is possible to use the Santavator without having Santa's fingerprint.
 `if (btn4.classList.contains('powered') && hasToken('besanta')) {
 `
 to
@@ -12,6 +12,6 @@ to
 
 ![post-change](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-10/post-change.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Mjg2NDA4OTAsODU4NTQ2ODgxLC0xNz
-Q5ODk2NjddfQ==
+eyJoaXN0b3J5IjpbMTc2MTgzNTY0MCw4NTg1NDY4ODEsLTE3ND
+k4OTY2N119
 -->
