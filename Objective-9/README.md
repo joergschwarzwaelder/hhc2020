@@ -12,6 +12,7 @@ A [Python Scapy script](https://github.com/joergschwarzwaelder/hhc2020/blob/mast
 
 Capture of ARP spoofing success with following DNS query:
 
+    15:57:16.006467 ARP, Request who-has 10.6.6.53 tell 10.6.6.35, length 28
     15:57:47.028750 ARP, Reply 10.6.6.53 is-at 02:42:0a:06:00:02, length 28
     15:57:47.057274 IP 10.6.6.35.27609 > 10.6.6.53.53: 0+ A? ftp.osuosl.org. (32)`
 
@@ -42,6 +43,6 @@ That way the remote device would download this package and install it. In course
 to receive the [text](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-9/NORTH_POLE_Land_Use_Board_Meeting_Minutes.txt).
 In this file can be found that **Tanta Kringle** recused herself from the vote.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzNzA5NzU1NSwtMTc5ODQxNTg5NiwtOD
-c4MzkyMjE2LDUxNDIwOTE1OV19
+eyJoaXN0b3J5IjpbLTIxMTE5Mzg1MjUsLTE3OTg0MTU4OTYsLT
+g3ODM5MjIxNiw1MTQyMDkxNTldfQ==
 -->
