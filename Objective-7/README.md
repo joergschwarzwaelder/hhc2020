@@ -20,8 +20,9 @@ In addition these unknown messages were seen on the bus:
 | 19B#0000000F2057 |
 | 188#00000000 |
 
-Finally "Brake" messages wi
+Finally "Brake" messages with a negative value were seen on the bus.
+By excluding the unknown "19B" message and the "080" messages with a negative value it was possible to get the Sleigh operational again.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2OTc4NjQ1Miw1Njg2MDIwNTddfQ==
+eyJoaXN0b3J5IjpbODI3MDExMjQ3LDU2ODYwMjA1N119
 -->
