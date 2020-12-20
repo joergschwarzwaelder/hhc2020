@@ -5,8 +5,8 @@ To be completed
 
 Capture of ARP spoofing success with following DNS query:
 
-> 5:57:47.028750 ARP, Reply 10.6.6.53 is-at 02:42:0a:06:00:02, length 28
-15:57:47.057274 IP 10.6.6.35.27609 > 10.6.6.53.53: 0+ A? ftp.osuosl.org. (32)
+> 15:57:47.028750 ARP, Reply 10.6.6.53 is-at 02:42:0a:06:00:02, length 28
+> 15:57:47.057274 IP 10.6.6.35.27609 > 10.6.6.53.53: 0+ A? ftp.osuosl.org. (32)
 
 
 >17:27:16.968588 ARP, Request who-has 10.6.6.53 tell 10.6.6.35, length 28
@@ -17,6 +17,6 @@ Capture of ARP spoofing success with following DNS query:
 >17:27:18.098452 IP 10.6.0.2.80 > 10.6.6.35.50340: Flags [R.], seq 0, ack 2451495178, win 0, length 0
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTA2Nzg1MTY5LC04NzgzOTIyMTYsNTE0Mj
-A5MTU5XX0=
+eyJoaXN0b3J5IjpbLTEwMzA3NjA1MzYsLTg3ODM5MjIxNiw1MT
+QyMDkxNTldfQ==
 -->
