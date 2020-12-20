@@ -6,7 +6,7 @@ The application lights shows this message after startup:
 
     >>> CONFIGURATION FILE LOADED, SELECT FIELDS DECRYPTED:
 
-This is an indicator that this application does not hash the passwords - they are encrypted instead. And it seems that that password get unencrypted upon start, so that the password is in clear test in the process memory.
+This is an indicator that this application does not hash the passwords - they are encrypted instead. And it seems that the password get unencrypted upon start, so that the password is in clear test in the process memory.
 
 By using the script get_lights_password.sh is was possible to dump the process memory and to find the password in clear text.
 
@@ -47,5 +47,5 @@ To get hold of the clear text password the script
 [vending-password.sh](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/vending-password.sh) goes through all characters in scope on all positions of the encoded password and creates the encoded representation.
 The script determined that the password is **CandyCane1**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQ4MjkzMDgwLC0zMDkyNjk2OTNdfQ==
+eyJoaXN0b3J5IjpbLTUxMTI1NjA5NCwtMzA5MjY5NjkzXX0=
 -->
