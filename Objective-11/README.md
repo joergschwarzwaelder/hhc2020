@@ -11,9 +11,9 @@ Each single block has this data structure:
 
 The provided Blockchain data contains the blocks with serials #128449-#129996. The objective is to predict the nonce of block #130000.
 In the hints for this objective is a [talk of Tom Liston covering Mersenne Twister based PRNG ](https://www.youtube.com/watch?v=Jo5Nlbqd-Vg) along with [sample Python code](https://github.com/tliston/mt19937) for predicting the next random values if you know the last 624 ones (covering 32bit PRNG).
-As the nonces in the Blockchain are 64bit it was found they were created by using two 32bit random values (first one for the lower 32bit, second one for the upper 32bit).
+As the nonces in the Blockchain are 64 Bit it was found they were created by using two 32 Bit random values (first one for the lower 32 Bit, second one for the upper 32 Bit).
 The prediction works just the same: The nonces of the last 312 blocks of the Blockchain were split into lower and upper half and pre-loaded into the Mersenne Twister.
-The next 6 32bit random values out of this prepared PRNG are part of the nonces for #129997-#129999.
+The next 6 32 Bit random values out of this prepared PRNG are part of the nonces for #129997-#129999.
 Then finally the next two are lower and upper half of the nonce for block #130000 -> **57066318 f32f729d**
 
 
@@ -61,6 +61,6 @@ A [toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective
 Screenshot of the toolbox:
 ![toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/Frostys-Toolbox.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODc4OTUwNjY4LDExMjc3MjI0NzYsMTc1NT
+eyJoaXN0b3J5IjpbMTgwOTc4MzY2LDExMjc3MjI0NzYsMTc1NT
 g4ODU3MV19
 -->
