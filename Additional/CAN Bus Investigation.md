@@ -1,6 +1,7 @@
 ## CAN Bus Investigation
 Using cut it is possible to determine that " 19B" is the LOCK/UNLOCK signal which is supposed to appear three times in the log:
 
+```
     elf@7b2ad8c74795:~$ cut -d'#' -f1 < candump.log | cut -d' ' -f3 | sort | uniq -c
       35 188
        3 19B
@@ -13,6 +14,6 @@ Using cut it is possible to determine that " 19B" is the LOCK/UNLOCK signal whic
 
 As the objective says that there are one UNLOCK and two LOCK signals, the decimal portion to be submitted is **122520**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2MzE2MzA0MywtODEyNjA4NjgzLDE1Nz
+eyJoaXN0b3J5IjpbMTM2NTI1NTAwMSwtODEyNjA4NjgzLDE1Nz
 YwNjc1MTBdfQ==
 -->
