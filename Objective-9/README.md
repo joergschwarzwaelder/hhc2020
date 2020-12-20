@@ -5,8 +5,8 @@ The objective is to get hold of the file /NORTH_POLE_Land_Use_Board_Meeting_Minu
 Exercise setup:
 ||Local Host|Remote Host  |
 |--|--|--|
-|MAC|  |  |
-|IP|  |  |
+|MAC|02:42:0a:06:00:02  | 4c:24:57ab:ed:84 |
+|IP| 10.6.0.2 | 10.6.6.35 |
 
 
 
@@ -40,6 +40,6 @@ That way the remote device would download this package and install it. In course
 to receive the [text](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-9/NORTH_POLE_Land_Use_Board_Meeting_Minutes.txt).
 In this file can be found that **Tanta Kringle** recused herself from the vote.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5OTY5OTA2OCwtODc4MzkyMjE2LDUxND
-IwOTE1OV19
+eyJoaXN0b3J5IjpbMjAwMzUwOTk0LC04NzgzOTIyMTYsNTE0Mj
+A5MTU5XX0=
 -->
