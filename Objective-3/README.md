@@ -1,6 +1,5 @@
-# Objective 3: Investigate S3 Bucket
-
+# Objective 3: Point-of-Sale Password Recovery
 To be completed
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjc3Mzg3ODUzXX0=
+eyJoaXN0b3J5IjpbLTg3MjU2OTcxNiw2NzczODc4NTNdfQ==
 -->
