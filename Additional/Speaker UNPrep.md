@@ -27,7 +27,8 @@ By using the script get_lights_password.sh is was possible to dump the process m
 So the password is **Computer-TurnLightsOn**
 
 ## vending-machines
+The password which has to be used is stored encoded in the file "vending-machines.json". When the file is deleted it is possible to set a new password and to learn about the encoding method.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzMjA0ODUxMywtMzA5MjY5NjkzXX0=
+eyJoaXN0b3J5IjpbLTExNzIxMjY3MTUsLTMwOTI2OTY5M119
 -->
