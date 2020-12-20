@@ -21,7 +21,7 @@ The batch file can be found at [https://raw.githubusercontent.com/redcanaryco/at
 The last command in this batch file is
 **quser**
 7. According to x509 certificate events captured by Zeek (formerly Bro), what is the serial number of the TLS certificate assigned to the Windows domain controller in the attack range?
-→ `index=* *serial*`
+→ `index=* "certificate.serial"="*" host=zeek *attackrange* *dc*`
 **55FCEEBB21270D9249E86F4B9DC7AA60**
 
 > Final question: This last one is encrypted using your favorite phrase!
@@ -34,7 +34,7 @@ The reference to RFC 7465 (Prohibiting RC4 Cipher Suites) gives an idea on the u
 Decoding in [CyberChef](https://gchq.github.io/CyberChef/#recipe=From_Base64%28%27A-Za-z0-9+/=%27,true%29RC4%28%7B%27option%27:%27UTF8%27,%27string%27:%27Stay%20Frosty%27%7D,%27Latin1%27,%27Latin1%27%29&input=N0ZYalAxbHlmS2J5REsvTUNoeWYzNmg3) shows the solution: **The Lollipop Guild**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwNDIzODY1Nyw0NTM1NDY2OTcsLTQzMT
-E1MDg4MCw2MzY2MzMwODMsMjcwMjA3OTc3LC0xOTUyMzUwNzU0
-LC0xNTUxNjg1MTQyXX0=
+eyJoaXN0b3J5IjpbNDE1MTIxOTIzLDE1MDQyMzg2NTcsNDUzNT
+Q2Njk3LC00MzExNTA4ODAsNjM2NjMzMDgzLDI3MDIwNzk3Nywt
+MTk1MjM1MDc1NCwtMTU1MTY4NTE0Ml19
 -->
