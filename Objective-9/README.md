@@ -1,6 +1,6 @@
 # Objective 9: ARP Shenanigans
 
-To be completed
+The objective is to get hold of the file /NORTH_POLE_Land_Use_Board_Meeting_Minutes.txt on a remote host usiTo be completed
 
 
 Capture of ARP spoofing success with following DNS query:
@@ -33,6 +33,6 @@ That way the remote device would download this package and install it. In course
 to receive the [text](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-9/NORTH_POLE_Land_Use_Board_Meeting_Minutes.txt).
 In this file can be found that **Tanta Kringle** recused herself from the vote.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTM5MDE1MTksLTg3ODM5MjIxNiw1MT
+eyJoaXN0b3J5IjpbLTE4OTY3NDM0NjQsLTg3ODM5MjIxNiw1MT
 QyMDkxNTldfQ==
 -->
