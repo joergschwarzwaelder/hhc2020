@@ -10,7 +10,7 @@ Splunk Training Questions:
 3. One technique that Santa had us simulate deals with 'system information discovery'. What is the full name of the registry key that is queried to determine the MachineGuid?
 → "system information discovery" is t1082 in the MITRA ATT&CK techniques
 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography**
-4. According to events recorded by the Splunk Attack Range, when was the first2b7e151628aed2a6abf71589 OSTAP related atomic test executed? (Please provide the alphanumeric UTC timestamp.)
+4. According to events recorded by the Splunk Attack Range, when was the OSTAP related atomic test executed? (Please provide the alphanumeric UTC timestamp.)
 → `index=attack`
 **2020-11-30T17:44:15Z**
 5. One Atomic Red Team test executed by the Attack Range makes use of an open source package authored by frgnca on GitHub. According to Sysmon (Event Code 1) events in Splunk, what was the ProcessId associated with the first use of this component?
@@ -34,6 +34,6 @@ The reference to RFC 7465 (Prohibiting RC4 Cipher Suites) gives an idea on the u
 Decoding in [CyberChef](https://gchq.github.io/CyberChef/#recipe=From_Base64%28%27A-Za-z0-9+/=%27,true%29RC4%28%7B%27option%27:%27UTF8%27,%27string%27:%27Stay%20Frosty%27%7D,%27Latin1%27,%27Latin1%27%29&input=N0ZYalAxbHlmS2J5REsvTUNoeWYzNmg3) shows the solution: **The Lollipop Guild**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM2NjMzMDgzLDI3MDIwNzk3NywtMTk1Mj
-M1MDc1NCwtMTU1MTY4NTE0Ml19
+eyJoaXN0b3J5IjpbLTQzMTE1MDg4MCw2MzY2MzMwODMsMjcwMj
+A3OTc3LC0xOTUyMzUwNzU0LC0xNTUxNjg1MTQyXX0=
 -->
