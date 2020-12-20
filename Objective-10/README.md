@@ -9,12 +9,14 @@ By changing line 354 of app.js in the Browser it is possible to use the Santavat
 
 `if (btn4.classList.contains('powered') && hasToken('besanta')) {
 `
+
 to
+
 `if (1) {
 `
 
 ![post-change](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-10/post-change.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY3OTU1MTQ2LDg1ODU0Njg4MSwtMTc0OT
+eyJoaXN0b3J5IjpbLTM4MTczNTIyLDg1ODU0Njg4MSwtMTc0OT
 g5NjY3XX0=
 -->
