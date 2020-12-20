@@ -30,8 +30,8 @@ That way the remote device would download this package and install it. In course
 
     nc -lvp 4444 > text
 to receive the [text](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-9/NORTH_POLE_Land_Use_Board_Meeting_Minutes.txt).
-In this file can be found that **Tanta Kringle** recused herself.
+In this file can be found that **Tanta Kringle** recused herself from the vote.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4MTI2MTUyMSwtODc4MzkyMjE2LDUxND
+eyJoaXN0b3J5IjpbMTc1NzgyOTc5MiwtODc4MzkyMjE2LDUxND
 IwOTE1OV19
 -->
