@@ -6,7 +6,7 @@ The following badges were found in game:
 |--|--|--|
 |Bow Ninecandle  | Talks |#db# TAG ID: 2006e22f0e (6023) - Format Len: 26 bit - FC: 113 - Card: 6023|
 |Sparkle Redberry  | Lobby  |#db# TAG ID: 2006e22f0d (6022) - Format Len: 26 bit - FC: 113 - Card: 6022|
-|Holly Evergreen  |behind Lobby  |#db# TAG ID: 2006e22f10 (6024) - Format Len: 26 bit - FC: 113 - Card: 6024|
+|Holly Evergreen  |Kitchen |#db# TAG ID: 2006e22f10 (6024) - Format Len: 26 bit - FC: 113 - Card: 6024|
 |Shinny Upatree  |outside  |#db# TAG ID: 2006e22f13 (6025) - Format Len: 26 bit - FC: 113 - Card: 6025|
 |Noel Boetie  |Wrapping Room  |#db# TAG ID: 2006e22ee1 (6000) - Format Len: 26 bit - FC: 113 - Card: 6000|
 
@@ -16,9 +16,12 @@ Netwars: checked
 Talks floor: checked
 Wrapping room/wortkshop checked
 courtyard checked
+grwat room checked
+dining room checked
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4ODg5Nzc1OCwtNDM1NjQ4NDk2LDYyMj
+eyJoaXN0b3J5IjpbMTIzNzEwNDA0MiwtNDM1NjQ4NDk2LDYyMj
 k5NDk1NV19
 -->
