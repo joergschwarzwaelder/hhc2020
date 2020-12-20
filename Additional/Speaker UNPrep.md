@@ -2,7 +2,7 @@
 The objective is to find the passwords used by the scripts "lights" and "vending-machines".
 
 ## lights
-The application lights show this message after startup:
+The application lights shows this message after startup:
 
     >>> CONFIGURATION FILE LOADED, SELECT FIELDS DECRYPTED:
 
@@ -47,5 +47,5 @@ To get hold of the clear text password the script
 [vending-password.sh](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/vending-password.sh) goes through all characters in scope on all positions of the encoded password and creates the encoded representation.
 The script determined that the password is **CandyCane1**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTM3ODY5OTMsLTMwOTI2OTY5M119
+eyJoaXN0b3J5IjpbMjQ4MjkzMDgwLC0zMDkyNjk2OTNdfQ==
 -->
