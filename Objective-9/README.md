@@ -30,7 +30,8 @@ That way the remote device would download this package and install it. In course
 
     nc -lvp 4444 > text
 to receive the text.
+In this file can 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyNDU2NDY5OSwtODc4MzkyMjE2LDUxND
+eyJoaXN0b3J5IjpbLTIxNTY0NDkwOCwtODc4MzkyMjE2LDUxND
 IwOTE1OV19
 -->
