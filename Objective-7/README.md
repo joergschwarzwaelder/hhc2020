@@ -10,11 +10,17 @@ By setting the filters and operating the sleigh it was possible to find the foll
 |Unlock  | 19B#00000F000000 ||
 |Stop  | 02A#0000FF ||
 |Start  | 02A#00FF00 ||
-|Engine Revolutions  | 244#0000000000 ||
-|Steering Wheel  | 019#00000000 |positiv|
-|Brake  | 080#000000 |non negative values |
+|Engine Revolutions  | 244#0000000000 |non negative hex values|
+|Steering Wheel  | 019#00000000 |positive and negative hex values|
+|Brake  | 080#000000 |non negative hex values |
+
+In addition these 
+|Type|ID  |Comment|
+|--|--|--|
+|Lock  | 19B#000000000000 ||
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwMzA4MDA3Niw1Njg2MDIwNTddfQ==
+eyJoaXN0b3J5IjpbNDM0MTU5Njg2LDU2ODYwMjA1N119
 -->
