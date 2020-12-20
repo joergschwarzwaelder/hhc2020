@@ -32,8 +32,18 @@ It was foud that:
 
  - The clear text and the encoded password always have the same length
  - Same characters on the same position are encoded to the same character in the same position
- - The encoding 
+ - The encoding repeats after 8 characters, i.e. an "a" at position 1 is encoded in the way as an "a" in position 9:
+ 
+|clear text|encoded|
+|--|--|
+| josh|ajPg
+|iosh|MjPg
+|ajosh: 98fno
+|joshi:ajPg4
+|aaaaaaaaaa:9Vbtacpg9V
+|eeeeeeeeee:wcZQAYuewc |  |
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzODgyMDEyMSwtMzA5MjY5NjkzXX0=
+eyJoaXN0b3J5IjpbLTE0MDQ5ODM4MTksLTMwOTI2OTY5M119
 -->
