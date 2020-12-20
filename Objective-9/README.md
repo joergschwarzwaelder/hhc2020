@@ -8,7 +8,7 @@ Exercise setup:
 |MAC|02:42:0a:06:00:02  | 4c:24:57ab:ed:84 |
 |IP| 10.6.0.2 | 10.6.6.35 |
 
-
+A Python Scapy script was prepared to spoof ARP replies for the host 10.6.6.53 redirecting the traffic to the local host.
 
 Capture of ARP spoofing success with following DNS query:
 
@@ -40,6 +40,6 @@ That way the remote device would download this package and install it. In course
 to receive the [text](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-9/NORTH_POLE_Land_Use_Board_Meeting_Minutes.txt).
 In this file can be found that **Tanta Kringle** recused herself from the vote.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwMzUwOTk0LC04NzgzOTIyMTYsNTE0Mj
-A5MTU5XX0=
+eyJoaXN0b3J5IjpbMTM0NTUwNTI3MSwtODc4MzkyMjE2LDUxND
+IwOTE1OV19
 -->
