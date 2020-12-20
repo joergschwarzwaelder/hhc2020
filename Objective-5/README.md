@@ -9,6 +9,8 @@ The following badges were found in game:
 |Holly Evergreen  |Kitchen |#db# TAG ID: 2006e22f10 (6024) - Format Len: 26 bit - FC: 113 - Card: 6024|
 |Shinny Upatree  |outside  |#db# TAG ID: 2006e22f13 (6025) - Format Len: 26 bit - FC: 113 - Card: 6025|
 |Noel Boetie  |Wrapping Room  |#db# TAG ID: 2006e22ee1 (6000) - Format Len: 26 bit - FC: 113 - Card: 6000|
+|Ginger Breddiee  |Entry  |#db# TAG ID: 2006e22f0d (6022) - Format Len: 26 bit - FC: 113 - Card: 6022|
+
 
 
 lf hid sim -r <id>
@@ -22,6 +24,6 @@ dining room checked
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzNzEwNDA0MiwtNDM1NjQ4NDk2LDYyMj
-k5NDk1NV19
+eyJoaXN0b3J5IjpbLTE3MDMyMzM3NjUsLTQzNTY0ODQ5Niw2Mj
+I5OTQ5NTVdfQ==
 -->
