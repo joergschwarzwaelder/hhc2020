@@ -29,9 +29,9 @@ This package was modified to include this line in the postinst script:
 That way the remote device would download this package and install it. In course of the installation, the file in scope would be sent to port 4444 of the attacking host, which has to run the command
 
     nc -lvp 4444 > text
-to receive the text.
-In this file can 
+to receive the [text](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-9/NORTH_POLE_Land_Use_Board_Meeting_Minutes.txt).
+In this file can be found that **Tanta Kringle** recused herself.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNTY0NDkwOCwtODc4MzkyMjE2LDUxND
+eyJoaXN0b3J5IjpbMTY4MTI2MTUyMSwtODc4MzkyMjE2LDUxND
 IwOTE1OV19
 -->
