@@ -17,12 +17,13 @@ Splunk Training Questions:
 → `index=* EventCode=1  *AudioDevice*`
 **3648**
 6. Alice ran a simulation of an attacker abusing Windows registry run keys. This technique leveraged a multi-line batch file that was also used by a few other techniques. What is the final command of this multi-line batch file used as part of this simulation?
-→ [https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/ARTifacts/Misc/Discovery.bat](https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/ARTifacts/Misc/Discovery.bat)
-→ quser
+The batch file can be found at [https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/ARTifacts/Misc/Discovery.bat](https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/ARTifacts/Misc/Discovery.bat)
+The last command in this batch file is
+**quser**
 7. According to x509 certificate events captured by Zeek (formerly Bro), what is the serial number of the TLS certificate assigned to the Windows domain controller in the attack range?
-→ index=* *serial*
-→  55FCEEBB21270D9249E86F4B9DC7AA60
+→ `index=* *serial*`
+**55FCEEBB21270D9249E86F4B9DC7AA60**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxNDE1MjM1NiwtMTk1MjM1MDc1NCwtMT
-U1MTY4NTE0Ml19
+eyJoaXN0b3J5IjpbLTEzOTY0NDI0OTAsLTE5NTIzNTA3NTQsLT
+E1NTE2ODUxNDJdfQ==
 -->
