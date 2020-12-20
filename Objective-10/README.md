@@ -1,9 +1,8 @@
 # Objective 10: Defeat Fingerprint Sensor
 
-To be completed
-
-
+The objective is to enter Santa's office by defeating the fingerprint 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODU4NTQ2ODgxLC0xNzQ5ODk2NjddfQ==
+eyJoaXN0b3J5IjpbMTAwODU3OTI2Nyw4NTg1NDY4ODEsLTE3ND
+k4OTY2N119
 -->
