@@ -43,8 +43,8 @@ It was found that:
 |aaaaaaaaaa|9Vbtacpg9V|
 |eeeeeeeeee|wcZQAYuewc | 
 
-To get hold of the clear text
-[vending-passwor](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/vending-password.sh)
+To get hold of the clear text password the script
+[vending-password.sh](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/vending-password.sh) goes through all characters in scope on all positions of the 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2Njc0MDg2MTYsLTMwOTI2OTY5M119
+eyJoaXN0b3J5IjpbMjEyMjgwMjQ5OSwtMzA5MjY5NjkzXX0=
 -->
