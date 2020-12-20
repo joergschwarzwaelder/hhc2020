@@ -14,10 +14,10 @@ The Proxmark device is then able to simulate a badge using
 
     lf hid sim -r <id>
 
-It was found that the badge of Bow Ninecandle opens the HID lock in the workshop.
+It was found that the badge of Bow Ninecandle (ID: 2006e22f0e) opens the HID lock in the workshop.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTI5NDg2ODIsLTE4MDU0NzQ5NjYsLT
-QzNTY0ODQ5Niw2MjI5OTQ5NTVdfQ==
+eyJoaXN0b3J5IjpbLTIwNTU3MzA3MCwtMTgwNTQ3NDk2NiwtND
+M1NjQ4NDk2LDYyMjk5NDk1NV19
 -->
