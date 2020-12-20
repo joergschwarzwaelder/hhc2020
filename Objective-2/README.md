@@ -68,3 +68,6 @@
     elf@7c1c2bcf55ec:~/bucket_finder/wrapper3000$ xxd -r package.txt.Z.xz.xxd | xz -d | uncompress
     North Pole: The Frostiest Place on Earth
     elf@7c1c2bcf55ec:~/bucket_finder/wrapper3000$ 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTU0OTI4MjMyNV19
+-->
