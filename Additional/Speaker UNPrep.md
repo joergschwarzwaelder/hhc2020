@@ -1,6 +1,17 @@
 # Speaker UNPrep
 The objective is to find the passwords used by the scripts "lights" and "vending-machines".
 
+## door
+The password for the application is stored in clear test in the application binary:
+```
+elf@fb8c0d254251 ~ $ strings ./door | grep -i password
+/home/elf/doorYou look at the screen. It wants a password. You roll your eyes - the 
+password is probably stored right in the binary. There's gotta be a
+Be sure to finish the challenge in prod: And don't forget, the password is "Op3nTheD00r"
+Beep boop invalid password
+```
+So this password is **Op3nTheD00r**
+
 ## lights
 The application lights shows this message after startup:
 
@@ -47,6 +58,6 @@ To get hold of the clear text password the script
 [vending-password.sh](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/vending-password.sh) goes through all characters in scope on all positions of the encoded password and creates the encoded representation.
 The script determined that the password is **CandyCane1**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzMzM2MzMwMSwtNjgxODg1MjIyLC0zMD
-kyNjk2OTNdfQ==
+eyJoaXN0b3J5IjpbNDA3MzM4NzQsLTY4MTg4NTIyMiwtMzA5Mj
+Y5NjkzXX0=
 -->
