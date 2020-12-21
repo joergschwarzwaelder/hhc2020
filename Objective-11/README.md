@@ -57,10 +57,12 @@ In addition the [hex dump diff](https://github.com/joergschwarzwaelder/hhc2020/b
 
 The modified block (#129459) has the same MD5 hash (so that the Blockchain is still healthy) and a SHA256 hash of **fff054f33c2134e0230efb29dad515064ac97aa8c68d33c58c01213a0d408afb**.
 
+## Fun Zone
+
 A [toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/Frostys-Toolbox.html) for analyzing and tampering this Blockchain (which also allows the download of the full tampered Blockchain and every single evidence) is available; also hosted [here](https://joergschwarzwaelder.github.io/d93ad9aa555b3b01a32fb0d102509bae8f3080072892b667298c089c0baa1244/Objective11/Frostys-Toolbox.html) for easy use.
 Screenshot of the toolbox:
 ![toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/Frostys-Toolbox.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwOTc4MzY2LDExMjc3MjI0NzYsMTc1NT
-g4ODU3MV19
+eyJoaXN0b3J5IjpbLTk5OTc2NDUwNywxODA5NzgzNjYsMTEyNz
+cyMjQ3NiwxNzU1ODg4NTcxXX0=
 -->
