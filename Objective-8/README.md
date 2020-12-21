@@ -66,9 +66,11 @@ Get it started:
 ```
 curl https://tag-generator.kringlecastle.com/upload -F'my_file[]=@joergen.zip'
 ```
+Now you have in the reverse shell listener an interactive shell as user `app`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3NjYxMDA3NSwyMTA3NTI5ODQ2LDkyMj
-E0NDM1LC0zOTg0OTE0NjEsMTE1MTU1Njg5NiwyMzg0NjAyNzIs
-MTkzMzM2MTc4NywtMTQ2NzYxNTI2MiwtMjQzOTQyODY2LDEzMT
-IwNTY0NTMsOTIwNDU1ODY1LC0xNjA2MDc4MDQwXX0=
+eyJoaXN0b3J5IjpbLTYxOTI5NzQxMSwtNTc2NjEwMDc1LDIxMD
+c1Mjk4NDYsOTIyMTQ0MzUsLTM5ODQ5MTQ2MSwxMTUxNTU2ODk2
+LDIzODQ2MDI3MiwxOTMzMzYxNzg3LC0xNDY3NjE1MjYyLC0yND
+M5NDI4NjYsMTMxMjA1NjQ1Myw5MjA0NTU4NjUsLTE2MDYwNzgw
+NDBdfQ==
 -->
