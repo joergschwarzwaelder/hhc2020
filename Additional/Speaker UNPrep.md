@@ -1,7 +1,7 @@
 # Speaker UNPrep
 Location: Talks Lobby
 
-The objective is to find the passwords used by the scripts `door`, `lights` and `vending-machines`.
+The objective is to find the passwords used by the applications `door`, `lights` and `vending-machines`.
 
 ## door
 The password for the application is stored in clear test in the application binary:
@@ -60,6 +60,6 @@ To get hold of the clear text password the script
 [vending-password.sh](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/vending-password.sh) goes through all characters in scope on all positions of the encoded password and creates the encoded representation.
 The script determined that the password is **CandyCane1**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjQ0MjEzODQsLTE2NTcxNzg1NDAsND
-A3MzM4NzQsLTY4MTg4NTIyMiwtMzA5MjY5NjkzXX0=
+eyJoaXN0b3J5IjpbOTE3MjkzMTI1LC0xNjU3MTc4NTQwLDQwNz
+MzODc0LC02ODE4ODUyMjIsLTMwOTI2OTY5M119
 -->
