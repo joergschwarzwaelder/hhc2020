@@ -1,4 +1,5 @@
 # Sort-o-matic
+Location: Workshop
 ```
 1: \d
 2: [a-zA-Z]{3}
@@ -10,5 +11,5 @@
 8: ^([0][1-9]|[12][0-9]|3[01])[/\.-](0[1-9]|1[0-2])[/\.-]\d{4}$
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTI5NjU3ODZdfQ==
+eyJoaXN0b3J5IjpbLTM2ODk3NzQ0Nl19
 -->
