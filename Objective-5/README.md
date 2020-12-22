@@ -1,5 +1,7 @@
 # Objective 5: Open HID Lock
-The Proxmark reader can be operated with the command "lf hid read" to read out badges in proximity.
+Location: Workshop
+
+The Proxmark reader can be operated with the command `lf hid read` to read out badges in proximity.
 
 The following badges were found in game:
 |Elf  |Where  |Tag|
@@ -18,6 +20,6 @@ It was found that the badge of Bow Ninecandle (ID: 2006e22f0e) opens the HID loc
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzNzEzNzMsLTIwNTU3MzA3MCwtMTgwNT
-Q3NDk2NiwtNDM1NjQ4NDk2LDYyMjk5NDk1NV19
+eyJoaXN0b3J5IjpbLTYwNTYzNDg0NywtMjA1NTczMDcwLC0xOD
+A1NDc0OTY2LC00MzU2NDg0OTYsNjIyOTk0OTU1XX0=
 -->
