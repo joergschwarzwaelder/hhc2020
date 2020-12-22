@@ -11,13 +11,13 @@ In the hints for this game is a [talk of Tom Liston covering Mersenne Twister ba
 This script was slightly [modified](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/mt19937-jsw.py) to consume the HTML comments in order to populate the Mersenne Twister PRNG with the last 624 values to restore the PRNG state prior to seed creation. The next random value is then printed out.
 
 This next random value is the seed of the board layout.
-Using this seed value on level "easy" in a new browser tab gives information about the board layout. Every hit on "easy" is then also replicated on the level "impossible".
+Using this seed value on level "easy" in a new browser tab gives information about the board layout. Every hit on "easy" is then manually also replicated on the level "impossible".
 
 ## Fun Zone
 
 A [Tampermonkey script](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/snowball.tampermonkey) was created to automate this task.
 Here is a [video](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/Holiday%20Hack%20Challenge%202020%20-%20Snowball%20-%20Marie.webm) of Marie in action solving the game on "impossible".
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDY4NjcyNjEsMzU5NjMwNTgzLC0xMT
-IxOTM5NTQsLTIwMTczMTgyNjksNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTUwODk2MDE0LDM1OTYzMDU4MywtMTEyMT
+kzOTU0LC0yMDE3MzE4MjY5LDczMDk5ODExNl19
 -->
