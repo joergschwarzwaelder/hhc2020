@@ -3,9 +3,9 @@
 
 **In-game character: joergen**
 
-Disclaimer: All information and doin this repository is provided as-is and probably not
+**Disclaimer:** All information and code in this repository is provided as-is, probably not without errors and not for production use.
 
-Background information:
+**Background information:**
 
 [Map of the Game](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Map.md)
 
@@ -68,6 +68,6 @@ When navigating as Santa through the Santa image in the Entry hall the character
    Tmux](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/Unescape%20Tmux.md)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTY3NTI4MjM4LDQ0NjIwOTA4MiwtNTg1Mj
-Q4NSwxNDI5NDg1Mzc1XX0=
+eyJoaXN0b3J5IjpbLTIwNzQ2Mjk2MjksNDQ2MjA5MDgyLC01OD
+UyNDg1LDE0Mjk0ODUzNzVdfQ==
 -->
