@@ -15,8 +15,8 @@ elf@7b2ad8c74795:~$ grep ' 19B' candump.log
 (1608926674.092148) vcan0 19B#000000000000
 ```
 
-As the objective says that there are one UNLOCK and two LOCK signals, the decimal portion to be submitted is **122520**.
+As the objective says that there are one UNLOCK and two LOCK signals, the decimal portion of time UNLOCK timestamp to be submitted is **122520**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyMTE4NTg0MywtNzA4Mjk1MTEsLTgxMj
-YwODY4MywxNTc2MDY3NTEwXX0=
+eyJoaXN0b3J5IjpbMTAwMjI4MTUzNSwxNjIxMTg1ODQzLC03MD
+gyOTUxMSwtODEyNjA4NjgzLDE1NzYwNjc1MTBdfQ==
 -->
