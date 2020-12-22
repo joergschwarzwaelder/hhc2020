@@ -1,4 +1,5 @@
 # Objective 11: Naughty/Nice List with Blockchain Investigation
+Location: Santa's Office
 
 The Blockchain to be investigated was provided by an Elf.
 It uses MD5 as hashing algorithm. Some Elves saw that Jack Frost's entry in this Blockchain was set to "Naughty" in the past and now it is set to "Nice". They suppose that Jack tampered his Block on the Blockchain.
@@ -63,7 +64,7 @@ A [toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective
 Screenshot of the toolbox:
 ![toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/Frostys-Toolbox.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDczMjkwNTYwLDE0Njg5NDcxODMsLTk5OT
-c2NDUwNywxODA5NzgzNjYsMTEyNzcyMjQ3NiwxNzU1ODg4NTcx
-XX0=
+eyJoaXN0b3J5IjpbMzQ3NTM0NzM2LDQ3MzI5MDU2MCwxNDY4OT
+Q3MTgzLC05OTk3NjQ1MDcsMTgwOTc4MzY2LDExMjc3MjI0NzYs
+MTc1NTg4ODU3MV19
 -->
