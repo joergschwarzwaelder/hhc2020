@@ -1,4 +1,6 @@
 # Elf C0de
+Location: Dining Room
+
 The objective is to navigate the Elf using Javascript through each level.
 
 ## Level 1
@@ -115,5 +117,5 @@ function scan(a) {
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjg2MDE5MzcxLDk3NjkyMDg5XX0=
+eyJoaXN0b3J5IjpbMTEyMDQ1NzUwMiw5NzY5MjA4OV19
 -->
