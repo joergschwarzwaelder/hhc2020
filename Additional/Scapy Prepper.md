@@ -1,10 +1,10 @@
 # Scapy Prepper
+Location: NetWars
 ```
 >>> task.get()
 Welcome to the "Present Packet Prepper" interface! The North Pole could use your help preparing present packets for shipment.
 Start by running the task.submit() function passing in a string argument of 'start'.
 Type task.help() for help on this question.
->>>
 >>> task.submit("start")
 Correct! adding a () to a function or class will execute it. Ex - FunctionExecuted()
 
@@ -14,7 +14,6 @@ Correct! The "send" scapy class will send a crafted scapy packet out of a networ
 
 Submit the class object of the scapy module that sniffs network packets and returns those packets in a list.
 
->>>
 >>> task.submit(sniff)
 Correct! the "sniff" scapy class will sniff network traffic and return these packets in a list.
 
@@ -23,14 +22,11 @@ Submit the NUMBER only from the choices below that would successfully send a TCP
 2. pkt = sniff(IP(dst="127.0.0.1")/TCP(dport=20))
 3. pkt = sendp(IP(dst="127.0.0.1")/TCP(dport=20))
 
->>>
-
 >>> task.submit(1)
 Correct! sr1 will send a packet, then immediately sniff for a response packet.
 
 Submit the class object of the scapy module that can read pcap or pcapng files and return a list of packets.
 
->>>
 >>> task.submit(rdpcap)
 Correct! the "rdpcap" scapy class can read pcap files.
 
@@ -39,13 +35,11 @@ The variable UDP_PACKETS contains a list of UDP packets. Submit the NUMBER only 
 2. UDP_PACKETS.show()
 3. UDP_PACKETS.list()
 
->>>
 >>> task.submit(2)
 Correct! .show() can be used on lists of packets AND on an individual packet.
 
 Submit only the first packet found in UDP_PACKETS.
 
->>>
 >>> task.submit(UDP_PACKETS[0])
 Correct! Scapy packet lists work just like regular python lists so packets can be accessed by their position in the list starting at offset 0.
 
@@ -217,5 +211,6 @@ Congratulations, all pretty present packets properly prepared for processing!
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODA0ODI2OTUsLTgyMDY0MTg4OV19
+eyJoaXN0b3J5IjpbMjQ0Mzg2OTE4LC0xOTgwNDgyNjk1LC04Mj
+A2NDE4ODldfQ==
 -->
