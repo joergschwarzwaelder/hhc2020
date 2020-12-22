@@ -1,4 +1,5 @@
 # Linux Primer
+Location: Courtyard
 ```
 elf@39f874933907:~$ ls
 HELP  munchkin_19315479765589239  workshop
@@ -56,5 +57,5 @@ elf@ccd953526f61:~/workshop/electrical$ curl http://localhost:54321
 munchkin.73180338045875elf@ccd953526f61:~/workshop/electrical$ kill 22562
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzMjk4MzMwN119
+eyJoaXN0b3J5IjpbMzg4NzY1NzExXX0=
 -->
