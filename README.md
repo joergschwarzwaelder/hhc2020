@@ -7,6 +7,8 @@ Background information:
 [Map of the Game](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Map.md)
 
 [Location of the relevant Elf characters](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Elf%20Directory.md)
+
+
 To the left of the workshop, protected by the HID lock, is a dark room with  obstacles. If you navigate through this room to the bottom, the game character transforms to Santa and moves to the Entry hall. Some objectives are only accessible being Santa.
 
 When navigating as Santa through the Santa image in the Entry hall the character is transformed back to original.
@@ -63,6 +65,6 @@ When navigating as Santa through the Santa image in the Entry hall the character
    Tmux](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/Unescape%20Tmux.md)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjc5OTI4NDgsLTU4NTI0ODUsMTQyOT
-Q4NTM3NV19
+eyJoaXN0b3J5IjpbNjM5NDcyNzE2LC01ODUyNDg1LDE0Mjk0OD
+UzNzVdfQ==
 -->
