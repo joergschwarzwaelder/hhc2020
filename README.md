@@ -18,15 +18,15 @@ In-Game character joergen**
 [33.6 kbps Challenge](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/33.6%20kbps%20challenge.md)
 [CAN Bus Investigation](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/CAN%20Bus%20Investigation.md)
 [Elf C0de](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/Elf%20C0de.md)
-Kringle Kiosk
-Linux Primer
-Redis Bug Hunt
-Scapy Prepper
-Snowball Game
-Sort-o-matic
-Speaker UNPrep
+[Kringle Kiosk](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/Kringle%20Kiosk.md)
+[Linux Primer](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/Linux%20Primer.md)
+[Redis Bug Hunt](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/Redis%20Bug%20Hunt.md)
+[Scapy Prepper](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/Scapy%20Prepper.md)
+[Snowball Game](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/Snowball%20Game.md)
+[Sort-o-matic](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/Sort-o-matic.md)
+[Speaker UNPrep](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/Speaker%20UNPrep.md)
 Unescape Tmux
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3MjE2NjM2MCwxNDI5NDg1Mzc1XX0=
+eyJoaXN0b3J5IjpbLTQ2Mzk4NDIyMiwxNDI5NDg1Mzc1XX0=
 -->
