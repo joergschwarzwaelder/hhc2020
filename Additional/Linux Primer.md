@@ -1,5 +1,7 @@
 # Linux Primer
 Location: Courtyard
+
+The objective is to get familiar with a few Linux command line utilities.
 ```
 elf@39f874933907:~$ ls
 HELP  munchkin_19315479765589239  workshop
@@ -57,5 +59,5 @@ elf@ccd953526f61:~/workshop/electrical$ curl http://localhost:54321
 munchkin.73180338045875elf@ccd953526f61:~/workshop/electrical$ kill 22562
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzg4NzY1NzExXX0=
+eyJoaXN0b3J5IjpbMTE2NDYxMDI0OV19
 -->
