@@ -45,22 +45,12 @@ Correct! Scapy packet lists work just like regular python lists so packets can b
 
 Submit only the entire TCP layer of the second packet in TCP_PACKETS.
 
->>>
 >>> task.submit(TCP_PACKETS[1].getlayer(TCP))
 Correct! Most of the major fields like Ether, IP, TCP, UDP, ICMP, DNS, DNSQR, DNSRR, Raw, etc... can be accessed this way. Ex - pkt[IP][TCP]
 
 Change the source IP address of the first packet found in UDP_PACKETS to 127.0.0.1 and then submit this modified packet
 
->>>
 >>> UDP_PACKETS[0][IP].src="127.0.0.1"
-
->>> task.submit(UDP_PACKETS[0])
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-AttributeError: 'PawngTask' object has no attribute 'sumit'
-
-'PawngTask' object has no attribute 'sumit'
-
 >>> task.submit(UDP_PACKETS[0])
 Correct! You can change ALL scapy packet attributes using this method.
 
@@ -100,15 +90,12 @@ Submit the password "task.submit('elf_password')" of the user alabaster as found
 ###[ Raw ]###
            load      = 'PASS echo\r\n'
 
-
->>>
 >>> task.submit('echo')
 Correct! Here is some really nice list comprehension that will grab all the raw payloads from tcp packets:
 [pkt[Raw].load for pkt in TCP_PACKETS if Raw in pkt]
 
 The ICMP_PACKETS variable contains a packet list of several icmp echo-request and icmp echo-reply packets. Submit only the ICMP chksum value from the second packet in the ICMP_PACKETS list.
 
->>>
 >>> task.submit(0x4c44)
 Correct! You can access the ICMP chksum value from the second packet using ICMP_PACKETS[1][ICMP].chksum .
 
@@ -117,13 +104,11 @@ Submit the number of the choice below that would correctly create a ICMP echo re
 2. pkt = IP(src='127.0.0.1')/ICMP(type="echo-reply")
 3. pkt = IP(dst='127.0.0.1')/ICMP(type="echo-request")
 
->>>
 >>> task.submit(3)
 Correct! Once you assign the packet to a variable named "pkt" you can then use that variable to send or manipulate your created packet.
 
 Create and then submit a UDP packet with a dport of 5000 and a dst IP of 127.127.127.127. (all other packet attributes can be unspecified)
 
->>>
 >>> task.submit(IP(dst='127.127.127.127')/UDP(dport=5000))
 Correct! Your UDP packet creation should look something like this:
 pkt = IP(dst="127.127.127.127")/UDP(dport=5000)
@@ -131,7 +116,6 @@ task.submit(pkt)
 
 Create and then submit a UDP packet with a dport of 53, a dst IP of 127.2.3.4, and is a DNS query with a qname of "elveslove.santa". (all other packet attributes can be unspecified)
 
->>>
 >>> task.submit(IP(dst='127.2.3.4')/UDP(dport=53)/DNS(qd=DNSQR(qname="elveslove.santa")))
 Correct! Your UDP packet creation should look something like this:
 pkt = IP(dst="127.2.3.4")/UDP(dport=53)/DNS(rd=1,qd=DNSQR(qname="elveslove.santa"))
@@ -139,7 +123,6 @@ task.submit(pkt)
 
 The variable ARP_PACKETS contains an ARP request and response packets. The ARP response (the second packet) has 3 incorrect fields in the ARP layer. Correct the second packet in ARP_PACKETS to be a proper ARP response and then task.submit(ARP_PACKETS) for inspection.
 
->>>
 >>> ARP_PACKETS[1].show()
 ###[ Ethernet ]###
   dst       = 00:16:ce:6e:8b:24
@@ -211,6 +194,6 @@ Congratulations, all pretty present packets properly prepared for processing!
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQ0Mzg2OTE4LC0xOTgwNDgyNjk1LC04Mj
-A2NDE4ODldfQ==
+eyJoaXN0b3J5IjpbLTY3MjQ5NTIzMCwtMTk4MDQ4MjY5NSwtOD
+IwNjQxODg5XX0=
 -->
