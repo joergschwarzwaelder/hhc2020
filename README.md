@@ -1,6 +1,7 @@
 # Holidayhack Challenge 2020
-**Writeup submitted by Joerg Schwarzwaelder
-In-game character: joergen**
+**Writeup submitted by Joerg Schwarzwaelder**
+
+**In-game character: joergen**
 
 ## Main Objectives
 
@@ -30,5 +31,5 @@ In-game character: joergen**
 [Unescape Tmux](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/Unescape%20Tmux.md)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5MjM4ODEzLDE0Mjk0ODUzNzVdfQ==
+eyJoaXN0b3J5IjpbLTE0NzE4NTczNjEsMTQyOTQ4NTM3NV19
 -->
