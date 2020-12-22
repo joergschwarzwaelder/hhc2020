@@ -6,10 +6,10 @@
 ## Main Objectives
 
  - [Objective
-   1](https://github.com/joergschwarzwaelder/hhc2020/tree/master/Objective-1)
+   1: Uncover Santa's Gift List](https://github.com/joergschwarzwaelder/hhc2020/tree/master/Objective-1)
    
 -   [Objective
-   2](https://github.com/joergschwarzwaelder/hhc2020/tree/master/Objective-2)
+   2: Investigate S3 Bucket](https://github.com/joergschwarzwaelder/hhc2020/tree/master/Objective-2)
  -  [Objective
    3](https://github.com/joergschwarzwaelder/hhc2020/tree/master/Objective-3)
   - [Objective
@@ -54,5 +54,5 @@
    Tmux](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/Unescape%20Tmux.md)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTMwMjI4ODExLDE0Mjk0ODUzNzVdfQ==
+eyJoaXN0b3J5IjpbLTU4NTI0ODUsMTQyOTQ4NTM3NV19
 -->
