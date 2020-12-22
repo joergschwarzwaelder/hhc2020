@@ -21,7 +21,7 @@ The application lights shows this message after startup:
 
 This is an indicator that this application does not hash the passwords - they are encrypted instead. And it seems that the password gets unencrypted upon start, so that the password is in clear text in the process memory.
 
-By using the script get_lights_password.sh it was possible to dump the process memory and to find the password in clear text.
+By using the script [get_lights_password.sh](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/get_lights_password.sh) it was possible to dump the process memory and to find the password in clear text.
 
 ```
 ^?f8887c0c000-7f8887c0e000 rw-p 001ba000 08:01 2495947                    /lib/x86_64-linux
@@ -60,6 +60,6 @@ To get hold of the clear text password the script
 [vending-password.sh](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/vending-password.sh) goes through all characters in scope on all positions of the encoded password and creates the encoded representation.
 The script determined that the password is **CandyCane1**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Njk1NzIwNjYsLTE2NTcxNzg1NDAsND
-A3MzM4NzQsLTY4MTg4NTIyMiwtMzA5MjY5NjkzXX0=
+eyJoaXN0b3J5IjpbMjg3NTk3MzM1LC0xNjU3MTc4NTQwLDQwNz
+MzODc0LC02ODE4ODUyMjIsLTMwOTI2OTY5M119
 -->
