@@ -1,4 +1,5 @@
 # Objective 9: ARP Shenanigans
+Location: NetWars
 
 The objective is to get hold of the file /NORTH_POLE_Land_Use_Board_Meeting_Minutes.txt on a remote host using ARP  and DNS spoofing.
 
@@ -42,8 +43,8 @@ That way the remote device would download this package and install it. In course
 
     nc -lvp 4444 > text
 to receive the [text](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-9/NORTH_POLE_Land_Use_Board_Meeting_Minutes.txt).
-In this file can be found that **Tanta Kringle** recused herself from the vote.
+In this file it can be found that **Tanta Kringle** recused herself from the vote.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwNDQyNjUzOSwtMTc5ODQxNTg5NiwtOD
-c4MzkyMjE2LDUxNDIwOTE1OV19
+eyJoaXN0b3J5IjpbMTYzNDM5NDk0MSwxMjA0NDI2NTM5LC0xNz
+k4NDE1ODk2LC04NzgzOTIyMTYsNTE0MjA5MTU5XX0=
 -->
