@@ -15,9 +15,9 @@ In-Game character joergen**
 [Objective 11](https://github.com/joergschwarzwaelder/hhc2020/tree/master/Objective-11)
 
 ## Additional Tasks
-33.6 kbps Challenge
-CAN Bus Investigation
-Elf C0de
+[33.6 kbps Challenge](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/33.6%20kbps%20challenge.md)
+[CAN Bus Investigation](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/CAN%20Bus%20Investigation.md)
+[Elf C0de](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/Elf%20C0de.md)
 Kringle Kiosk
 Linux Primer
 Redis Bug Hunt
@@ -25,7 +25,8 @@ Scapy Prepper
 Snowball Game
 Sort-o-matic
 Speaker UNPrep
+Unescape Tmux
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzNjE4Mjc5NiwxNDI5NDg1Mzc1XX0=
+eyJoaXN0b3J5IjpbMTA3MjE2NjM2MCwxNDI5NDg1Mzc1XX0=
 -->
