@@ -1,7 +1,7 @@
 # Objective 7: Solve the Sleigh's CAN-D-BUS Problem
-Locatio
+Location: NetWars
 
-Santa's sleigh behaves strange and is hard to operate.
+Santa's sleigh behaves strangly and is hard to operate.
 The objective is to analyze the CAN-D-Bus messages and filter out messages which seem to be injected by Jack Frost.
 
 By setting the filters and operating the sleigh it was possible to find the following legitimate message definitions:
@@ -26,6 +26,6 @@ By excluding the unknown "19B" message and the "080" messages with a negative va
 
 ![CAN Bus filter](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-7/can-bus-filter.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzODQ4NTEyMiwtODE3ODAyNDcsNTY4Nj
-AyMDU3XX0=
+eyJoaXN0b3J5IjpbLTE2MTcyNDY4MzYsLTgxNzgwMjQ3LDU2OD
+YwMjA1N119
 -->
