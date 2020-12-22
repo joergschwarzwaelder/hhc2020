@@ -11,11 +11,11 @@ This script was used to populate a Mersenne Twister PRNG with the last 624 value
 Then the next random value is the seed of the board layout.
 Using this seed value on level "easy" in a new browser tab gives information about the board layout. Every hit on "easy" is then also performed on the level "impossible".
 
-Heading
+## Fun Zone
 
 A [Tampermonkey script](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/snowball.tampermonkey) was created to automate this task.
 Here is a [video](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/Holiday%20Hack%20Challenge%202020%20-%20Snowball%20-%20Marie.webm) of Marie in action solving the game on "impossible".
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwMDIyMjM0NSwtMjAxNzMxODI2OSw3Mz
+eyJoaXN0b3J5IjpbLTExMjE5Mzk1NCwtMjAxNzMxODI2OSw3Mz
 A5OTgxMTZdfQ==
 -->
