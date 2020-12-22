@@ -1,4 +1,5 @@
 # Objective 7: Solve the Sleigh's CAN-D-BUS Problem
+Locatio
 
 Santa's sleigh behaves strange and is hard to operate.
 The objective is to analyze the CAN-D-Bus messages and filter out messages which seem to be injected by Jack Frost.
@@ -25,5 +26,6 @@ By excluding the unknown "19B" message and the "080" messages with a negative va
 
 ![CAN Bus filter](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-7/can-bus-filter.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxNzgwMjQ3LDU2ODYwMjA1N119
+eyJoaXN0b3J5IjpbLTQzODQ4NTEyMiwtODE3ODAyNDcsNTY4Nj
+AyMDU3XX0=
 -->
