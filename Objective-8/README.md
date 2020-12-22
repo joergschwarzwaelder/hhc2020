@@ -1,4 +1,5 @@
 # Objective 8: Broken Tag Generator
+Location: Wrapping Room
 
 The objective is to obtain the value of the environment variable `GREETZ` of the [Tag Generator](https://tag-generator.kringlecastle.com/).
 
@@ -65,10 +66,11 @@ curl https://tag-generator.kringlecastle.com/upload -F'my_file[]=@joergen.zip'
 ```
 Now you have in the reverse shell listener an interactive shell as user `app`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjM1NDEzNTUsMTYwNzM0ODUxNCwtOD
-IzMDUwODYxLDEyOTM3MjA0MzksMTM5NTc5NDgyNCwtMTU5OTI1
-NDQxNSwtNjE5Mjk3NDExLC01NzY2MTAwNzUsMjEwNzUyOTg0Ni
-w5MjIxNDQzNSwtMzk4NDkxNDYxLDExNTE1NTY4OTYsMjM4NDYw
-MjcyLDE5MzMzNjE3ODcsLTE0Njc2MTUyNjIsLTI0Mzk0Mjg2Ni
-wxMzEyMDU2NDUzLDkyMDQ1NTg2NSwtMTYwNjA3ODA0MF19
+eyJoaXN0b3J5IjpbLTE4ODcyOTE2NjksLTE3NjM1NDEzNTUsMT
+YwNzM0ODUxNCwtODIzMDUwODYxLDEyOTM3MjA0MzksMTM5NTc5
+NDgyNCwtMTU5OTI1NDQxNSwtNjE5Mjk3NDExLC01NzY2MTAwNz
+UsMjEwNzUyOTg0Niw5MjIxNDQzNSwtMzk4NDkxNDYxLDExNTE1
+NTY4OTYsMjM4NDYwMjcyLDE5MzMzNjE3ODcsLTE0Njc2MTUyNj
+IsLTI0Mzk0Mjg2NiwxMzEyMDU2NDUzLDkyMDQ1NTg2NSwtMTYw
+NjA3ODA0MF19
 -->
