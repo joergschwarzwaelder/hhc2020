@@ -40,7 +40,7 @@ e7a37d000 rw-p 00000000 00:0
 So the password is **Computer-TurnLightsOn**.
 
 ## vending-machines
-The password which has to be used is stored encoded in the file "vending-machines.json": LVEdQPpBwr. When the password file is deleted it is possible to set a new password and to learn about the encoding method.
+The password, which has to be used, is stored encoded in the file "vending-machines.json": LVEdQPpBwr. When the password file is deleted it is possible to set a new password and to learn about the encoding method.
 It was found that:
 
  - The clear text and the encoded password always have the same length
@@ -60,6 +60,6 @@ To get hold of the clear text password the script
 [vending-password.sh](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/vending-password.sh) goes through all characters in scope on all positions of the encoded password and creates the encoded representation.
 The script determined that the password is **CandyCane1**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyODUxNjY5LC0xNjU3MTc4NTQwLDQwNz
-MzODc0LC02ODE4ODUyMjIsLTMwOTI2OTY5M119
+eyJoaXN0b3J5IjpbLTQxODI4MTg2MywtMTY1NzE3ODU0MCw0MD
+czMzg3NCwtNjgxODg1MjIyLC0zMDkyNjk2OTNdfQ==
 -->
