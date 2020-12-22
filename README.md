@@ -4,6 +4,7 @@
 **In-game character: joergen**
 
 Background information:
+
 [Map of the Game](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Map.md)
 
 [Location of the relevant Elf characters](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Elf%20Directory.md)
@@ -65,6 +66,6 @@ When navigating as Santa through the Santa image in the Entry hall the character
    Tmux](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/Unescape%20Tmux.md)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM5NDcyNzE2LC01ODUyNDg1LDE0Mjk0OD
+eyJoaXN0b3J5IjpbNDQ2MjA5MDgyLC01ODUyNDg1LDE0Mjk0OD
 UzNzVdfQ==
 -->
