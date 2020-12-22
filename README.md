@@ -3,9 +3,12 @@
 
 **In-game character: joergen**
 
-Map of the Game
+Background information:
+[Map of the Game](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Map.md)
 
 [Location of the relevant Elf characters](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Elf%20Directory.md)
+To the left of the workshop, protected by the HID lock, is a dark room with  obstacles. If you navigate through this room to the bottom, the game character transforms to Santa
+
 
 ## Main Objectives
 
@@ -58,6 +61,6 @@ Map of the Game
    Tmux](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/Unescape%20Tmux.md)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDkwMzQ3MTQsLTU4NTI0ODUsMTQyOT
-Q4NTM3NV19
+eyJoaXN0b3J5IjpbLTE2OTkxNTUwNiwtNTg1MjQ4NSwxNDI5ND
+g1Mzc1XX0=
 -->
