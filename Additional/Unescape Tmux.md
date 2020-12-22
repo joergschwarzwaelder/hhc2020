@@ -9,8 +9,8 @@ elf@8d612f631075:~$ tmux a
 ```
 
 ## Alternate solution
-`/var/go.sh`
+`elf@8d612f631075:~$ /var/go.sh`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4NTM0NjAyMSw1ODY1NjI3MTIsLTgwOT
-Y3NTAzMF19
+eyJoaXN0b3J5IjpbLTE3NzMzODYzODMsNTg2NTYyNzEyLC04MD
+k2NzUwMzBdfQ==
 -->
