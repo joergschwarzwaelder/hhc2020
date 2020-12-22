@@ -141,30 +141,8 @@ The variable ARP_PACKETS contains an ARP request and response packets. The ARP r
 ###[ Padding ]###
         load      = '\xc0\xa8\x00r'
 
-
 >>> ARP_PACKETS[1][ARP].op=2
-
->>> ARP_PACKETS[1].show()
-###[ Ethernet ]###
-  dst       = 00:16:ce:6e:8b:24
-  src       = 00:13:46:0b:22:ba
-  type      = ARP
-###[ ARP ]###
-     hwtype    = 0x1
-     ptype     = IPv4
-     hwlen     = 6
-     plen      = 4
-     op        = is-at
-     hwsrc     = ff:ff:ff:ff:ff:ff
-     psrc      = 192.168.0.1
-     hwdst     = ff:ff:ff:ff:ff:ff
-     pdst      = 192.168.0.114
-###[ Padding ]###
-        load      = '\xc0\xa8\x00r'
-
-
 >>> ARP_PACKETS[1][ARP].hwdst='00:16:ce:6e:8b:24'
-
 >>> ARP_PACKETS[1][ARP].hwsrc='00:13:46:0b:22:ba'
 >>> ARP_PACKETS[1].show()
 ###[ Ethernet ]###
@@ -184,16 +162,12 @@ The variable ARP_PACKETS contains an ARP request and response packets. The ARP r
 ###[ Padding ]###
         load      = '\xc0\xa8\x00r'
 
-
 >>> task.submit(ARP_PACKETS)
 Great, you prepared all the present packets!
 
 Congratulations, all pretty present packets properly prepared for processing!
-
->>>
-
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3MjQ5NTIzMCwtMTk4MDQ4MjY5NSwtOD
+eyJoaXN0b3J5IjpbMTMyODI2MDExNywtMTk4MDQ4MjY5NSwtOD
 IwNjQxODg5XX0=
 -->
