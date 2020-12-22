@@ -21,7 +21,7 @@ Then finally the next two are lower and upper half of the nonce for block #13000
 ## Objective 11b: Part 2
 
 The objective is to modify Jack Frosts block back from Nice to Naughty and to make available the hidden PDF pages by changing only four bytes.
-MD5 works using chunks of 64 bytes. It is possible increase a value at offset #n of block #m without changing the MD5 hash by also decreasing the value at offset #n of block #m+1 (entangled values).
+MD5 works using chunks of 64 bytes. It is possible increase a value at offset #n of block #m without changing the MD5 hash by also decreasing the value at offset #n of block #m+1 (entangled values) (this does not work in general; it is only possible for certain byte offsets and bit positions https://github.com/corkami/collisions/blob/master/unicoll.md)
 With this information the naughty/nice value can be changed from "1" (Nice) to "0" (Naughty) and one specific value in the PDF document from "2" to "3".
 As compensating measure (to have the MD5 hash stay the same) the entangled values have to be changed accordingly.
 
@@ -64,7 +64,7 @@ A [toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective
 Screenshot of the toolbox:
 ![toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/Frostys-Toolbox.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQ3NTM0NzM2LDQ3MzI5MDU2MCwxNDY4OT
-Q3MTgzLC05OTk3NjQ1MDcsMTgwOTc4MzY2LDExMjc3MjI0NzYs
-MTc1NTg4ODU3MV19
+eyJoaXN0b3J5IjpbNDY2Mjk0NzYwLDM0NzUzNDczNiw0NzMyOT
+A1NjAsMTQ2ODk0NzE4MywtOTk5NzY0NTA3LDE4MDk3ODM2Niwx
+MTI3NzIyNDc2LDE3NTU4ODg1NzFdfQ==
 -->
