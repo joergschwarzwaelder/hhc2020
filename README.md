@@ -3,6 +3,8 @@
 
 **In-game character: joergen**
 
+Disclaimer: All information and doin this repository is provided as-is and probably not
+
 Background information:
 
 [Map of the Game](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Map.md)
@@ -35,11 +37,11 @@ When navigating as Santa through the Santa image in the Entry hall the character
   - [Objective
    8: Broken Tag Generator](https://github.com/joergschwarzwaelder/hhc2020/tree/master/Objective-8)
   - [Objective
-   9](https://github.com/joergschwarzwaelder/hhc2020/tree/master/Objective-9)
+   9: ARP Shenanigans](https://github.com/joergschwarzwaelder/hhc2020/tree/master/Objective-9)
   - [Objective
-   10](https://github.com/joergschwarzwaelder/hhc2020/tree/master/Objective-10)
+   10: Defeat Fingerprint Sensor](https://github.com/joergschwarzwaelder/hhc2020/tree/master/Objective-10)
   - [Objective
-   11](https://github.com/joergschwarzwaelder/hhc2020/tree/master/Objective-11)
+   11: Naughty/Nice List with Blockchain Investigation](https://github.com/joergschwarzwaelder/hhc2020/tree/master/Objective-11)
 
 ## Additional Tasks
 
@@ -66,6 +68,6 @@ When navigating as Santa through the Santa image in the Entry hall the character
    Tmux](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/Unescape%20Tmux.md)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjcxNzczNDMsNDQ2MjA5MDgyLC01OD
-UyNDg1LDE0Mjk0ODUzNzVdfQ==
+eyJoaXN0b3J5IjpbNTY3NTI4MjM4LDQ0NjIwOTA4MiwtNTg1Mj
+Q4NSwxNDI5NDg1Mzc1XX0=
 -->
