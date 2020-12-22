@@ -1,5 +1,7 @@
-## CAN Bus Investigation
-Using cut it is possible to determine that " 19B" is the LOCK/UNLOCK signal which is supposed to appear three times in the log:
+# CAN Bus Investigation
+Location: NetWars
+
+Using cut it is possible to determine that ` 19B` is the LOCK/UNLOCK signal which is supposed to appear three times in the log:
 
 ```
 elf@7b2ad8c74795:~$ cut -d'#' -f1 < candump.log | cut -d' ' -f3 | sort | uniq -c
@@ -15,6 +17,6 @@ elf@7b2ad8c74795:~$ grep ' 19B' candump.log
 
 As the objective says that there are one UNLOCK and two LOCK signals, the decimal portion to be submitted is **122520**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwODI5NTExLC04MTI2MDg2ODMsMTU3Nj
-A2NzUxMF19
+eyJoaXN0b3J5IjpbMTYyMTE4NTg0MywtNzA4Mjk1MTEsLTgxMj
+YwODY4MywxNTc2MDY3NTEwXX0=
 -->
