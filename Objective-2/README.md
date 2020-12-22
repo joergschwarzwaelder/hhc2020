@@ -1,4 +1,7 @@
 # Objective 2: Investigate S3 Bucket
+Location: Front Lawn
+
+The objective is to unwrap an over-wrapped file and find the text string inside.
 ```
 elf@7c1c2bcf55ec:~$ cd bucket_finder/
 elf@7c1c2bcf55ec:~/bucket_finder$ ./bucket_finder.rb --log-file bucket.out wordlist
@@ -72,5 +75,5 @@ elf@7c1c2bcf55ec:~/bucket_finder/wrapper3000$
 So the text in the package is **North Pole: The Frostiest Place on Earth**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTAxNzA3MDhdfQ==
+eyJoaXN0b3J5IjpbMTc4Njc4OTgxMl19
 -->
