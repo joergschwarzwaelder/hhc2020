@@ -59,10 +59,11 @@ The modified block (#129459) has the same MD5 hash (so that the Blockchain is st
 
 ## Fun Zone
 
-A [toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/Frostys-Toolbox.html) for analyzing and tampering this Blockchain (which also allows the download of the full tampered Blockchain and every single evidence) is available; also hosted [here]**missing** for easy use.
+A [toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/Frostys-Toolbox.html) for analyzing and tampering this Blockchain (which also allows the download of the full tampered Blockchain and every single evidence) is available.
 Screenshot of the toolbox:
 ![toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/Frostys-Toolbox.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2ODk0NzE4MywtOTk5NzY0NTA3LDE4MD
-k3ODM2NiwxMTI3NzIyNDc2LDE3NTU4ODg1NzFdfQ==
+eyJoaXN0b3J5IjpbNDczMjkwNTYwLDE0Njg5NDcxODMsLTk5OT
+c2NDUwNywxODA5NzgzNjYsMTEyNzcyMjQ3NiwxNzU1ODg4NTcx
+XX0=
 -->
