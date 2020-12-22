@@ -65,13 +65,14 @@ Get it started:
 curl https://tag-generator.kringlecastle.com/upload -F'my_file[]=@joergen.zip'
 ```
 Now you have in the reverse shell listener an interactive shell as user `app`.
-
+The user `app` has write access to /tmp and /home/app.
+In addition the user has write access to `/usr/local/bundle, where the web server is located.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODIyNDkwNzEzLC0xNzYzNTQxMzU1LDE2MD
-czNDg1MTQsLTgyMzA1MDg2MSwxMjkzNzIwNDM5LDEzOTU3OTQ4
-MjQsLTE1OTkyNTQ0MTUsLTYxOTI5NzQxMSwtNTc2NjEwMDc1LD
-IxMDc1Mjk4NDYsOTIyMTQ0MzUsLTM5ODQ5MTQ2MSwxMTUxNTU2
-ODk2LDIzODQ2MDI3MiwxOTMzMzYxNzg3LC0xNDY3NjE1MjYyLC
-0yNDM5NDI4NjYsMTMxMjA1NjQ1Myw5MjA0NTU4NjUsLTE2MDYw
-NzgwNDBdfQ==
+eyJoaXN0b3J5IjpbLTExMzAwMzgwNjksLTE3NjM1NDEzNTUsMT
+YwNzM0ODUxNCwtODIzMDUwODYxLDEyOTM3MjA0MzksMTM5NTc5
+NDgyNCwtMTU5OTI1NDQxNSwtNjE5Mjk3NDExLC01NzY2MTAwNz
+UsMjEwNzUyOTg0Niw5MjIxNDQzNSwtMzk4NDkxNDYxLDExNTE1
+NTY4OTYsMjM4NDYwMjcyLDE5MzMzNjE3ODcsLTE0Njc2MTUyNj
+IsLTI0Mzk0Mjg2NiwxMzEyMDU2NDUzLDkyMDQ1NTg2NSwtMTYw
+NjA3ODA0MF19
 -->
