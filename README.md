@@ -3,6 +3,10 @@
 
 **In-game character: joergen**
 
+Map of the Game
+
+[Location of the relevant Elf characters](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Elf%20Directory.md)
+
 ## Main Objectives
 
  - [Objective
@@ -54,5 +58,6 @@
    Tmux](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/Unescape%20Tmux.md)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4NTI0ODUsMTQyOTQ4NTM3NV19
+eyJoaXN0b3J5IjpbLTEyNDkwMzQ3MTQsLTU4NTI0ODUsMTQyOT
+Q4NTM3NV19
 -->
