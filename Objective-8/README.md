@@ -65,10 +65,10 @@ Get it started:
 curl https://tag-generator.kringlecastle.com/upload -F'my_file[]=@joergen.zip'
 ```
 Now you have in the reverse shell listener an interactive shell as user `app`.
-The user `app` has write access to /tmp and /home/app.
-In addition the user has write access to `/usr/local/bundle, where the web server is located.
+The user `app` has write access to `/tmp` and `/home/app`.
+In addition the user has write access to `/usr/local/bundle`, where the web server is located.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzAwMzgwNjksLTE3NjM1NDEzNTUsMT
+eyJoaXN0b3J5IjpbLTEwNTIxNjM2MTcsLTE3NjM1NDEzNTUsMT
 YwNzM0ODUxNCwtODIzMDUwODYxLDEyOTM3MjA0MzksMTM5NTc5
 NDgyNCwtMTU5OTI1NDQxNSwtNjE5Mjk3NDExLC01NzY2MTAwNz
 UsMjEwNzUyOTg0Niw5MjIxNDQzNSwtMzk4NDkxNDYxLDExNTE1
