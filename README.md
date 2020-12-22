@@ -1,6 +1,8 @@
 # Holidayhack Challenge 2020
 **Writeup submitted by Joerg Schwarzwaelder
-In-Game character joergen**
+In-game character joergen**
+
+
 
 [Objective 1](https://github.com/joergschwarzwaelder/hhc2020/tree/master/Objective-1)
 [Objective 2](https://github.com/joergschwarzwaelder/hhc2020/tree/master/Objective-2)
@@ -28,5 +30,5 @@ In-Game character joergen**
 [Unescape Tmux](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/Unescape%20Tmux.md)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzQ0OTg1OTYsMTQyOTQ4NTM3NV19
+eyJoaXN0b3J5IjpbLTkwNTg1MjE5MiwxNDI5NDg1Mzc1XX0=
 -->
