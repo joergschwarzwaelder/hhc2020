@@ -23,17 +23,17 @@ When navigating as Santa through the Santa image in the Entry hall the character
 -   [Objective
    2: Investigate S3 Bucket](https://github.com/joergschwarzwaelder/hhc2020/tree/master/Objective-2)
  -  [Objective
-   3](https://github.com/joergschwarzwaelder/hhc2020/tree/master/Objective-3)
+   3: Point-of-Sale Password Recovery](https://github.com/joergschwarzwaelder/hhc2020/tree/master/Objective-3)
   - [Objective
-   4](https://github.com/joergschwarzwaelder/hhc2020/tree/master/Objective-4)
+   4: Operate the Santavator](https://github.com/joergschwarzwaelder/hhc2020/tree/master/Objective-4)
   - [Objective
-   5](https://github.com/joergschwarzwaelder/hhc2020/tree/master/Objective-5)
+   5: Open HID Lock](https://github.com/joergschwarzwaelder/hhc2020/tree/master/Objective-5)
   - [Objective
-   6](https://github.com/joergschwarzwaelder/hhc2020/tree/master/Objective-6)
+   6: Splunk Challenge](https://github.com/joergschwarzwaelder/hhc2020/tree/master/Objective-6)
   - [Objective
-   7](https://github.com/joergschwarzwaelder/hhc2020/tree/master/Objective-7)
+   7: Solve the Sleigh's CAN-D-BUS Problem](https://github.com/joergschwarzwaelder/hhc2020/tree/master/Objective-7)
   - [Objective
-   8](https://github.com/joergschwarzwaelder/hhc2020/tree/master/Objective-8)
+   8: Broken Tag Generator](https://github.com/joergschwarzwaelder/hhc2020/tree/master/Objective-8)
   - [Objective
    9](https://github.com/joergschwarzwaelder/hhc2020/tree/master/Objective-9)
   - [Objective
@@ -66,6 +66,6 @@ When navigating as Santa through the Santa image in the Entry hall the character
    Tmux](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/Unescape%20Tmux.md)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQ2MjA5MDgyLC01ODUyNDg1LDE0Mjk0OD
-UzNzVdfQ==
+eyJoaXN0b3J5IjpbLTEyMjcxNzczNDMsNDQ2MjA5MDgyLC01OD
+UyNDg1LDE0Mjk0ODUzNzVdfQ==
 -->
