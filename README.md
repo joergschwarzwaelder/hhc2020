@@ -10,9 +10,22 @@ In-Game character joergen**
 [Objective 6](https://github.com/joergschwarzwaelder/hhc2020/tree/master/Objective-6)
 [Objective 7](https://github.com/joergschwarzwaelder/hhc2020/tree/master/Objective-7)
 [Objective 8](https://github.com/joergschwarzwaelder/hhc2020/tree/master/Objective-8)
-Objective 9
-Objective 10
-Objective 11
+[Objective 9](https://github.com/joergschwarzwaelder/hhc2020/tree/master/Objective-9)
+[Objective 10](https://github.com/joergschwarzwaelder/hhc2020/tree/master/Objective-10)
+[Objective 11](https://github.com/joergschwarzwaelder/hhc2020/tree/master/Objective-11)
+
+## Additional Tasks
+33.6 kbps Challenge
+CAN Bus Investigation
+Elf C0de
+Kringle Kiosk
+Linux Primer
+Redis Bug Hunt
+Scapy Prepper
+Snowball Game
+Sort-o-matic
+Speaker UNPrep
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxNjQ3ODQwMCwxNDI5NDg1Mzc1XX0=
+eyJoaXN0b3J5IjpbLTYzNjE4Mjc5NiwxNDI5NDg1Mzc1XX0=
 -->
