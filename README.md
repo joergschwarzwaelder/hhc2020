@@ -1,5 +1,5 @@
 # SANS Holiday Hack Challenge 2020
-**Writeup submitted by Joerg Schwarzwaelder**
+**Write-up submitted by Joerg Schwarzwaelder**
 
 **In-game character: joergen**
 
@@ -75,8 +75,8 @@ When navigating as Santa through the Santa image in the Entry hall the character
 ## Holiday Eggs
 Two [Holiday Eggs](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Holiday%20Eggs.md) were discovered.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjI2NjM2MzUsLTE1NzE0NjQ5ODksLT
-IxNDMzOTkxOTQsLTE2NjIwOTc1ODUsLTEyMTUxMTgwNDgsLTIw
-NzQ2Mjk2MjksNDQ2MjA5MDgyLC01ODUyNDg1LDE0Mjk0ODUzNz
-VdfQ==
+eyJoaXN0b3J5IjpbMTIwNDM3MzE1MCwtMTU3MTQ2NDk4OSwtMj
+E0MzM5OTE5NCwtMTY2MjA5NzU4NSwtMTIxNTExODA0OCwtMjA3
+NDYyOTYyOSw0NDYyMDkwODIsLTU4NTI0ODUsMTQyOTQ4NTM3NV
+19
 -->
