@@ -6,6 +6,7 @@
 **Disclaimer:** All information and code in this repository is provided as-is, probably not without errors and not for production use.
 
 ![HHC2020 Logo](https://github.com/joergschwarzwaelder/hhc2020/blob/master/bg-2020-cut.png) 
+
 **'Zat You, Santa Claus?  
 featuring KringleCon 3: French Hens**
 
@@ -74,7 +75,7 @@ When navigating as Santa through the Santa image in the Entry hall the character
 ## Holiday Eggs
 Two [Holiday Eggs](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Holiday%20Eggs.md) were discovered.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDYzMjM4Njc2LC0xNjYyMDk3NTg1LC0xMj
-E1MTE4MDQ4LC0yMDc0NjI5NjI5LDQ0NjIwOTA4MiwtNTg1MjQ4
-NSwxNDI5NDg1Mzc1XX0=
+eyJoaXN0b3J5IjpbLTIxNDMzOTkxOTQsLTE2NjIwOTc1ODUsLT
+EyMTUxMTgwNDgsLTIwNzQ2Mjk2MjksNDQ2MjA5MDgyLC01ODUy
+NDg1LDE0Mjk0ODUzNzVdfQ==
 -->
