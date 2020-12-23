@@ -5,6 +5,8 @@
 
 **Disclaimer:** All information and code in this repository is provided as-is, probably not without errors and not for production use.
 
+![HHC2020 Logo](https://github.com/joergschwarzwaelder/hhc2020/blob/master/bg-2020-cut.png)
+
 **Background information:**
 
 [Map of the Game](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Map.md)
@@ -70,6 +72,7 @@ When navigating as Santa through the Santa image in the Entry hall the character
 ## Holiday Eggs
 Two [Holiday Eggs](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Holiday%20Eggs.md) were discovered.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTUxMTgwNDgsLTIwNzQ2Mjk2MjksND
-Q2MjA5MDgyLC01ODUyNDg1LDE0Mjk0ODUzNzVdfQ==
+eyJoaXN0b3J5IjpbLTE2NjIwOTc1ODUsLTEyMTUxMTgwNDgsLT
+IwNzQ2Mjk2MjksNDQ2MjA5MDgyLC01ODUyNDg1LDE0Mjk0ODUz
+NzVdfQ==
 -->
