@@ -74,7 +74,7 @@ Lateron the breakpoint is reached again when the program is waiting for the user
 ```
 
 **Approach 4**
-It was found that it is possible to provide clear text password in the `lights.conf` file - but the user has only write access to the `lab` directory.
+It was found that it is possible to provide a clear text password in the `lights.conf` file - but the user has only write access to the `lab` directory.
 Using  a tailored library providing an alternative system call `read` through `LD_PRELOAD` it is possible to call `/home/elf/lights` and inject the customized config file into that.
 
 ```
@@ -147,8 +147,8 @@ To get hold of the clear text password the script
 [vending-password.sh](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/vending-password.sh) goes through all characters in scope on all positions of the encoded password and creates the encoded representation.
 The script determined that the password is **CandyCane1**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxMzE4MzI1LDExOTc5MjMzNTUsMTc4NT
-M3NTEwMywtNTQzMDY5OTU5LC0xNDYyNzk1MjI1LDQ0ODQxMzAw
-NCwxOTUzMjA4MTU4LC00MTgyODE4NjMsLTE2NTcxNzg1NDAsND
-A3MzM4NzQsLTY4MTg4NTIyMiwtMzA5MjY5NjkzXX0=
+eyJoaXN0b3J5IjpbLTE2ODk5OTMwMzQsMTE5NzkyMzM1NSwxNz
+g1Mzc1MTAzLC01NDMwNjk5NTksLTE0NjI3OTUyMjUsNDQ4NDEz
+MDA0LDE5NTMyMDgxNTgsLTQxODI4MTg2MywtMTY1NzE3ODU0MC
+w0MDczMzg3NCwtNjgxODg1MjIyLC0zMDkyNjk2OTNdfQ==
 -->
