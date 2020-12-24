@@ -72,6 +72,11 @@ Lateron the breakpoint is reached again when the program is waiting for the user
 0x555555599d90:	"Computer-TurnLightsOnU"
 0x555555599da7:	""
 ```
+**Approach 4**
+The program tries to determine it's own location via /proc/self/exe. Using private namespaces this can be tempered.
+At first create a modified lights.conf file in lab:
+
+
 
 ## vending-machines
 The password, which has to be used, is stored encoded in the file "vending-machines.json": LVEdQPpBwr. When the password file is deleted it is possible to set a new password and to learn about the encoding method.
@@ -94,7 +99,7 @@ To get hold of the clear text password the script
 [vending-password.sh](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/vending-password.sh) goes through all characters in scope on all positions of the encoded password and creates the encoded representation.
 The script determined that the password is **CandyCane1**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjI3OTUyMjUsNDQ4NDEzMDA0LDE5NT
-MyMDgxNTgsLTQxODI4MTg2MywtMTY1NzE3ODU0MCw0MDczMzg3
-NCwtNjgxODg1MjIyLC0zMDkyNjk2OTNdfQ==
+eyJoaXN0b3J5IjpbLTUwMjcwNDE3OCwtMTQ2Mjc5NTIyNSw0ND
+g0MTMwMDQsMTk1MzIwODE1OCwtNDE4MjgxODYzLC0xNjU3MTc4
+NTQwLDQwNzMzODc0LC02ODE4ODUyMjIsLTMwOTI2OTY5M119
 -->
