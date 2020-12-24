@@ -1,7 +1,7 @@
 # Objective 11: Naughty/Nice List with Blockchain Investigation
 Location: Santa's Office
 
-The Blockchain to be investigated was provided by an Elf.
+The [Blockchain](https://download.holidayhackchallenge.com/2020/blockchain.dat) to be investigated was provided by an Elf.
 It uses MD5 as hashing algorithm. Some Elves saw that Jack Frost's entry in this Blockchain was set to "Naughty" in the past and now it is set to "Nice". They suppose that Jack tampered his Block on the Blockchain.
 Each single block has this data structure:
 
@@ -10,7 +10,7 @@ Each single block has this data structure:
 
 ## Objective 11a: Part 1
 
-The [provided Blockchain](https://download.holidayhackchallenge.com/2020/blockchain.dat) data contains the blocks with serials #128449-#129996. The objective is to predict the nonce of block #130000.
+The provided Blockchain data contains the blocks with serials #128449-#129996. The objective is to predict the nonce of block #130000.
 In the hints is a [talk of Tom Liston covering Mersenne Twister based PRNG ](https://www.youtube.com/watch?v=Jo5Nlbqd-Vg) along with [sample Python code](https://github.com/tliston/mt19937) for predicting the next random values if you know the last 624 ones (covering 32 Bit PRNG).
 As the nonces in the Blockchain are 64 Bit it was found they were created by using two 32 Bit random values (first one for the lower 32 Bit, second one for the upper 32 Bit).
 The prediction works just the same: The nonces of the last 312 blocks of the Blockchain were split into lower and upper half and pre-loaded into the Mersenne Twister.
@@ -64,7 +64,7 @@ A [toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective
 Screenshot of the toolbox:
 ![toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/Frostys-Toolbox.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1ODA3NjM4NiwzNjEyNDc3MjYsLTE3OT
+eyJoaXN0b3J5IjpbLTI1NDAzNTU1NCwzNjEyNDc3MjYsLTE3OT
 MzOTc0ODAsNjgwMjU5Miw0NjYyOTQ3NjAsMzQ3NTM0NzM2LDQ3
 MzI5MDU2MCwxNDY4OTQ3MTgzLC05OTk3NjQ1MDcsMTgwOTc4Mz
 Y2LDExMjc3MjI0NzYsMTc1NTg4ODU3MV19
