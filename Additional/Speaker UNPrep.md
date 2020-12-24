@@ -65,7 +65,7 @@ Catchpoint 1 (call to syscall read), 0x00007ffff7ebe142 in __GI___libc_read (fd=
 (gdb) x/20s 0x555555599d90
 0x555555599d90:	"password: E$ed633d885dcb9b2f3f0118361de4d57752712c27c5316a95d9e5e5b124\nname: elf-technician\n"
 ```
-Lateron the breakpoint is reached again when the program is waiting for the user input. At this time at exactly the same memory location the decrpyted password can be found:
+Lateron the breakpoint is reached again when the program is waiting for the user input. At this time at exactly the same memory location the decrypted password can be found:
 
 ```
 (gdb) x/20s 0x555555599d90
@@ -94,7 +94,7 @@ To get hold of the clear text password the script
 [vending-password.sh](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/vending-password.sh) goes through all characters in scope on all positions of the encoded password and creates the encoded representation.
 The script determined that the password is **CandyCane1**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwMDU1OTI0Myw0NDg0MTMwMDQsMTk1Mz
-IwODE1OCwtNDE4MjgxODYzLC0xNjU3MTc4NTQwLDQwNzMzODc0
-LC02ODE4ODUyMjIsLTMwOTI2OTY5M119
+eyJoaXN0b3J5IjpbLTE0NjI3OTUyMjUsNDQ4NDEzMDA0LDE5NT
+MyMDgxNTgsLTQxODI4MTg2MywtMTY1NzE3ODU0MCw0MDczMzg3
+NCwtNjgxODg1MjIyLC0zMDkyNjk2OTNdfQ==
 -->
