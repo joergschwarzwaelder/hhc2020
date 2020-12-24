@@ -23,7 +23,7 @@ password: E$ed633d885dcb9b2f3f0118361de4d57752712c27c5316a95d9e5e5b124
 name: E$ed633d885dcb9b2f3f0118361de4d57752712c27c5316a95d9e5e5b124
 #name: elf-technician
 ```
-Starting the `lights` process then displays the password as username `The terminal just blinks: Welcome back, Computer-TurnLightsOn`
+Starting the `lights` process then displays the password as username: `The terminal just blinks: Welcome back, Computer-TurnLightsOn`
 So the password is **Computer-TurnLightsOn**.
 
 **Approach 2**:
@@ -94,7 +94,7 @@ To get hold of the clear text password the script
 [vending-password.sh](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/vending-password.sh) goes through all characters in scope on all positions of the encoded password and creates the encoded representation.
 The script determined that the password is **CandyCane1**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjAxNTI5OTAxLDQ0ODQxMzAwNCwxOTUzMj
-A4MTU4LC00MTgyODE4NjMsLTE2NTcxNzg1NDAsNDA3MzM4NzQs
-LTY4MTg4NTIyMiwtMzA5MjY5NjkzXX0=
+eyJoaXN0b3J5IjpbLTgwMDU1OTI0Myw0NDg0MTMwMDQsMTk1Mz
+IwODE1OCwtNDE4MjgxODYzLC0xNjU3MTc4NTQwLDQwNzMzODc0
+LC02ODE4ODUyMjIsLTMwOTI2OTY5M119
 -->
