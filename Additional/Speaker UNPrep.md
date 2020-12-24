@@ -27,7 +27,7 @@ Starting the `lights` process then displays the password as username: `The termi
 So the password is **Computer-TurnLightsOn**.
 
 **Approach 2**:
-The application lights shows this message after startup:
+The application `lights` shows this message after startup:
 
     >>> CONFIGURATION FILE LOADED, SELECT FIELDS DECRYPTED:
 
@@ -147,8 +147,8 @@ To get hold of the clear text password the script
 [vending-password.sh](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/vending-password.sh) goes through all characters in scope on all positions of the encoded password and creates the encoded representation.
 The script determined that the password is **CandyCane1**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5NzkyMzM1NSwxNzg1Mzc1MTAzLC01ND
-MwNjk5NTksLTE0NjI3OTUyMjUsNDQ4NDEzMDA0LDE5NTMyMDgx
-NTgsLTQxODI4MTg2MywtMTY1NzE3ODU0MCw0MDczMzg3NCwtNj
-gxODg1MjIyLC0zMDkyNjk2OTNdfQ==
+eyJoaXN0b3J5IjpbMjAxMzE4MzI1LDExOTc5MjMzNTUsMTc4NT
+M3NTEwMywtNTQzMDY5OTU5LC0xNDYyNzk1MjI1LDQ0ODQxMzAw
+NCwxOTUzMjA4MTU4LC00MTgyODE4NjMsLTE2NTcxNzg1NDAsND
+A3MzM4NzQsLTY4MTg4NTIyMiwtMzA5MjY5NjkzXX0=
 -->
