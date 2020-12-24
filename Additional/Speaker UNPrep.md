@@ -127,7 +127,7 @@ elf@7e18ebefca11 ~/lab $
 ```
 
 **Approach 5**
-Similar to approach 4, but here the clear text password is displayed (for an unknown reason encrypted passwords have an extra character appended which has to be chopped off).
+Similar to approach 4, but here the clear text password is searched in memory and displayed (for an unknown reason encrypted passwords have an extra character appended which has to be chopped off).
 ```
 elf@3daddf729fff ~/lab $ cat read.c
 #define _GNU_SOURCE
@@ -200,10 +200,9 @@ To get hold of the clear text password the script
 [vending-password.sh](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/vending-password.sh) goes through all characters in scope on all positions of the encoded password and creates the encoded representation.
 The script determined that the password is **CandyCane1**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzMDAxMjE3MiwxMTMwMDEyMTcyLC01MD
-EzODUyMSw3NTEyNjY1ODEsLTE2ODk5OTMwMzQsMTE5NzkyMzM1
-NSwxNzg1Mzc1MTAzLC01NDMwNjk5NTksLTE0NjI3OTUyMjUsND
-Q4NDEzMDA0LDE5NTMyMDgxNTgsLTQxODI4MTg2MywtMTY1NzE3
-ODU0MCw0MDczMzg3NCwtNjgxODg1MjIyLC0zMDkyNjk2OTNdfQ
-==
+eyJoaXN0b3J5IjpbMTI2MzM1NDk4LDExMzAwMTIxNzIsLTUwMT
+M4NTIxLDc1MTI2NjU4MSwtMTY4OTk5MzAzNCwxMTk3OTIzMzU1
+LDE3ODUzNzUxMDMsLTU0MzA2OTk1OSwtMTQ2Mjc5NTIyNSw0ND
+g0MTMwMDQsMTk1MzIwODE1OCwtNDE4MjgxODYzLC0xNjU3MTc4
+NTQwLDQwNzMzODc0LC02ODE4ODUyMjIsLTMwOTI2OTY5M119
 -->
