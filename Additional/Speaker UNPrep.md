@@ -54,7 +54,18 @@ So the password is **Computer-TurnLightsOn**.
 **Approach 3**
 The program was started in GDB with a breakpoint set to the `read` syscall:
 ```
-
+(gdb) catch syscall 0
+Catchpoint 1 (syscall 'read' [0])
+(gdb) run
+```
+After several stops it is visible that the `lights.conf` file is read into memory:
+```
+Catchpoint 1 (call to syscall read), 0x00007ffff7ebe142 in __GI___libc_read (fd=3, buf=0x555555599d90, nbytes=8192) at ../sysdeps/unix/sysv/linux/read.c:26
+26	in ../sysdeps/unix/sysv/linux/read.c
+(gdb) x/20s 0x555555599d90
+0x555555599d90:	"password: E$ed633d885dcb9b2f3f0118361de4d57752712c27c5316a95d9e5e5b124\nname: elf-technician\n"
+```
+Lateron the breakpoint is reached again when the program is waiting for
 
 ## vending-machines
 The password, which has to be used, is stored encoded in the file "vending-machines.json": LVEdQPpBwr. When the password file is deleted it is possible to set a new password and to learn about the encoding method.
@@ -77,7 +88,7 @@ To get hold of the clear text password the script
 [vending-password.sh](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/vending-password.sh) goes through all characters in scope on all positions of the encoded password and creates the encoded representation.
 The script determined that the password is **CandyCane1**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTAwMTQxMzc0LDQ0ODQxMzAwNCwxOTUzMj
-A4MTU4LC00MTgyODE4NjMsLTE2NTcxNzg1NDAsNDA3MzM4NzQs
-LTY4MTg4NTIyMiwtMzA5MjY5NjkzXX0=
+eyJoaXN0b3J5IjpbMTM2NDE0MDg2Myw0NDg0MTMwMDQsMTk1Mz
+IwODE1OCwtNDE4MjgxODYzLC0xNjU3MTc4NTQwLDQwNzMzODc0
+LC02ODE4ODUyMjIsLTMwOTI2OTY5M119
 -->
