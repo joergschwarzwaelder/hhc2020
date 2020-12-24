@@ -1,7 +1,7 @@
 # Objective 11: Naughty/Nice List with Blockchain Investigation
 Location: Santa's Office
 
-The [Blockchain](https://download.holidayhackchallenge.com/2020/blockchain.dat) to be investigated was provided by an Elf.
+The [Blockchain](https://download.holidayhackchallenge.com/2020/blockchain.dat) to be investigated can be obtained in Santa's office.
 It uses MD5 as hashing algorithm. Some Elves saw that Jack Frost's entry in this Blockchain was set to "Naughty" in the past and now it is set to "Nice". They suppose that Jack tampered his Block on the Blockchain.
 Each single block has this data structure:
 
@@ -64,8 +64,8 @@ A [toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective
 Screenshot of the toolbox:
 ![toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/Frostys-Toolbox.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1NDAzNTU1NCwzNjEyNDc3MjYsLTE3OT
-MzOTc0ODAsNjgwMjU5Miw0NjYyOTQ3NjAsMzQ3NTM0NzM2LDQ3
-MzI5MDU2MCwxNDY4OTQ3MTgzLC05OTk3NjQ1MDcsMTgwOTc4Mz
-Y2LDExMjc3MjI0NzYsMTc1NTg4ODU3MV19
+eyJoaXN0b3J5IjpbMTI0NTQ5NDQ2LDM2MTI0NzcyNiwtMTc5Mz
+M5NzQ4MCw2ODAyNTkyLDQ2NjI5NDc2MCwzNDc1MzQ3MzYsNDcz
+MjkwNTYwLDE0Njg5NDcxODMsLTk5OTc2NDUwNywxODA5NzgzNj
+YsMTEyNzcyMjQ3NiwxNzU1ODg4NTcxXX0=
 -->
