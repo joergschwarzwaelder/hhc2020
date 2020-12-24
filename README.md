@@ -12,6 +12,8 @@ featuring KringleCon 3: French Hens**
 
 **Background information:**
 
+[Online Game](https://2020.kringlecon.com/)
+
 [Map of the Game](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Map.md)
 
 [Location of the relevant Elf characters](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Elf%20Directory.md)
@@ -75,8 +77,8 @@ When navigating as Santa through the Santa image in the Entry hall the character
 ## Holiday Eggs
 Two [Holiday Eggs](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Holiday%20Eggs.md) were discovered.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwNDM3MzE1MCwtMTU3MTQ2NDk4OSwtMj
-E0MzM5OTE5NCwtMTY2MjA5NzU4NSwtMTIxNTExODA0OCwtMjA3
-NDYyOTYyOSw0NDYyMDkwODIsLTU4NTI0ODUsMTQyOTQ4NTM3NV
-19
+eyJoaXN0b3J5IjpbLTc1NDExOTY3MywxMjA0MzczMTUwLC0xNT
+cxNDY0OTg5LC0yMTQzMzk5MTk0LC0xNjYyMDk3NTg1LC0xMjE1
+MTE4MDQ4LC0yMDc0NjI5NjI5LDQ0NjIwOTA4MiwtNTg1MjQ4NS
+wxNDI5NDg1Mzc1XX0=
 -->
