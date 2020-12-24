@@ -171,7 +171,7 @@ You wonder how to turn the lights on? If only you had some kind of hin---
 The terminal just blinks: Welcome back, elf-technician
 
 What do you enter? > 
-** Password is: **Computer-TurnLightsOnU** **
+** Password is: Computer-TurnLightsOnU **
 Computer-TurnLightsOn
 Checking......
 
@@ -200,9 +200,10 @@ To get hold of the clear text password the script
 [vending-password.sh](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/vending-password.sh) goes through all characters in scope on all positions of the encoded password and creates the encoded representation.
 The script determined that the password is **CandyCane1**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ3NjEzNTYsMTEzMDAxMjE3MiwtNTAxMz
-g1MjEsNzUxMjY2NTgxLC0xNjg5OTkzMDM0LDExOTc5MjMzNTUs
-MTc4NTM3NTEwMywtNTQzMDY5OTU5LC0xNDYyNzk1MjI1LDQ0OD
-QxMzAwNCwxOTUzMjA4MTU4LC00MTgyODE4NjMsLTE2NTcxNzg1
-NDAsNDA3MzM4NzQsLTY4MTg4NTIyMiwtMzA5MjY5NjkzXX0=
+eyJoaXN0b3J5IjpbMTEzMDAxMjE3MiwxMTMwMDEyMTcyLC01MD
+EzODUyMSw3NTEyNjY1ODEsLTE2ODk5OTMwMzQsMTE5NzkyMzM1
+NSwxNzg1Mzc1MTAzLC01NDMwNjk5NTksLTE0NjI3OTUyMjUsND
+Q4NDEzMDA0LDE5NTMyMDgxNTgsLTQxODI4MTg2MywtMTY1NzE3
+ODU0MCw0MDczMzg3NCwtNjgxODg1MjIyLC0zMDkyNjk2OTNdfQ
+==
 -->
