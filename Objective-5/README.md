@@ -9,7 +9,7 @@ The following badges were found in game:
 |Bow Ninecandle  | Talks |#db# TAG ID: 2006e22f0e (6023) - Format Len: 26 bit - FC: 113 - Card: 6023|
 |Sparkle Redberry  | Front Lawn  |#db# TAG ID: 2006e22f0d (6022) - Format Len: 26 bit - FC: 113 - Card: 6022|
 |Holly Evergreen  |Kitchen |#db# TAG ID: 2006e22f10 (6024) - Format Len: 26 bit - FC: 113 - Card: 6024|
-|Shinny Upatree  |outside  |#db# TAG ID: 2006e22f13 (6025) - Format Len: 26 bit - FC: 113 - Card: 6025|
+|Shinny Upatree  |Front Lawn  |#db# TAG ID: 2006e22f13 (6025) - Format Len: 26 bit - FC: 113 - Card: 6025|
 |Noel Boetie  |Wrapping Room  |#db# TAG ID: 2006e22ee1 (6000) - Format Len: 26 bit - FC: 113 - Card: 6000|
 
 The Proxmark device is then able to simulate a badge using 
@@ -20,6 +20,7 @@ It was found that the badge of Bow Ninecandle (ID: 2006e22f0e) opens the HID loc
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwNTYzNDg0NywtMjA1NTczMDcwLC0xOD
-A1NDc0OTY2LC00MzU2NDg0OTYsNjIyOTk0OTU1XX0=
+eyJoaXN0b3J5IjpbLTIzOTgxNTAzNSwtNjA1NjM0ODQ3LC0yMD
+U1NzMwNzAsLTE4MDU0NzQ5NjYsLTQzNTY0ODQ5Niw2MjI5OTQ5
+NTVdfQ==
 -->
