@@ -126,6 +126,39 @@ Lights on!
 elf@7e18ebefca11 ~/lab $ 
 ```
 
+**Approach 5**
+```
+elf@3daddf729fff ~/lab $ cat read.c
+#define _GNU_SOURCE
+#include <dlfcn.h>
+#include <unistd.h>
+#include <string.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <stdio.h>
+
+static ssize_t (*real_read)(int fd, void *buf, size_t count);
+
+ssize_t read(int fd, void *buf, size_t count){
+  int ret; int i; char *p;
+  if(fd==0){
+    int i;
+    p=(char *)memmem(buf-9200,700,".conf",5);
+    p+=5;
+    for(i=0;i<200;i++){
+      if((*p!=0)&&(*(p+1)!=0))break;
+      p++;
+    }
+    printf("\n** Password is: %s **\n",p);
+  }
+  real_read=dlsym(RTLD_NEXT,"read");
+  ret=real_read(fd,buf,count);
+  return ret;
+}
+elf@3daddf729fff ~/lab $ gcc -fPIC -shared -o read.so read.c -ldl
+```
+
 ## vending-machines
 The password, which has to be used, is stored encoded in the file "vending-machines.json": LVEdQPpBwr. When the password file is deleted it is possible to set a new password and to learn about the encoding method.
 It was found that:
@@ -147,9 +180,9 @@ To get hold of the clear text password the script
 [vending-password.sh](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/vending-password.sh) goes through all characters in scope on all positions of the encoded password and creates the encoded representation.
 The script determined that the password is **CandyCane1**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwMTM4NTIxLDc1MTI2NjU4MSwtMTY4OT
-k5MzAzNCwxMTk3OTIzMzU1LDE3ODUzNzUxMDMsLTU0MzA2OTk1
-OSwtMTQ2Mjc5NTIyNSw0NDg0MTMwMDQsMTk1MzIwODE1OCwtND
-E4MjgxODYzLC0xNjU3MTc4NTQwLDQwNzMzODc0LC02ODE4ODUy
-MjIsLTMwOTI2OTY5M119
+eyJoaXN0b3J5IjpbLTE1Nzk4MDUzMzcsLTUwMTM4NTIxLDc1MT
+I2NjU4MSwtMTY4OTk5MzAzNCwxMTk3OTIzMzU1LDE3ODUzNzUx
+MDMsLTU0MzA2OTk1OSwtMTQ2Mjc5NTIyNSw0NDg0MTMwMDQsMT
+k1MzIwODE1OCwtNDE4MjgxODYzLC0xNjU3MTc4NTQwLDQwNzMz
+ODc0LC02ODE4ODUyMjIsLTMwOTI2OTY5M119
 -->
