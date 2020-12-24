@@ -75,6 +75,16 @@ Lateron the breakpoint is reached again when the program is waiting for the user
 **Approach 4**
 The program tries to determine it's own location via /proc/self/exe. Using private namespaces this can be tempered.
 At first create a modified lights.conf file in lab:
+```
+password: abc123
+name: elf-technician
+```
+Then create the private namespace:
+```
+unshare -Ufmp -r bash
+mount --make-private /
+mount --bind home /home
+```
 
 
 
@@ -99,7 +109,7 @@ To get hold of the clear text password the script
 [vending-password.sh](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/vending-password.sh) goes through all characters in scope on all positions of the encoded password and creates the encoded representation.
 The script determined that the password is **CandyCane1**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwMjcwNDE3OCwtMTQ2Mjc5NTIyNSw0ND
+eyJoaXN0b3J5IjpbLTMzMDI3NDk2MSwtMTQ2Mjc5NTIyNSw0ND
 g0MTMwMDQsMTk1MzIwODE1OCwtNDE4MjgxODYzLC0xNjU3MTc4
 NTQwLDQwNzMzODc0LC02ODE4ODUyMjIsLTMwOTI2OTY5M119
 -->
