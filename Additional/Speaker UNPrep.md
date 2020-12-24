@@ -35,7 +35,7 @@ This is an indicator that this application does not hash the passwords - they ar
 By using the script [get_lights_password.sh](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/get_lights_password.sh) it was possible to dump the process memory and to find the password in clear text.
 
 ```
-^?f8887c0c000-7f8887c0e000 rw-p 001ba000 08:01 2495947                    /lib/x86_64-linux
+7f8887c0c000-7f8887c0e000 rw-p 001ba000 08:01 2495947                    /lib/x86_64-linux
 -gnu/libc-2.28.so
 7f8887c
 main
@@ -71,7 +71,7 @@ To get hold of the clear text password the script
 [vending-password.sh](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/vending-password.sh) goes through all characters in scope on all positions of the encoded password and creates the encoded representation.
 The script determined that the password is **CandyCane1**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1MzIwODE1OCwtNDE4MjgxODYzLC0xNj
-U3MTc4NTQwLDQwNzMzODc0LC02ODE4ODUyMjIsLTMwOTI2OTY5
-M119
+eyJoaXN0b3J5IjpbNDQ4NDEzMDA0LDE5NTMyMDgxNTgsLTQxOD
+I4MTg2MywtMTY1NzE3ODU0MCw0MDczMzg3NCwtNjgxODg1MjIy
+LC0zMDkyNjk2OTNdfQ==
 -->
