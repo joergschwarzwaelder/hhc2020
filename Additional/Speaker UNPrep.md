@@ -72,6 +72,10 @@ Lateron the breakpoint is reached again when the program is waiting for the user
 0x555555599d90:	"Computer-TurnLightsOnU"
 0x555555599da7:	""
 ```
+
+**Approach 4**
+Using  a tailored library providing an alternative system call `read` we can call `/home/elf/lights` and inject the customized 
+
 ## vending-machines
 The password, which has to be used, is stored encoded in the file "vending-machines.json": LVEdQPpBwr. When the password file is deleted it is possible to set a new password and to learn about the encoding method.
 It was found that:
@@ -93,7 +97,8 @@ To get hold of the clear text password the script
 [vending-password.sh](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/vending-password.sh) goes through all characters in scope on all positions of the encoded password and creates the encoded representation.
 The script determined that the password is **CandyCane1**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0MzA2OTk1OSwtMTQ2Mjc5NTIyNSw0ND
-g0MTMwMDQsMTk1MzIwODE1OCwtNDE4MjgxODYzLC0xNjU3MTc4
-NTQwLDQwNzMzODc0LC02ODE4ODUyMjIsLTMwOTI2OTY5M119
+eyJoaXN0b3J5IjpbMTEwMjQzNDk1MCwtNTQzMDY5OTU5LC0xND
+YyNzk1MjI1LDQ0ODQxMzAwNCwxOTUzMjA4MTU4LC00MTgyODE4
+NjMsLTE2NTcxNzg1NDAsNDA3MzM4NzQsLTY4MTg4NTIyMiwtMz
+A5MjY5NjkzXX0=
 -->
