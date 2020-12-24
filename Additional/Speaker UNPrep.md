@@ -74,7 +74,57 @@ Lateron the breakpoint is reached again when the program is waiting for the user
 ```
 
 **Approach 4**
-Using  a tailored library providing an alternative system call `read` we can call `/home/elf/lights` and inject the customized 
+It was found that it is possible to provide clear text password in the `lights.conf` file - but the user has only write access to the `lab` directory.
+Using  a tailored library providing an alternative system call `read` we can call `/home/elf/lights` and inject the customized config file into that.
+
+```
+elf@7e18ebefca11 ~ $ cd lab
+elf@7e18ebefca11 ~/lab $ cat read.c
+#define _GNU_SOURCE
+#include <dlfcn.h>
+#include <unistd.h>
+#include <string.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+
+static ssize_t (*real_read)(int fd, void *buf, size_t count);
+
+ssize_t read(int fd, void *buf, size_t count){
+  int ret;
+  real_read=dlsym(RTLD_NEXT,"read");
+  ret=real_read(fd,buf,ret);
+  if(memcmp("password: E$",buf,12)==0){
+    int fd2;
+    fd2=open("lights.conf",O_RDONLY);
+    dup2(fd2,fd);
+    ret=real_read(fd,buf,ret);
+  }
+  return ret;
+}
+elf@7e18ebefca11 ~/lab $ gcc -fPIC -shared -o read.so read.c -ldl
+elf@7e18ebefca11 ~/lab $ cat lights.conf 
+password: abc123
+name: elf-technician
+elf@7e18ebefca11 ~/lab $ LD_PRELOAD=$PWD/read.so ../lights
+The speaker unpreparedness room sure is dark, you're thinking (assuming
+you've opened the door; otherwise, you wonder how dark it actually is)
+
+You wonder how to turn the lights on? If only you had some kind of hin---
+
+ >>> CONFIGURATION FILE LOADED, SELECT FIELDS DECRYPTED: /home/elf/lights.conf
+
+---t to help figure out the password... I guess you'll just have to make do!
+
+The terminal just blinks: Welcome back, elf-technician
+
+What do you enter? > abc123
+
+Checking......
+
+Lights on!
+elf@7e18ebefca11 ~/lab $ 
+```
 
 ## vending-machines
 The password, which has to be used, is stored encoded in the file "vending-machines.json": LVEdQPpBwr. When the password file is deleted it is possible to set a new password and to learn about the encoding method.
@@ -97,7 +147,7 @@ To get hold of the clear text password the script
 [vending-password.sh](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/vending-password.sh) goes through all characters in scope on all positions of the encoded password and creates the encoded representation.
 The script determined that the password is **CandyCane1**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwMjQzNDk1MCwtNTQzMDY5OTU5LC0xND
+eyJoaXN0b3J5IjpbMTc4NTM3NTEwMywtNTQzMDY5OTU5LC0xND
 YyNzk1MjI1LDQ0ODQxMzAwNCwxOTUzMjA4MTU4LC00MTgyODE4
 NjMsLTE2NTcxNzg1NDAsNDA3MzM4NzQsLTY4MTg4NTIyMiwtMz
 A5MjY5NjkzXX0=
