@@ -127,6 +127,7 @@ elf@7e18ebefca11 ~/lab $
 ```
 
 **Approach 5**
+Similar to approach 4 but here the password is displayed (for an unknown 
 ```
 elf@3daddf729fff ~/lab $ cat read.c
 #define _GNU_SOURCE
@@ -157,6 +158,25 @@ ssize_t read(int fd, void *buf, size_t count){
   return ret;
 }
 elf@3daddf729fff ~/lab $ gcc -fPIC -shared -o read.so read.c -ldl
+elf@3daddf729fff ~/lab $ LD_PRELOAD=$PWD/read.so ../lights 
+The speaker unpreparedness room sure is dark, you're thinking (assuming
+you've opened the door; otherwise, you wonder how dark it actually is)
+
+You wonder how to turn the lights on? If only you had some kind of hin---
+
+ >>> CONFIGURATION FILE LOADED, SELECT FIELDS DECRYPTED: /home/elf/lights.conf
+
+---t to help figure out the password... I guess you'll just have to make do!
+
+The terminal just blinks: Welcome back, elf-technician
+
+What do you enter? > 
+** Password is: Computer-TurnLightsOnU **
+Computer-TurnLightsOn
+Checking......
+
+Lights on!
+elf@3daddf729fff ~/lab $
 ```
 
 ## vending-machines
@@ -180,9 +200,9 @@ To get hold of the clear text password the script
 [vending-password.sh](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/vending-password.sh) goes through all characters in scope on all positions of the encoded password and creates the encoded representation.
 The script determined that the password is **CandyCane1**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Nzk4MDUzMzcsLTUwMTM4NTIxLDc1MT
-I2NjU4MSwtMTY4OTk5MzAzNCwxMTk3OTIzMzU1LDE3ODUzNzUx
-MDMsLTU0MzA2OTk1OSwtMTQ2Mjc5NTIyNSw0NDg0MTMwMDQsMT
-k1MzIwODE1OCwtNDE4MjgxODYzLC0xNjU3MTc4NTQwLDQwNzMz
-ODc0LC02ODE4ODUyMjIsLTMwOTI2OTY5M119
+eyJoaXN0b3J5IjpbLTE1ODU5ODcsLTUwMTM4NTIxLDc1MTI2Nj
+U4MSwtMTY4OTk5MzAzNCwxMTk3OTIzMzU1LDE3ODUzNzUxMDMs
+LTU0MzA2OTk1OSwtMTQ2Mjc5NTIyNSw0NDg0MTMwMDQsMTk1Mz
+IwODE1OCwtNDE4MjgxODYzLC0xNjU3MTc4NTQwLDQwNzMzODc0
+LC02ODE4ODUyMjIsLTMwOTI2OTY5M119
 -->
