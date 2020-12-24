@@ -16,14 +16,14 @@ So this password is **Op3nTheD00r**.
 
 ## lights
 **Approach 1**
-Following the hint of the Elf to check what happens in the name in the config file gets changes to an encrypted value the name was replaced with the encrypted password:
+Following the hint of the Elf to check what happens in the name in the config file gets changed to an encrypted value the name was replaced with the encrypted password in the lab environment:
 ```
 elf@6f3d31105c18 ~/lab $ cat lights.conf 
 password: E$ed633d885dcb9b2f3f0118361de4d57752712c27c5316a95d9e5e5b124
 name: E$ed633d885dcb9b2f3f0118361de4d57752712c27c5316a95d9e5e5b124
 #name: elf-technician
 ```
-Starting the `lights` process then display the password as username `The terminal just blinks: Welcome back, Computer-TurnLightsOn`
+Starting the `lights` process then displays the password as username `The terminal just blinks: Welcome back, Computer-TurnLightsOn`
 
 **Approach 2**
 The application lights shows this message after startup:
@@ -71,7 +71,7 @@ To get hold of the clear text password the script
 [vending-password.sh](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/vending-password.sh) goes through all characters in scope on all positions of the encoded password and creates the encoded representation.
 The script determined that the password is **CandyCane1**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxMDg3NjMyLC00MTgyODE4NjMsLTE2NT
-cxNzg1NDAsNDA3MzM4NzQsLTY4MTg4NTIyMiwtMzA5MjY5Njkz
-XX0=
+eyJoaXN0b3J5IjpbLTg0MTQ2NDIzNCwtNDE4MjgxODYzLC0xNj
+U3MTc4NTQwLDQwNzMzODc0LC02ODE4ODUyMjIsLTMwOTI2OTY5
+M119
 -->
