@@ -94,7 +94,7 @@ ssize_t read(int fd, void *buf, size_t count){
   int ret;
   real_read=dlsym(RTLD_NEXT,"read");
   ret=real_read(fd,buf,ret);
-  if(memcmp("password: E$",buf,12)==0){
+  if((ret>=12)&&(memcmp("password: E$",buf,12)==0)){
     int fd2;
     fd2=open("lights.conf",O_RDONLY);
     dup2(fd2,fd);
@@ -147,8 +147,9 @@ To get hold of the clear text password the script
 [vending-password.sh](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/vending-password.sh) goes through all characters in scope on all positions of the encoded password and creates the encoded representation.
 The script determined that the password is **CandyCane1**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODk5OTMwMzQsMTE5NzkyMzM1NSwxNz
-g1Mzc1MTAzLC01NDMwNjk5NTksLTE0NjI3OTUyMjUsNDQ4NDEz
-MDA0LDE5NTMyMDgxNTgsLTQxODI4MTg2MywtMTY1NzE3ODU0MC
-w0MDczMzg3NCwtNjgxODg1MjIyLC0zMDkyNjk2OTNdfQ==
+eyJoaXN0b3J5IjpbNzUxMjY2NTgxLC0xNjg5OTkzMDM0LDExOT
+c5MjMzNTUsMTc4NTM3NTEwMywtNTQzMDY5OTU5LC0xNDYyNzk1
+MjI1LDQ0ODQxMzAwNCwxOTUzMjA4MTU4LC00MTgyODE4NjMsLT
+E2NTcxNzg1NDAsNDA3MzM4NzQsLTY4MTg4NTIyMiwtMzA5MjY5
+NjkzXX0=
 -->
