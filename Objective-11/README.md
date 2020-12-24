@@ -11,6 +11,7 @@ Each single block has this data structure:
 ## Objective 11a: Part 1
 
 The provided Blockchain data contains the blocks with serials #128449-#129996. The objective is to predict the nonce of block #130000.
+
 In the hints is a [talk of Tom Liston covering Mersenne Twister based PRNG ](https://www.youtube.com/watch?v=Jo5Nlbqd-Vg) along with [sample Python code](https://github.com/tliston/mt19937) for predicting the next random values if you know the last 624 ones (covering 32 Bit PRNG).
 As the nonces in the Blockchain are 64 Bit it was found they were created by using two 32 Bit random values (first one for the lower 32 Bit, second one for the upper 32 Bit).
 The prediction works just the same: The nonces of the last 312 blocks of the Blockchain were split into lower and upper half and pre-loaded into the Mersenne Twister.
@@ -21,6 +22,7 @@ Then finally the next two are lower and upper half of the nonce for block #13000
 ## Objective 11b: Part 2
 
 The objective is to modify Jack Frosts block back from Nice to Naughty and to make available the hidden PDF pages by changing only four bytes.
+
 MD5 works using chunks of 64 bytes. It is possible increase a value at offset #n of block #m without changing the MD5 hash by also decreasing the value at offset #n of block #m+1 (entangled values) (this does not work in general; it is only possible for certain byte offsets and bit positions https://github.com/corkami/collisions/blob/master/unicoll.md)
 With this information the naughty/nice value can be changed from "1" (Nice) to "0" (Naughty) and one specific value in the PDF document from "2" to "3" (to make the original naughty messages visible).
 As compensating measure (to have the MD5 hash stay the same) the entangled values have to be changed accordingly.
@@ -64,8 +66,8 @@ A [toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective
 Screenshot of the toolbox:
 ![toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/Frostys-Toolbox.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0NTQ5NDQ2LDM2MTI0NzcyNiwtMTc5Mz
-M5NzQ4MCw2ODAyNTkyLDQ2NjI5NDc2MCwzNDc1MzQ3MzYsNDcz
-MjkwNTYwLDE0Njg5NDcxODMsLTk5OTc2NDUwNywxODA5NzgzNj
-YsMTEyNzcyMjQ3NiwxNzU1ODg4NTcxXX0=
+eyJoaXN0b3J5IjpbMTE5OTIyMTg2NiwzNjEyNDc3MjYsLTE3OT
+MzOTc0ODAsNjgwMjU5Miw0NjYyOTQ3NjAsMzQ3NTM0NzM2LDQ3
+MzI5MDU2MCwxNDY4OTQ3MTgzLC05OTk3NjQ1MDcsMTgwOTc4Mz
+Y2LDExMjc3MjI0NzYsMTc1NTg4ODU3MV19
 -->
