@@ -15,7 +15,7 @@ Beep boop invalid password
 So this password is **Op3nTheD00r**.
 
 ## lights
-**Approach 1**
+**Approach 1**:
 Following the hint of the Elf to check what happens if the name in the config file gets changed to an encrypted value the name was replaced with the encrypted password in the lab environment:
 ```
 elf@6f3d31105c18 ~/lab $ cat lights.conf 
@@ -26,7 +26,7 @@ name: E$ed633d885dcb9b2f3f0118361de4d57752712c27c5316a95d9e5e5b124
 Starting the `lights` process then displays the password as username `The terminal just blinks: Welcome back, Computer-TurnLightsOn`
 So the password is **Computer-TurnLightsOn**.
 
-**Approach 2**
+**Approach 2**:
 The application lights shows this message after startup:
 
     >>> CONFIGURATION FILE LOADED, SELECT FIELDS DECRYPTED:
@@ -51,7 +51,7 @@ e7a37d000 rw-p 00000000 00:0
 ```
 So the password is **Computer-TurnLightsOn**.
 
-**Approach 3**
+**Approach 3**:
 The program was started in GDB with a breakpoint set to the `read` syscall:
 ```
 (gdb) catch syscall 0
@@ -94,7 +94,7 @@ To get hold of the clear text password the script
 [vending-password.sh](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/vending-password.sh) goes through all characters in scope on all positions of the encoded password and creates the encoded representation.
 The script determined that the password is **CandyCane1**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTMzMTc3NTMsNDQ4NDEzMDA0LDE5NT
-MyMDgxNTgsLTQxODI4MTg2MywtMTY1NzE3ODU0MCw0MDczMzg3
-NCwtNjgxODg1MjIyLC0zMDkyNjk2OTNdfQ==
+eyJoaXN0b3J5IjpbNjAxNTI5OTAxLDQ0ODQxMzAwNCwxOTUzMj
+A4MTU4LC00MTgyODE4NjMsLTE2NTcxNzg1NDAsNDA3MzM4NzQs
+LTY4MTg4NTIyMiwtMzA5MjY5NjkzXX0=
 -->
