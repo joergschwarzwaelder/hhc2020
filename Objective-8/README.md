@@ -27,7 +27,7 @@ So the `GREETZ` variable contains **JackFrostWasHere**
 
 ## Solution using RCE
 
-The [Ruby application code](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-8/app.rb) can be downloaded through the above path traversal (the full path of the app.rb is display in the application's error messages):
+The [Ruby application code](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-8/app.rb) can be downloaded through the above path traversal (the full path of `app.rb` is displayed in the application's error messages):
 ```
 curl https://tag-generator.kringlecastle.com/image?id=../../app/lib/app.rb --output app.rb
 ```
@@ -68,7 +68,7 @@ Now you have in the reverse shell listener an interactive shell as user `app`.
 The user `app` has write access to `/tmp` and `/home/app`.
 In addition the user has write access to `/usr/local/bundle`, where the web server is located.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjg5MjA5ODMsLTYxMzQ0OTY1NiwtMT
+eyJoaXN0b3J5IjpbLTEyMTM4MzYyMjMsLTYxMzQ0OTY1NiwtMT
 A1MjE2MzYxNywtMTc2MzU0MTM1NSwxNjA3MzQ4NTE0LC04MjMw
 NTA4NjEsMTI5MzcyMDQzOSwxMzk1Nzk0ODI0LC0xNTk5MjU0ND
 E1LC02MTkyOTc0MTEsLTU3NjYxMDA3NSwyMTA3NTI5ODQ2LDky
