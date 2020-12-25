@@ -4,9 +4,7 @@ use strict;
 my $file="vending-machines.json";
 
 my $password=`grep password ../$file`;
-chop $password;
-$password=~s/^.*: "//;
-$password=~s/"//;
+($password)=($password=~/^.*: "(.*)"/);
 
 my $solved=" " x length($password);
 
@@ -18,9 +16,7 @@ foreach my $i ('0'..'9','a'..'z','A'..'Z'){
   printf F "\n";
   close F;
   my $t=`grep password $file`;
-  chop $t;
-  $t=~s/^.*: "//;
-  $t=~s/"//;
+  ($t)=($t=~/^.*: "(.*)"/);
   printf "%s - %s",$i,$t;
 
   for(my $c=0;$c<length($password);$c++){
