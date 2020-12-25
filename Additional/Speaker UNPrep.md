@@ -201,10 +201,19 @@ int nanosleep(const struct timespec *req, struct timespec *rem){
   return 0;
 }
 elf@73a9db05c841 ~/lab $ gcc -fPIC -shared -o sleep.so sleep.c -ldl
+elf@73a9db05c841 ~/lab $ time LD_PRELOAD=$PWD/sleep.so ./v.pl 
+C - Lbn3UP9W - *CandyCane1*
+
+Finally: *CandyCane1*
+
+real    0m0.284s
+user    0m0.130s
+sys     0m0.063s
+elf@73a9db05c841 ~/lab $ time ./v.pl
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1ODg3MjU1MiwtNTkyMjc0NjkzLC01MT
+eyJoaXN0b3J5IjpbMTUyMzA3MDI1NywtNTkyMjc0NjkzLC01MT
 c2Nzg1MTEsMTI2MzM1NDk4LDExMzAwMTIxNzIsLTUwMTM4NTIx
 LDc1MTI2NjU4MSwtMTY4OTk5MzAzNCwxMTk3OTIzMzU1LDE3OD
 UzNzUxMDMsLTU0MzA2OTk1OSwtMTQ2Mjc5NTIyNSw0NDg0MTMw
