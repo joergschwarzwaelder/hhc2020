@@ -32,11 +32,11 @@ The last command in this batch file is
 > can't believe the Splunk folks put it in their talk!
 
 The reference to [RFC 7465](https://tools.ietf.org/html/rfc7465) (Prohibiting RC4 Cipher Suites) gives an idea on the used Cipher. The KringleCon [Splunk talk](https://youtu.be/RxVgEFt08kU?t=1121) shows the passphrase `Stay Frosty`.
-Decoding in [CyberChef](https://gchq.github.io/CyberChef/#recipe=From_Base64%28%27A-Za-z0-9+/=%27,true%29RC4%28%7B%27option%27:%27UTF8%27,%27string%27:%27Stay%20Frosty%27%7D,%27Latin1%27,%27Latin1%27%29&input=N0ZYalAxbHlmS2J5REsvTUNoeWYzNmg3) shows the solution: **The Lollipop Guild**
+Decoding in CyberChef shows the solution: **The Lollipop Guild**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODcwMjA3NjU3LDE4NTE2MjUzMjAsNDE1MT
-IxOTIzLDE1MDQyMzg2NTcsNDUzNTQ2Njk3LC00MzExNTA4ODAs
-NjM2NjMzMDgzLDI3MDIwNzk3NywtMTk1MjM1MDc1NCwtMTU1MT
-Y4NTE0Ml19
+eyJoaXN0b3J5IjpbMTM2NDU5NzA4Myw4NzAyMDc2NTcsMTg1MT
+YyNTMyMCw0MTUxMjE5MjMsMTUwNDIzODY1Nyw0NTM1NDY2OTcs
+LTQzMTE1MDg4MCw2MzY2MzMwODMsMjcwMjA3OTc3LC0xOTUyMz
+UwNzU0LC0xNTUxNjg1MTQyXX0=
 -->
