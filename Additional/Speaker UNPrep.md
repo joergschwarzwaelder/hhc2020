@@ -191,11 +191,23 @@ It was found that:
 To get hold of the clear text password the script
 [vending-password.sh](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/vending-password.sh) goes through all characters in scope on all positions of the encoded password and creates the encoded representation.
 The script determined that the password is **CandyCane1**.
+
+To speed up the process the syscall `nanosleep` can be intercepted:
+```
+elf@73a9db05c841 ~/lab $ cat sleep.c
+#include <time.h>
+
+int nanosleep(const struct timespec *req, struct timespec *rem){
+  return 0;
+}
+elf@73a9db05c841 ~/lab $ gcc -fPIC -shared -o sleep.so sleep.c -ldl
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5MjI3NDY5MywtNTE3Njc4NTExLDEyNj
-MzNTQ5OCwxMTMwMDEyMTcyLC01MDEzODUyMSw3NTEyNjY1ODEs
-LTE2ODk5OTMwMzQsMTE5NzkyMzM1NSwxNzg1Mzc1MTAzLC01ND
-MwNjk5NTksLTE0NjI3OTUyMjUsNDQ4NDEzMDA0LDE5NTMyMDgx
-NTgsLTQxODI4MTg2MywtMTY1NzE3ODU0MCw0MDczMzg3NCwtNj
-gxODg1MjIyLC0zMDkyNjk2OTNdfQ==
+eyJoaXN0b3J5IjpbLTk1ODg3MjU1MiwtNTkyMjc0NjkzLC01MT
+c2Nzg1MTEsMTI2MzM1NDk4LDExMzAwMTIxNzIsLTUwMTM4NTIx
+LDc1MTI2NjU4MSwtMTY4OTk5MzAzNCwxMTk3OTIzMzU1LDE3OD
+UzNzUxMDMsLTU0MzA2OTk1OSwtMTQ2Mjc5NTIyNSw0NDg0MTMw
+MDQsMTk1MzIwODE1OCwtNDE4MjgxODYzLC0xNjU3MTc4NTQwLD
+QwNzMzODc0LC02ODE4ODUyMjIsLTMwOTI2OTY5M119
 -->
