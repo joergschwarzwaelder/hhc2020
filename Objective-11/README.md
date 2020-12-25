@@ -14,7 +14,7 @@ The provided Blockchain data contains the blocks with serials #128449-#129996. T
 
 In the hints is a [talk of Tom Liston covering Mersenne Twister based PRNG ](https://www.youtube.com/watch?v=Jo5Nlbqd-Vg) along with [sample Python code](https://github.com/tliston/mt19937) for predicting the next random values if you know the last 624 ones (covering 32 Bit PRNG).
 As the nonces in the Blockchain are 64 Bit it was found they were created by using two 32 Bit random values (first one for the lower 32 Bit, second one for the upper 32 Bit).
-The prediction works just the same: The nonces of the last 312 blocks of the Blockchain were split into lower and upper half and pre-loaded into the Mersenne Twister.
+The prediction works just the same as in the [Snowball Game](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/Snowball%20Game.md): The nonces of the last 312 blocks of the Blockchain were split into lower and upper half and pre-loaded into the Mersenne Twister (so in total these are the required 624 random values).
 The next 6 32 Bit random values out of this prepared PRNG are part of the nonces for #129997-#129999.
 Then finally the next two are lower and upper half of the nonce for block #130000 -> **57066318 f32f729d**
 
@@ -66,8 +66,9 @@ A [toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective
 Screenshot of the toolbox:
 ![toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/Frostys-Toolbox.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5OTIyMTg2NiwzNjEyNDc3MjYsLTE3OT
-MzOTc0ODAsNjgwMjU5Miw0NjYyOTQ3NjAsMzQ3NTM0NzM2LDQ3
-MzI5MDU2MCwxNDY4OTQ3MTgzLC05OTk3NjQ1MDcsMTgwOTc4Mz
-Y2LDExMjc3MjI0NzYsMTc1NTg4ODU3MV19
+eyJoaXN0b3J5IjpbODk1OTg5Nzc4LDExOTkyMjE4NjYsMzYxMj
+Q3NzI2LC0xNzkzMzk3NDgwLDY4MDI1OTIsNDY2Mjk0NzYwLDM0
+NzUzNDczNiw0NzMyOTA1NjAsMTQ2ODk0NzE4MywtOTk5NzY0NT
+A3LDE4MDk3ODM2NiwxMTI3NzIyNDc2LDE3NTU4ODg1NzFdfQ==
+
 -->
