@@ -144,7 +144,7 @@ static ssize_t (*real_read)(int fd, void *buf, size_t count);
 ssize_t read(int fd, void *buf, size_t count){
   static void *storage;
   if(fd==3){ storage=buf; }
-  if(fd==0){ printf("\n** password is %s\n",(char *)storage); }
+  if(fd==0){ printf("\n** Password is: %s **\n",(char *)storage); }
   real_read=dlsym(RTLD_NEXT,"read");
   return real_read(fd,buf,count);
 }
@@ -192,10 +192,10 @@ To get hold of the clear text password the script
 [vending-password.sh](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/vending-password.sh) goes through all characters in scope on all positions of the encoded password and creates the encoded representation.
 The script determined that the password is **CandyCane1**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTUyODE2MDYsLTUxNzY3ODUxMSwxMj
-YzMzU0OTgsMTEzMDAxMjE3MiwtNTAxMzg1MjEsNzUxMjY2NTgx
-LC0xNjg5OTkzMDM0LDExOTc5MjMzNTUsMTc4NTM3NTEwMywtNT
-QzMDY5OTU5LC0xNDYyNzk1MjI1LDQ0ODQxMzAwNCwxOTUzMjA4
-MTU4LC00MTgyODE4NjMsLTE2NTcxNzg1NDAsNDA3MzM4NzQsLT
-Y4MTg4NTIyMiwtMzA5MjY5NjkzXX0=
+eyJoaXN0b3J5IjpbNzYzNjQ4MDI0LC01MTc2Nzg1MTEsMTI2Mz
+M1NDk4LDExMzAwMTIxNzIsLTUwMTM4NTIxLDc1MTI2NjU4MSwt
+MTY4OTk5MzAzNCwxMTk3OTIzMzU1LDE3ODUzNzUxMDMsLTU0Mz
+A2OTk1OSwtMTQ2Mjc5NTIyNSw0NDg0MTMwMDQsMTk1MzIwODE1
+OCwtNDE4MjgxODYzLC0xNjU3MTc4NTQwLDQwNzMzODc0LC02OD
+E4ODUyMjIsLTMwOTI2OTY5M119
 -->
