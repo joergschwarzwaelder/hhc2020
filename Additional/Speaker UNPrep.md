@@ -201,7 +201,7 @@ elf@73a9db05c841 ~/lab $ cat sleep.c
 int nanosleep(const struct timespec *req, struct timespec *rem){
   return 0;
 }
-elf@73a9db05c841 ~/lab $ gcc -fPIC -shared -o sleep.so sleep.c -ldl
+elf@73a9db05c841 ~/lab $ gcc -fPIC -shared -o sleep.so sleep.c
 elf@73a9db05c841 ~/lab $ time LD_PRELOAD=$PWD/sleep.so ./v.pl 
 C - Lbn3UP9W - *CandyCane1*
 
@@ -220,10 +220,10 @@ user    0m0.139s
 sys     0m0.069s
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5NDM1NjU4MSwtNTkyMjc0NjkzLC01MT
-c2Nzg1MTEsMTI2MzM1NDk4LDExMzAwMTIxNzIsLTUwMTM4NTIx
-LDc1MTI2NjU4MSwtMTY4OTk5MzAzNCwxMTk3OTIzMzU1LDE3OD
-UzNzUxMDMsLTU0MzA2OTk1OSwtMTQ2Mjc5NTIyNSw0NDg0MTMw
-MDQsMTk1MzIwODE1OCwtNDE4MjgxODYzLC0xNjU3MTc4NTQwLD
-QwNzMzODc0LC02ODE4ODUyMjIsLTMwOTI2OTY5M119
+eyJoaXN0b3J5IjpbNzI0NTI1MjU2LC01OTIyNzQ2OTMsLTUxNz
+Y3ODUxMSwxMjYzMzU0OTgsMTEzMDAxMjE3MiwtNTAxMzg1MjEs
+NzUxMjY2NTgxLC0xNjg5OTkzMDM0LDExOTc5MjMzNTUsMTc4NT
+M3NTEwMywtNTQzMDY5OTU5LC0xNDYyNzk1MjI1LDQ0ODQxMzAw
+NCwxOTUzMjA4MTU4LC00MTgyODE4NjMsLTE2NTcxNzg1NDAsND
+A3MzM4NzQsLTY4MTg4NTIyMiwtMzA5MjY5NjkzXX0=
 -->
