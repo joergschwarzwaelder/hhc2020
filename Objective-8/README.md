@@ -47,6 +47,7 @@ GREETZ=JackFrostWasHere
 
 ## Full Interactive Remote Shell
 Create a ZIP file including an empty jpg file:
+**easy option**
 ```
 touch joergen.jpg
 zip joergen.zip joergen.jpg
@@ -68,11 +69,11 @@ Now you have in the reverse shell listener an interactive shell as user `app`.
 The user `app` has write access to `/tmp` and `/home/app`.
 In addition the user has write access to `/usr/local/bundle`, where the web server is located.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0MDA5NzA4MywtOTM1ODEzMjg4LC02MT
-M0NDk2NTYsLTEwNTIxNjM2MTcsLTE3NjM1NDEzNTUsMTYwNzM0
-ODUxNCwtODIzMDUwODYxLDEyOTM3MjA0MzksMTM5NTc5NDgyNC
-wtMTU5OTI1NDQxNSwtNjE5Mjk3NDExLC01NzY2MTAwNzUsMjEw
-NzUyOTg0Niw5MjIxNDQzNSwtMzk4NDkxNDYxLDExNTE1NTY4OT
-YsMjM4NDYwMjcyLDE5MzMzNjE3ODcsLTE0Njc2MTUyNjIsLTI0
-Mzk0Mjg2Nl19
+eyJoaXN0b3J5IjpbLTE5NTI5Nzc0MiwxNDQwMDk3MDgzLC05Mz
+U4MTMyODgsLTYxMzQ0OTY1NiwtMTA1MjE2MzYxNywtMTc2MzU0
+MTM1NSwxNjA3MzQ4NTE0LC04MjMwNTA4NjEsMTI5MzcyMDQzOS
+wxMzk1Nzk0ODI0LC0xNTk5MjU0NDE1LC02MTkyOTc0MTEsLTU3
+NjYxMDA3NSwyMTA3NTI5ODQ2LDkyMjE0NDM1LC0zOTg0OTE0Nj
+EsMTE1MTU1Njg5NiwyMzg0NjAyNzIsMTkzMzM2MTc4NywtMTQ2
+NzYxNTI2Ml19
 -->
