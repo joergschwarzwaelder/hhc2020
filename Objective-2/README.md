@@ -14,7 +14,7 @@ Bucket santa redirects to: santa.s3.amazonaws.com
 http://santa.s3.amazonaws.com/
         Bucket found but access denied: santa
 ```
-Using the hint to `Wrapper3000` (displayed on terminal startup) and taking into consideration that [AWS bucket names may only contain lower case characters](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-s3-bucket-naming-requirements.html), `wrapper3000` was added to the wordlist.
+Using the hint to `Wrapper3000` (displayed on terminal startup) and taking into consideration that [AWS bucket names may only contain lower case characters](https://docs.aws.amazon.com/AmazonS3/latest/dev/BucketRestrictions.html), `wrapper3000` was added to the wordlist.
 ```
 elf@7c1c2bcf55ec:~/bucket_finder$ echo wrapper3000 >> wordlist
 elf@7c1c2bcf55ec:~/bucket_finder$ ./bucket_finder.rb --log-file bucket.out wordlist
@@ -74,5 +74,6 @@ elf@7c1c2bcf55ec:~/bucket_finder/wrapper3000$
 So the text in the package is **North Pole: The Frostiest Place on Earth**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDQzMTE0MzcsMTc4Njc4OTgxMl19
+eyJoaXN0b3J5IjpbLTQ1NDYzMTQ0NywtMTk0NDMxMTQzNywxNz
+g2Nzg5ODEyXX0=
 -->
