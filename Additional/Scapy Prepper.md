@@ -56,7 +56,7 @@ Correct! You can change ALL scapy packet attributes using this method.
 
 Submit the password "task.submit('elf_password')" of the user alabaster as found in the packet list TCP_PACKETS.
 
->> TCP_PACKETS[6].show()
+>>> TCP_PACKETS[6].show()
 ###[ Ethernet ]###
   dst       = 00:15:f2:40:76:ef
   src       = 00:16:ce:6e:8b:24
@@ -168,6 +168,6 @@ Great, you prepared all the present packets!
 Congratulations, all pretty present packets properly prepared for processing!
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyODI2MDExNywtMTk4MDQ4MjY5NSwtOD
-IwNjQxODg5XX0=
+eyJoaXN0b3J5IjpbLTI2OTg4MDIwMywxMzI4MjYwMTE3LC0xOT
+gwNDgyNjk1LC04MjA2NDE4ODldfQ==
 -->
