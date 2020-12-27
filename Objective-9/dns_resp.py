@@ -22,7 +22,6 @@ def handle_dns_request(packet):
           )
     dns_response = eth / ip / udp / dns
     sendp(dns_response, iface="eth0")
-    dns_response.show()
 
 def main():
     berkeley_packet_filter = " and ".join( [
