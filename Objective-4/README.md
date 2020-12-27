@@ -13,9 +13,9 @@ There are also other items lying on the floor, but these do not seem to be requi
 
 ![Santavator](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-4/Santavator.png)
 ## Approach 2
-
+It is possible to tweak the Santavator HTML code to reach every single 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzOTExNTc4MiwtMzI1MjU4NTc5LDEyND
-QyOTUzOTMsLTE4NjU3OTcyMDIsMTYzMTY3NjcwMSwtMTQ5NzI5
-MjI0NF19
+eyJoaXN0b3J5IjpbNDQ0NzM0NTY4LC0zMjUyNTg1NzksMTI0ND
+I5NTM5MywtMTg2NTc5NzIwMiwxNjMxNjc2NzAxLC0xNDk3Mjky
+MjQ0XX0=
 -->
