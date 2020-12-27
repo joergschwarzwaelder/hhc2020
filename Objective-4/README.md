@@ -18,8 +18,13 @@ It is possible to tweak the Santavator HTML code to reach every single floor, as
 ![enter image description here](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-4/Santavator-bypass.png)
 
 Just replace in the highlighted line the value of `data-floor` with your destination floor (1, 1.5, 2, 3, r) and you can get there by pressing the "1" button. This even bypasses the Santa fingerprint sensor.
+
+## Approach 3
+By tweaking the Javascript app.js it is possible to activate all buttons and to impersonate Santa:
+
+![enter image description here](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-4/Santavator-bypass2.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyMjQ2NzgxMiwyOTIxODYwMTUsLTMyNT
-I1ODU3OSwxMjQ0Mjk1MzkzLC0xODY1Nzk3MjAyLDE2MzE2NzY3
-MDEsLTE0OTcyOTIyNDRdfQ==
+eyJoaXN0b3J5IjpbODEzNjQzNjgsMjEyMjQ2NzgxMiwyOTIxOD
+YwMTUsLTMyNTI1ODU3OSwxMjQ0Mjk1MzkzLC0xODY1Nzk3MjAy
+LDE2MzE2NzY3MDEsLTE0OTcyOTIyNDRdfQ==
 -->
