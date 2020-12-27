@@ -41,7 +41,7 @@ This package was modified to include this line in the postinst script:
 guest@faf32a4d4929:~/debs$ mkdir tmp
 guest@faf32a4d4929:~/debs$ dpkg-deb -R netcat-traditional_1.10-41.1ubuntu1_amd64.deb tmp
 guest@faf32a4d4929:~/debs$ vi tmp/DEBIAN/postinst 
-guest@faf32a4d4929:~/debs$ dpkg-deb -b tmp suriv
+guest@faf32a4d4929:~/debs$ dpkg-deb -b tmp suriv_amd64.deb
 dpkg-deb: building package 'netcat-traditional' in 'suriv_amd64.deb'.
 ```
 
@@ -52,8 +52,8 @@ That way the remote device would download this package and install it. In course
 to receive the [text](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-9/NORTH_POLE_Land_Use_Board_Meeting_Minutes.txt).
 In this file it can be found that **Tanta Kringle** recused herself from the vote.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjI2NzUyOTcsLTYxMjg5Nzc5OSwtOD
-UyNzIyNzAzLDE3NTgyNDM2NzcsMTYzNDM5NDk0MSwxMjA0NDI2
-NTM5LC0xNzk4NDE1ODk2LC04NzgzOTIyMTYsNTE0MjA5MTU5XX
-0=
+eyJoaXN0b3J5IjpbMTA5Mjc4NTMyMSwtMjA2MjY3NTI5NywtNj
+EyODk3Nzk5LC04NTI3MjI3MDMsMTc1ODI0MzY3NywxNjM0Mzk0
+OTQxLDEyMDQ0MjY1MzksLTE3OTg0MTU4OTYsLTg3ODM5MjIxNi
+w1MTQyMDkxNTldfQ==
 -->
