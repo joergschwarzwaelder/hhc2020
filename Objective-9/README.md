@@ -10,16 +10,8 @@ Exercise setup:
 |IP| 10.6.0.2 | 10.6.6.35 |10.6.6.53|
 
 A [Python Scapy script](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-9/spoof.py) was prepared to spoof ARP replies for the spoofed host redirecting the traffic to the local host.
-Furthermore this script spoofs DNS queries
-
-Capture of ARP spoofing success with following DNS query:
-
-```
-15:57:16.006467 ARP, Request who-has 10.6.6.53 tell 10.6.6.35, length 28
-15:57:47.028750 ARP, Reply 10.6.6.53 is-at 02:42:0a:06:00:02, length 28
-15:57:47.057274 IP 10.6.6.35.27609 > 10.6.6.53.53: 0+ A? ftp.osuosl.org. (32)`
-```
-Next a [Python Scapy script](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-9/dns_resp.py) was prepared to capture DNS requests to the spoofed host and to send replies redirecting traffic to ftp.osuosl.org to the local host.
+Furthermore this script spoofs DNS queries destined to the spoofed host and does always return A records pointing to it's own local IP address.
+The scripts takes the IP address of the spoofed host as argument, to here is has to be called with `./spoof.py
 
 Capture of ARP and DNS spoofing with following HTTP request:
 ```
@@ -56,9 +48,9 @@ That way the remote device would download this package and install it. In course
 to receive the [text](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-9/NORTH_POLE_Land_Use_Board_Meeting_Minutes.txt) (resp. receive the reverse shell connection).
 In this file it can be found that **Tanta Kringle** recused herself from the vote.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjYwMjA2MDYsMTI3MjY1NjQxOSw4NT
-gxODg5MjksMTA5Mjc4NTMyMSwtMjA2MjY3NTI5NywtNjEyODk3
-Nzk5LC04NTI3MjI3MDMsMTc1ODI0MzY3NywxNjM0Mzk0OTQxLD
-EyMDQ0MjY1MzksLTE3OTg0MTU4OTYsLTg3ODM5MjIxNiw1MTQy
-MDkxNTldfQ==
+eyJoaXN0b3J5IjpbLTMxMTMwMzQ2OCwxMjcyNjU2NDE5LDg1OD
+E4ODkyOSwxMDkyNzg1MzIxLC0yMDYyNjc1Mjk3LC02MTI4OTc3
+OTksLTg1MjcyMjcwMywxNzU4MjQzNjc3LDE2MzQzOTQ5NDEsMT
+IwNDQyNjUzOSwtMTc5ODQxNTg5NiwtODc4MzkyMjE2LDUxNDIw
+OTE1OV19
 -->
