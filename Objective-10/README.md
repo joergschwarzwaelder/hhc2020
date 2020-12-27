@@ -22,8 +22,11 @@ in the Browser it is possible to use the Santavator without having Santa's finge
 ![post-change](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-10/post-change.png)
 ## Approach 2
 This is documented as [approach 2 of Objective 4](https://github.com/joergschwarzwaelder/hhc2020/tree/master/Objective-4).
+
+## Approach 3
+This is documented as [approach 3 of Objective 4](https://github.com/joergschwarzwaelder/hhc2020/tree/master/Objective-4).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2NjU5NDU2Niw1OTEzNjQ3MzgsODE1Nj
-YzODcyLC0xODQxOTI2MzcwLDg1ODU0Njg4MSwtMTc0OTg5NjY3
-XX0=
+eyJoaXN0b3J5IjpbLTEyMzQ4MjM4OTksMTY2NjU5NDU2Niw1OT
+EzNjQ3MzgsODE1NjYzODcyLC0xODQxOTI2MzcwLDg1ODU0Njg4
+MSwtMTc0OTg5NjY3XX0=
 -->
