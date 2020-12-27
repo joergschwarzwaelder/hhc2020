@@ -52,11 +52,11 @@ and then made available in the web tree folder as `pub/jfrost/backdoor/suriv_amd
 That way the remote device would download this package and install it. In course of the installation, the file in scope would be sent to port 4444 of the local host, which has to run the command
 
     nc -lvp 4444 > text
-to receive the [text](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-9/NORTH_POLE_Land_Use_Board_Meeting_Minutes.txt) (re.
+to receive the [text](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-9/NORTH_POLE_Land_Use_Board_Meeting_Minutes.txt) (resp. receive the reverse shell connection).
 In this file it can be found that **Tanta Kringle** recused herself from the vote.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTgwMTg0NTMsMTA5Mjc4NTMyMSwtMj
-A2MjY3NTI5NywtNjEyODk3Nzk5LC04NTI3MjI3MDMsMTc1ODI0
-MzY3NywxNjM0Mzk0OTQxLDEyMDQ0MjY1MzksLTE3OTg0MTU4OT
-YsLTg3ODM5MjIxNiw1MTQyMDkxNTldfQ==
+eyJoaXN0b3J5IjpbODU4MTg4OTI5LDEwOTI3ODUzMjEsLTIwNj
+I2NzUyOTcsLTYxMjg5Nzc5OSwtODUyNzIyNzAzLDE3NTgyNDM2
+NzcsMTYzNDM5NDk0MSwxMjA0NDI2NTM5LC0xNzk4NDE1ODk2LC
+04NzgzOTIyMTYsNTE0MjA5MTU5XX0=
 -->
