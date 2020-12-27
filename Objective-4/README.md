@@ -13,9 +13,10 @@ There are also other items lying on the floor, but these do not seem to be requi
 
 ![Santavator](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-4/Santavator.png)
 ## Approach 2
-It is possible to tweak the Santavator HTML code to reach every single 
+It is possible to tweak the Santavator HTML code to reach every single floor.
+![enter image description here](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-4/Santavator-bypass.png)Just replace in the highlighted line the value of `data-floor` with your destination floor (1, 1.5, 2
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQ0NzM0NTY4LC0zMjUyNTg1NzksMTI0ND
+eyJoaXN0b3J5IjpbMjQyMTc2NTExLC0zMjUyNTg1NzksMTI0ND
 I5NTM5MywtMTg2NTc5NzIwMiwxNjMxNjc2NzAxLC0xNDk3Mjky
 MjQ0XX0=
 -->
