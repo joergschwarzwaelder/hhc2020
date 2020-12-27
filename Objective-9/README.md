@@ -29,7 +29,7 @@ Capture of ARP and DNS spoofing with following HTTP request:
 17:27:18.098422 IP 10.6.6.35.50340 > 10.6.0.2.80: Flags [S], seq 2451495177, win 64240, options [mss 1460,sackOK,TS val 2516141758 ecr 0,nop,wscale 7], length 0
 17:27:18.098452 IP 10.6.0.2.80 > 10.6.6.35.50340: Flags [R.], seq 0, ack 2451495178, win 0, length 0
 ```
-A Node.js HTTP server was started `python3 -m http.server 80` and it logged the request:
+A Node.js HTTP server was started using  `python3 -m http.server 80` and it logged the request:
 
     10.6.6.35 - - [12/Dec/2020 17:37:02] "GET /pub/jfrost/backdoor/suriv_amd64.deb HTTP/1.1" 404 -
 
@@ -55,8 +55,8 @@ That way the remote device would download this package and install it. In course
 to receive the [text](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-9/NORTH_POLE_Land_Use_Board_Meeting_Minutes.txt) (resp. receive the reverse shell connection).
 In this file it can be found that **Tanta Kringle** recused herself from the vote.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODU4MTg4OTI5LDEwOTI3ODUzMjEsLTIwNj
-I2NzUyOTcsLTYxMjg5Nzc5OSwtODUyNzIyNzAzLDE3NTgyNDM2
-NzcsMTYzNDM5NDk0MSwxMjA0NDI2NTM5LC0xNzk4NDE1ODk2LC
-04NzgzOTIyMTYsNTE0MjA5MTU5XX0=
+eyJoaXN0b3J5IjpbMTI3MjY1NjQxOSw4NTgxODg5MjksMTA5Mj
+c4NTMyMSwtMjA2MjY3NTI5NywtNjEyODk3Nzk5LC04NTI3MjI3
+MDMsMTc1ODI0MzY3NywxNjM0Mzk0OTQxLDEyMDQ0MjY1MzksLT
+E3OTg0MTU4OTYsLTg3ODM5MjIxNiw1MTQyMDkxNTldfQ==
 -->
