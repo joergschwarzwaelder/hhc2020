@@ -176,7 +176,7 @@ The password, which has to be used, is stored encoded in the file "vending-machi
 It was found that:
 
  - The clear text and the encoded password always have the same length
- - Same characters on the same position are encoded to the same character in the same position
+ - Same characters on the same position are encoded to the same character in the same position, this is independent of the other characters in the password
  - The encoding repeats after 8 characters, i.e. an "a" at position 1 is encoded in the same way as an "a" in position 9:
  
 |clear text|encoded|
@@ -220,7 +220,7 @@ user    0m0.139s
 sys     0m0.069s
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODE5MjAxMzcsLTQ4NTY5NzQyMCwxOT
+eyJoaXN0b3J5IjpbLTEwNTQ4OTY3MTgsLTQ4NTY5NzQyMCwxOT
 I2MjY1OTczLDcyNDUyNTI1NiwtNTkyMjc0NjkzLC01MTc2Nzg1
 MTEsMTI2MzM1NDk4LDExMzAwMTIxNzIsLTUwMTM4NTIxLDc1MT
 I2NjU4MSwtMTY4OTk5MzAzNCwxMTk3OTIzMzU1LDE3ODUzNzUx
