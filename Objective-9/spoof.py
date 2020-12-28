@@ -32,7 +32,7 @@ def handle_packets(packet):
         ip  = IP(dst=packet[IP].src, src=packet[IP].dst)
         udp = UDP(dport=packet[UDP].sport, sport=packet[UDP].dport)
         dns = DNS(
-              id=packet[DNS].id, aa=1, qr=1,
+          id=packet[DNS].id, aa=1, qr=1,
           rd=packet[DNS].rd,
           qdcount=packet[DNS].qdcount, qd=packet[DNS].qd,
           ancount=1, an=DNSRR(rrname=packet[DNS].qd.qname,type='A',ttl=10,rdata=ipaddr)
