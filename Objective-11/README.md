@@ -18,6 +18,9 @@ The prediction works just the same as in the [Snowball Game](https://github.com/
 The next 6 32 Bit random values out of this prepared PRNG are part of the nonces for #129997-#129999.
 Then finally the next two are lower and upper half of the nonce for block #130000 -> **57066318 f32f729d**
 
+A [Perl script](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/decode.pl) for analyzing and tampering the Blockchain is provided.
+It reads the file `blockchain.dat`, dumps out all information in ASCII, dumps out the original and modified PDFs for Jack Frost into the subdirectory `content` and performs MD5 and SHA256 hash recalculations.
+It also dumps out the nonce halves for the nonce prediction.
 
 ## Objective 11b: Part 2
 
@@ -60,15 +63,17 @@ In addition the [hex dump diff](https://github.com/joergschwarzwaelder/hhc2020/b
 
 The modified block (#129459) has the same MD5 hash (so that the Blockchain is still healthy) and a SHA256 hash of **fff054f33c2134e0230efb29dad515064ac97aa8c68d33c58c01213a0d408afb**.
 
+A Perl script automating all this work is described above.
+
 ## Fun Zone
 
-A [toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/Frostys-Toolbox.html) for analyzing and tampering this Blockchain (which also allows the download of the full tampered Blockchain and every single evidence) is available.
+A browser based [toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/Frostys-Toolbox.html) for analyzing and tampering this Blockchain (which also allows the download of the full tampered Blockchain and every single evidence) is available.
 Screenshot of the toolbox:
 ![toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/Frostys-Toolbox.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk1OTg5Nzc4LDExOTkyMjE4NjYsMzYxMj
-Q3NzI2LC0xNzkzMzk3NDgwLDY4MDI1OTIsNDY2Mjk0NzYwLDM0
-NzUzNDczNiw0NzMyOTA1NjAsMTQ2ODk0NzE4MywtOTk5NzY0NT
-A3LDE4MDk3ODM2NiwxMTI3NzIyNDc2LDE3NTU4ODg1NzFdfQ==
-
+eyJoaXN0b3J5IjpbLTU5NTExMDA5OCw4OTU5ODk3NzgsMTE5OT
+IyMTg2NiwzNjEyNDc3MjYsLTE3OTMzOTc0ODAsNjgwMjU5Miw0
+NjYyOTQ3NjAsMzQ3NTM0NzM2LDQ3MzI5MDU2MCwxNDY4OTQ3MT
+gzLC05OTk3NjQ1MDcsMTgwOTc4MzY2LDExMjc3MjI0NzYsMTc1
+NTg4ODU3MV19
 -->
