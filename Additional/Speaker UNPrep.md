@@ -193,7 +193,7 @@ To get hold of the clear text password the script
 [vending-password.pl](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/vending-password.pl) goes through all characters in scope on all positions of the encoded password and creates the encoded representation.
 The script determined that the password is **CandyCane1**.
 
-To speed up the process the syscall `nanosleep` can be intercepted so that no wait activity is performed:
+To speed up the process the syscall `nanosleep` can be intercepted so that no wait activity is performed in the `vending-machines` process:
 ```
 elf@73a9db05c841 ~/lab $ cat sleep.c
 #include <time.h>
@@ -220,11 +220,11 @@ user    0m0.139s
 sys     0m0.069s
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4NTY5NzQyMCwxOTI2MjY1OTczLDcyND
-UyNTI1NiwtNTkyMjc0NjkzLC01MTc2Nzg1MTEsMTI2MzM1NDk4
-LDExMzAwMTIxNzIsLTUwMTM4NTIxLDc1MTI2NjU4MSwtMTY4OT
-k5MzAzNCwxMTk3OTIzMzU1LDE3ODUzNzUxMDMsLTU0MzA2OTk1
-OSwtMTQ2Mjc5NTIyNSw0NDg0MTMwMDQsMTk1MzIwODE1OCwtND
-E4MjgxODYzLC0xNjU3MTc4NTQwLDQwNzMzODc0LC02ODE4ODUy
-MjJdfQ==
+eyJoaXN0b3J5IjpbLTE2ODE5MjAxMzcsLTQ4NTY5NzQyMCwxOT
+I2MjY1OTczLDcyNDUyNTI1NiwtNTkyMjc0NjkzLC01MTc2Nzg1
+MTEsMTI2MzM1NDk4LDExMzAwMTIxNzIsLTUwMTM4NTIxLDc1MT
+I2NjU4MSwtMTY4OTk5MzAzNCwxMTk3OTIzMzU1LDE3ODUzNzUx
+MDMsLTU0MzA2OTk1OSwtMTQ2Mjc5NTIyNSw0NDg0MTMwMDQsMT
+k1MzIwODE1OCwtNDE4MjgxODYzLC0xNjU3MTc4NTQwLDQwNzMz
+ODc0XX0=
 -->
