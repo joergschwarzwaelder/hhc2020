@@ -190,7 +190,7 @@ It was found that:
 
 So this seems to be a polyalphabetic cipher.
 To get hold of the clear text password the script
-[vending-password.sh](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/vending-password.sh) goes through all characters in scope on all positions of the encoded password and creates the encoded representation.
+[vending-password.pl](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/vending-password.pl) goes through all characters in scope on all positions of the encoded password and creates the encoded representation.
 The script determined that the password is **CandyCane1**.
 
 To speed up the process the syscall `nanosleep` can be intercepted so that no wait activity is performed:
@@ -202,7 +202,7 @@ int nanosleep(const struct timespec *req, struct timespec *rem){
   return 0;
 }
 elf@73a9db05c841 ~/lab $ gcc -fPIC -shared -o sleep.so sleep.c
-elf@73a9db05c841 ~/lab $ time LD_PRELOAD=$PWD/sleep.so ./v.pl 
+elf@73a9db05c841 ~/lab $ time LD_PRELOAD=$PWD/sleep.so ./vending-password.pl
 C - Lbn3UP9W - *CandyCane1*
 
 Finally: *CandyCane1*
@@ -220,10 +220,11 @@ user    0m0.139s
 sys     0m0.069s
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzI0NTI1MjU2LC01OTIyNzQ2OTMsLTUxNz
-Y3ODUxMSwxMjYzMzU0OTgsMTEzMDAxMjE3MiwtNTAxMzg1MjEs
-NzUxMjY2NTgxLC0xNjg5OTkzMDM0LDExOTc5MjMzNTUsMTc4NT
-M3NTEwMywtNTQzMDY5OTU5LC0xNDYyNzk1MjI1LDQ0ODQxMzAw
-NCwxOTUzMjA4MTU4LC00MTgyODE4NjMsLTE2NTcxNzg1NDAsND
-A3MzM4NzQsLTY4MTg4NTIyMiwtMzA5MjY5NjkzXX0=
+eyJoaXN0b3J5IjpbMTkyNjI2NTk3Myw3MjQ1MjUyNTYsLTU5Mj
+I3NDY5MywtNTE3Njc4NTExLDEyNjMzNTQ5OCwxMTMwMDEyMTcy
+LC01MDEzODUyMSw3NTEyNjY1ODEsLTE2ODk5OTMwMzQsMTE5Nz
+kyMzM1NSwxNzg1Mzc1MTAzLC01NDMwNjk5NTksLTE0NjI3OTUy
+MjUsNDQ4NDEzMDA0LDE5NTMyMDgxNTgsLTQxODI4MTg2MywtMT
+Y1NzE3ODU0MCw0MDczMzg3NCwtNjgxODg1MjIyLC0zMDkyNjk2
+OTNdfQ==
 -->
