@@ -18,6 +18,9 @@ The prediction works just the same as in the [Snowball Game](https://github.com/
 The next 6 32 Bit random values out of this prepared PRNG are part of the nonces for #129997-#129999.
 Then finally the next two are lower and upper half of the nonce for block #130000 -> **57066318 f32f729d**
 
+A [Perl script](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/decode.pl) for analyzing and tampering the Blockchain is provided.
+It reads the file `blockchain.dat`, dumps out all information in ASCII, dumps out
+
 
 ## Objective 11b: Part 2
 
@@ -66,9 +69,9 @@ A [toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective
 Screenshot of the toolbox:
 ![toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/Frostys-Toolbox.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk1OTg5Nzc4LDExOTkyMjE4NjYsMzYxMj
-Q3NzI2LC0xNzkzMzk3NDgwLDY4MDI1OTIsNDY2Mjk0NzYwLDM0
-NzUzNDczNiw0NzMyOTA1NjAsMTQ2ODk0NzE4MywtOTk5NzY0NT
-A3LDE4MDk3ODM2NiwxMTI3NzIyNDc2LDE3NTU4ODg1NzFdfQ==
-
+eyJoaXN0b3J5IjpbLTIzMzg5Mjk1Nyw4OTU5ODk3NzgsMTE5OT
+IyMTg2NiwzNjEyNDc3MjYsLTE3OTMzOTc0ODAsNjgwMjU5Miw0
+NjYyOTQ3NjAsMzQ3NTM0NzM2LDQ3MzI5MDU2MCwxNDY4OTQ3MT
+gzLC05OTk3NjQ1MDcsMTgwOTc4MzY2LDExMjc3MjI0NzYsMTc1
+NTg4ODU3MV19
 -->
