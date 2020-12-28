@@ -114,9 +114,6 @@ if __name__ == "__main__":
     print("import done")
 
     ###end of jsw
-##    for i in range(mt19937.n):
-##        myprng.MT[i] = untemper(random.randrange(0xFFFFFFFF))
-    # generate numbers and throw 'em away...
 
     f=myprng.extract_number()
     print(f)
