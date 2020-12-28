@@ -189,6 +189,7 @@ It was found that:
 |eeeeeeeeee|wcZQAYuewc | 
 
 So this seems to be a polyalphabetic cipher with a character mapping table for 8 positions.
+
 To get hold of the clear text password the script
 [vending-password.pl](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/vending-password.pl) goes through all characters in scope on all positions of the encoded password and creates the encoded representation.
 The script determined that the password is **CandyCane1**.
@@ -220,7 +221,7 @@ user    0m0.139s
 sys     0m0.069s
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2Nzg3OTY5MiwtNDg1Njk3NDIwLDE5Mj
+eyJoaXN0b3J5IjpbMTY0MTkyNzcxMCwtNDg1Njk3NDIwLDE5Mj
 YyNjU5NzMsNzI0NTI1MjU2LC01OTIyNzQ2OTMsLTUxNzY3ODUx
 MSwxMjYzMzU0OTgsMTEzMDAxMjE3MiwtNTAxMzg1MjEsNzUxMj
 Y2NTgxLC0xNjg5OTkzMDM0LDExOTc5MjMzNTUsMTc4NTM3NTEw
