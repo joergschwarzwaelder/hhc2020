@@ -21,6 +21,7 @@ Then finally the next two are lower and upper half of the nonce for block #13000
 A [Perl script](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/decode.pl) for analyzing and tampering the Blockchain is provided.
 It reads the file `blockchain.dat`, dumps out all information in ASCII, dumps out the original and modified PDFs for Jack Frost into the subdirectory `content` and performs MD5 and SHA256 hash recalculations.
 It also dumps out the nonce halves for the nonce prediction.
+The nonce prediction can be performed with the modified [mt19937 script](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/mt19937-reader.py) using: `./decoder.pl | ./mt19937-reader.py`
 
 ## Objective 11b: Part 2
 
@@ -71,9 +72,9 @@ A browser based [toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/ma
 Screenshot of the toolbox:
 ![toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/Frostys-Toolbox.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5NTExMDA5OCw4OTU5ODk3NzgsMTE5OT
-IyMTg2NiwzNjEyNDc3MjYsLTE3OTMzOTc0ODAsNjgwMjU5Miw0
-NjYyOTQ3NjAsMzQ3NTM0NzM2LDQ3MzI5MDU2MCwxNDY4OTQ3MT
-gzLC05OTk3NjQ1MDcsMTgwOTc4MzY2LDExMjc3MjI0NzYsMTc1
-NTg4ODU3MV19
+eyJoaXN0b3J5IjpbMjE4MjU4MDAwLC01OTUxMTAwOTgsODk1OT
+g5Nzc4LDExOTkyMjE4NjYsMzYxMjQ3NzI2LC0xNzkzMzk3NDgw
+LDY4MDI1OTIsNDY2Mjk0NzYwLDM0NzUzNDczNiw0NzMyOTA1Nj
+AsMTQ2ODk0NzE4MywtOTk5NzY0NTA3LDE4MDk3ODM2NiwxMTI3
+NzIyNDc2LDE3NTU4ODg1NzFdfQ==
 -->
