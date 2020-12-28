@@ -402,13 +402,13 @@ function predict_nonces(){
        }
     }
     c.setAttribute('title','MD5 Hash of previous Block');
-    c=row.insertCell(2); c.innerHTML=hash; c.setAttribute('title','MD5 Hash of this Block');
+    c=row.insertCell(2); c.innerHTML=hash; c.setAttribute('title','MD5 Hash of this Block data excl. Signature');
     var row=table.insertRow(index++);
     var c=row.insertCell(0);
     c.colSpan=6; c.innerHTML=signature.substr(0,114)+"<br />"+signature.substr(114,115)+"<br />"+signature.substr(229); c.setAttribute('title','Signature');
     var row=table.insertRow(index++);
-    c=row.insertCell(0); c.innerHTML=calchash; c.setAttribute('title','Calculated MD5 Hash of this Block');
-    c=row.insertCell(1); c.innerHTML=calcsha256hash; c.setAttribute('title','Calculated SHA256 Hash of this Block');
+    c=row.insertCell(0); c.innerHTML=calchash; c.setAttribute('title','Calculated MD5 Hash of this Block incl. Signature');
+    c=row.insertCell(1); c.innerHTML=calcsha256hash; c.setAttribute('title','Calculated SHA256 Hash of this Block incl. Signature');
     c.colSpan=2;
     var row=table.insertRow(index++);
 	var c=row.insertCell(0);
