@@ -22,14 +22,15 @@ Using this seed value on level "easy" in a new browser tab gives information abo
  - On tab 1: Start the game on "impossible". When you see the HTTP request for establishing the Web Socket, take note of the value of the `WhitewashCookie`
  - On tab 2: Start the game on "impossible". When you see the HTTP request for establishing the Web Socket, inject the cookie value of the previous step
  - Your two game sessions will now have the same board layout.
- - You can play on tab 2 and replicate all hits to tab
+ - You can now systematically check all fields on tab 2 and replicate all hits to tab 1.
+ - When you lose the game on tab 2, just restart the game injecting the noted cookie.
 
 ## Fun Zone
 
 A [Tampermonkey script](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/snowball.tampermonkey) was created to automate this task.
 Here is a [video](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/Holiday%20Hack%20Challenge%202020%20-%20Snowball%20-%20Marie.webm) of Marie in action solving the game on "impossible".
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4NDI5ODA0NCwtNTA4OTYwMTQsMzU5Nj
+eyJoaXN0b3J5IjpbLTc2OTI5NTk2MywtNTA4OTYwMTQsMzU5Nj
 MwNTgzLC0xMTIxOTM5NTQsLTIwMTczMTgyNjksNzMwOTk4MTE2
 XX0=
 -->
