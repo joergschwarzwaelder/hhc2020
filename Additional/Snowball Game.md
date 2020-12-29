@@ -19,14 +19,17 @@ Using this seed value on level "easy" in a new browser tab gives information abo
 
  - Setup Burp suite to intercept your traffic to the Snowball game
  - Open two browser tabs with the Snowball game start page
- - On tab 1: Start the game on "impossible". When you see the HTTP request for establishing the Web Socket, take note of the 
+ - On tab 1: Start the game on "impossible". When you see the HTTP request for establishing the Web Socket, take note of the value of the `WhitewashCookie`
+ - On tab 2: Start the game on "impossible". When you see the HTTP request for establishing the Web Socket, inject the cookie value of the previous step
+ - Your two game sessions will now have the same board layout.
+ - You can play on tab 2 and replicate all hits to tab
 
 ## Fun Zone
 
 A [Tampermonkey script](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/snowball.tampermonkey) was created to automate this task.
 Here is a [video](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/Holiday%20Hack%20Challenge%202020%20-%20Snowball%20-%20Marie.webm) of Marie in action solving the game on "impossible".
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzQ2MDI0ODIsLTUwODk2MDE0LDM1OT
-YzMDU4MywtMTEyMTkzOTU0LC0yMDE3MzE4MjY5LDczMDk5ODEx
-Nl19
+eyJoaXN0b3J5IjpbLTg4NDI5ODA0NCwtNTA4OTYwMTQsMzU5Nj
+MwNTgzLC0xMTIxOTM5NTQsLTIwMTczMTgyNjksNzMwOTk4MTE2
+XX0=
 -->
