@@ -125,7 +125,7 @@ if __name__ == "__main__":
 
     ###end of jsw
 
-    for i in range(highestblock,129999):
+    for i in range(highestblock+1,130000):
       r1 = myprng.extract_number()
       r2 = myprng.extract_number()
       print("%d: %8.8x %8.8x" % (i,r2, r1))  # This is the nonce for block #129997
