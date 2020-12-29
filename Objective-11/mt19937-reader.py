@@ -21,6 +21,7 @@
 import random
 import fileinput
 import re
+import sys
 
 # this is simply a python implementation of a standard Mersenne Twister PRNG.
 # the parameters used, implement the MT19937 variant of the PRNG, based on the
@@ -105,12 +106,18 @@ if __name__ == "__main__":
 
     ###jsw
     i=0
-    nonces=[];
+    highestblock=0
+    nonces=[]
     for line in fileinput.input():
-      r=re.match('.*nonce .* (\d+)$',line);
+      r=re.match('.*\(#(\d+)\).*nonce .* (\d+)$',line)
       if r:
-        nonces.append(int(r.group(1)))
-    print("Got %d nonce halves. Using the last 624 of them." % len(nonces));
+        nonces.append(int(r.group(2)))
+        highestblock=int(r.group(1))
+    if(len(nonces)<624):
+      print("Only %d nonce halves supplied. I need at least 624" % len(nonces))
+      sys.exit()
+    print("Got %d nonce halves. Using the last 624 of them." % len(nonces))
+    print("highest block id #%d" % highestblock)
     for i in range(623):
       myprng.MT[i] = untemper(nonces[len(nonces)-624+i])
 
@@ -118,15 +125,11 @@ if __name__ == "__main__":
 
     ###end of jsw
 
-    r21 = myprng.extract_number()
-    r22 = myprng.extract_number()
-#    print("%8.8x %8.8x" % (r22, r21))  # This is the nonce for block #129997
-    r21 = myprng.extract_number()
-    r22 = myprng.extract_number()
-#    print("%8.8x %8.8x" % (r22, r21))  # This is the nonce for block #129997
-    r21 = myprng.extract_number()
-    r22 = myprng.extract_number()
-#    print("%8.8x %8.8x" % (r22, r21))  # This is the nonce for block #129998
-    r21 = myprng.extract_number()
-    r22 = myprng.extract_number()
-    print("Nonce for Block #130000: %8.8x %8.8x" % (r22, r21))
+    for i in range(highestblock,129999):
+      r1 = myprng.extract_number()
+      r2 = myprng.extract_number()
+      print("%d: %8.8x %8.8x" % (i,r2, r1))  # This is the nonce for block #129997
+
+    r1 = myprng.extract_number()
+    r2 = myprng.extract_number()
+    print("\nNonce for Block #130000: %8.8x %8.8x" % (r2, r1))
