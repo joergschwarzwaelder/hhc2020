@@ -18,14 +18,15 @@ Using this seed value on level "easy" in a new browser tab gives information abo
 ## Approach 2
 
  - Setup Burp suite to intercept your traffic to the Snowball game
- - 
+ - Open two browser tabs with the Snowball game start page
+ - On tab 1: Start the game on "impossible". When you see the HTTP request for establishing the Web Socket, take note of the 
 
 ## Fun Zone
 
 A [Tampermonkey script](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/snowball.tampermonkey) was created to automate this task.
 Here is a [video](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/Holiday%20Hack%20Challenge%202020%20-%20Snowball%20-%20Marie.webm) of Marie in action solving the game on "impossible".
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODI5MjkzNjIsLTUwODk2MDE0LDM1OT
+eyJoaXN0b3J5IjpbLTE1MzQ2MDI0ODIsLTUwODk2MDE0LDM1OT
 YzMDU4MywtMTEyMTkzOTU0LC0yMDE3MzE4MjY5LDczMDk5ODEx
 Nl19
 -->
