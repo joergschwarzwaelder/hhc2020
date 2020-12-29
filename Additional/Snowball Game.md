@@ -16,7 +16,7 @@ This next random value is the seed of the board layout.
 Using this seed value on level "easy" in a new browser tab gives information about the board layout. Every hit on "easy" is then manually also replicated on the level "impossible".
 
 ## Approach 2
-It seems that the secret for the board layout is hidden in the WhitewashCookie. So the following step can be taken to win the game on "impossible":
+It seems that the secret for the board layout is hidden in the WhitewashCookie. So the following steps can be taken to win the game on "impossible":
  - Setup Burp suite to intercept your traffic to the Snowball game
  - Open two browser tabs with the Snowball game start page
  - On tab 1: Start the game on "impossible". When you see the HTTP request for establishing the Web Socket, take note of the value of the `WhitewashCookie` like:
@@ -33,7 +33,7 @@ WhitewashCookie=.eJyVUctugzAQ_BeffVgbcCzOtEqlqoc2NysHK3EaJCARhINV9d9rBkIeSinVSiN
 A [Tampermonkey script](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/snowball.tampermonkey) was created to automate approach 1.
 Here is a [video](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/Holiday%20Hack%20Challenge%202020%20-%20Snowball%20-%20Marie.webm) of Marie in action solving the game on "impossible".
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzQzODc1MCwtNTQyOTk1MCwtNTA4OT
+eyJoaXN0b3J5IjpbMTQ0Mzc5NjIyNSwtNTQyOTk1MCwtNTA4OT
 YwMTQsMzU5NjMwNTgzLC0xMTIxOTM5NTQsLTIwMTczMTgyNjks
 NzMwOTk4MTE2XX0=
 -->
