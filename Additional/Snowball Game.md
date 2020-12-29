@@ -19,7 +19,7 @@ Using this seed value on level "easy" in a new browser tab gives information abo
 It seems that the secret for the board layout is hidden in the WhitewashCookie. So the following steps can be taken to win the game on "impossible":
  - Setup Burp suite to intercept your traffic to the Snowball game
  - Open two browser tabs with the Snowball game start page (to get the achievement the first tab has to be the in-game Snowball game).
- - On tab 1: Start the game on "impossible". When you see the HTTP request for establishing the Web Socket, take note of the value of the `WhitewashCookie` like:
+ - On tab 1: Start the game on "impossible". When you see the HTTP request for establishing the Game panel `/game`, take note of the value of the `WhitewashCookie` like:
 ```
 WhitewashCookie=.eJyVUctugzAQ_BeffVgbcCzOtEqlqoc2NysHK3EaJCARhINV9d9rBkIeSinVSiN7dlizM18sy3e7fNMWJ89S4uypcqV_tf7QnlhqDPG-BArnNR_Zq5rFXk8QI_OYpT9Z-oUVY0392XrY9WOfH5tuVaO5ClrNE2AMjIAyqI2JwSVABVwE7DqEG-FLClN6tYBaQC3ARXgh7hTh-ec6d9W2eOD2fF_nbMqN-Ad7mzhmT8y983rK7fO6F8PVYGUCVMAFUMMuCU6iL6GVIZCucx9SzxFu4iYyQggEw1dtXbGUHQvrXc34cHjJArdsP_fvtmoOZVb7ZmsLN_bfbOmCQkoVJaR1HLHvH9LexR0.X-tZMQ.cIwH76HVoT1cll7VMVZo1Nux3Uk
 ```
@@ -35,7 +35,7 @@ Here is a [video](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Add
 
 For approach 2 also a [Tampermonkey script](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/snowball2.tampermonkey) is available for semi automation (you have to capture a cookie and paste is into the popup box). Also a [video of Marie is action](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/Holiday%20Hack%20Challenge%202020%20-%20Snowball%20-%20Marie%20on%20Steroids.webm) is available for this second approach.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4MTA4NDkwNywtMTQxNDcxNjU5MCwtNT
+eyJoaXN0b3J5IjpbLTg5NDQ0NjQ2MywtMTQxNDcxNjU5MCwtNT
 QyOTk1MCwtNTA4OTYwMTQsMzU5NjMwNTgzLC0xMTIxOTM5NTQs
 LTIwMTczMTgyNjksNzMwOTk4MTE2XX0=
 -->
