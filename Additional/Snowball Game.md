@@ -8,14 +8,14 @@ On "easy" the user is able to provide a seed value which is used by the server t
 
 On "impossible" it is not possible to provide this seed value. Instead there are in the HTML comments the last 624 random values, which were generated prior to creating the seed for the current game.
 
-## Approach 1
+## Approach 1: Seed Prediction
 In the hints for this game is a [talk of Tom Liston covering Mersenne Twister based PRNGs ](https://www.youtube.com/watch?v=Jo5Nlbqd-Vg) along with [sample Python code](https://github.com/tliston/mt19937) for predicting the next random values if you know the last 624 ones.
 This script was slightly [modified](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/mt19937-jsw.py) to consume the HTML comments in order to populate the Mersenne Twister PRNG with the last 624 values to restore the PRNG state prior to seed creation. The next random value is then printed out.
 
 This next random value is the seed of the board layout.
 Using this seed value on level "easy" in a new browser tab gives information about the board layout. Every hit on "easy" is then manually also replicated on the level "impossible".
 
-## Approach 2
+## Approach 2: Web SocketVvulnerability
 It seems that the secret for the board layout is hidden in the WhitewashCookie. So the following steps can be taken to win the game on "impossible":
  - Setup Burp suite to intercept your traffic to the Snowball game
  - Open two browser tabs with the Snowball game start page (to get the achievement the first tab has to be the in-game Snowball game).
@@ -35,7 +35,7 @@ Here is a [video](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Add
 
 For approach 2 also a [Tampermonkey script](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/snowball2.tampermonkey) is available for semi automation (you have to capture a cookie and paste it into the popup box). Also a [video of Marie is action](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/Holiday%20Hack%20Challenge%202020%20-%20Snowball%20-%20Marie%20on%20Steroids.webm) is available for this second approach.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0NDEwNzc3OCwtMTQxNDcxNjU5MCwtNT
-QyOTk1MCwtNTA4OTYwMTQsMzU5NjMwNTgzLC0xMTIxOTM5NTQs
-LTIwMTczMTgyNjksNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTE3OTQwMzA1NywxOTQ0MTA3Nzc4LC0xND
+E0NzE2NTkwLC01NDI5OTUwLC01MDg5NjAxNCwzNTk2MzA1ODMs
+LTExMjE5Mzk1NCwtMjAxNzMxODI2OSw3MzA5OTgxMTZdfQ==
 -->
