@@ -3,7 +3,7 @@ Location: Wrapping Room
 
 The objective is to obtain the value of the environment variable `GREETZ` of the [Tag Generator](https://tag-generator.kringlecastle.com/).
 
-## Solution using Path Traversal
+## Approach 1: Solution using Path Traversal
 
 It was found that the image download function allows path traversal:
 ```
@@ -25,7 +25,7 @@ PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sb
 ```
 So the `GREETZ` variable contains **JackFrostWasHere**
 
-## Solution using RCE
+## Approach 2: Solution using RCE
 
 The [Ruby application code](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-8/app.rb) can be downloaded through the above path traversal (the full path of `app.rb` is displayed in the application's error messages):
 ```
@@ -45,7 +45,7 @@ GREETZ=JackFrostWasHere
 [..]
 ```
 
-## Full Interactive Remote Shell
+## Approach 3: Full Interactive Remote Shell
 **Option 1**
 Create a ZIP file including an empty jpg file:
 ```
@@ -77,11 +77,11 @@ Now you have in the reverse shell listener an interactive shell as user `app`.
 The user `app` has write access to `/tmp` and `/home/app`.
 In addition the user has write access to `/usr/local/bundle`, where the web server is located.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjY4MTc5MjQsMjEyNTU5OTAzNiwxND
-QwMDk3MDgzLC05MzU4MTMyODgsLTYxMzQ0OTY1NiwtMTA1MjE2
-MzYxNywtMTc2MzU0MTM1NSwxNjA3MzQ4NTE0LC04MjMwNTA4Nj
-EsMTI5MzcyMDQzOSwxMzk1Nzk0ODI0LC0xNTk5MjU0NDE1LC02
-MTkyOTc0MTEsLTU3NjYxMDA3NSwyMTA3NTI5ODQ2LDkyMjE0ND
-M1LC0zOTg0OTE0NjEsMTE1MTU1Njg5NiwyMzg0NjAyNzIsMTkz
-MzM2MTc4N119
+eyJoaXN0b3J5IjpbLTYwMzU0OTE1NCwtMTkyNjgxNzkyNCwyMT
+I1NTk5MDM2LDE0NDAwOTcwODMsLTkzNTgxMzI4OCwtNjEzNDQ5
+NjU2LC0xMDUyMTYzNjE3LC0xNzYzNTQxMzU1LDE2MDczNDg1MT
+QsLTgyMzA1MDg2MSwxMjkzNzIwNDM5LDEzOTU3OTQ4MjQsLTE1
+OTkyNTQ0MTUsLTYxOTI5NzQxMSwtNTc2NjEwMDc1LDIxMDc1Mj
+k4NDYsOTIyMTQ0MzUsLTM5ODQ5MTQ2MSwxMTUxNTU2ODk2LDIz
+ODQ2MDI3Ml19
 -->
