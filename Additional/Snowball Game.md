@@ -30,13 +30,15 @@ WhitewashCookie=.eJyVUctugzAQ_BeffVgbcCzOtEqlqoc2NysHK3EaJCARhINV9d9rBkIeSinVSiN
 
 ## Fun Zone
 
-A [Tampermonkey script](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/snowball.tampermonkey) was created to automate approach 1.
+A [Tampermonkey script](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/snowball.tampermonkey) was created to automate approach 1. This script launches the second game on a new browser tab so that the progress can be tracked.
 Here is a [video](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/Holiday%20Hack%20Challenge%202020%20-%20Snowball%20-%20Marie.webm) of Marie in action solving the game on "impossible".
+A second Tampermonkey script was created which does not launch a new game in a second browser tab. Instead the script itself establishes the second game Web Soxc
+
 
 For approach 2 also a [Tampermonkey script](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/snowball2.tampermonkey) is available. Also a [video of Marie is action](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/Holiday%20Hack%20Challenge%202020%20-%20Snowball%20-%20Marie%20on%20Steroids.webm) is available for this second approach.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzY4MTc3NTYsOTEzODM4NjgyLC02Nj
-UwNDgxNTUsMTk0NDEwNzc3OCwtMTQxNDcxNjU5MCwtNTQyOTk1
-MCwtNTA4OTYwMTQsMzU5NjMwNTgzLC0xMTIxOTM5NTQsLTIwMT
-czMTgyNjksNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMTQ0MDAyNTYyNywtMTIzNjgxNzc1Niw5MT
+M4Mzg2ODIsLTY2NTA0ODE1NSwxOTQ0MTA3Nzc4LC0xNDE0NzE2
+NTkwLC01NDI5OTUwLC01MDg5NjAxNCwzNTk2MzA1ODMsLTExMj
+E5Mzk1NCwtMjAxNzMxODI2OSw3MzA5OTgxMTZdfQ==
 -->
