@@ -5,7 +5,7 @@
 // @description  KringleCon 2020: Win Snowball Impossible using WebSocket vulns
 // @author       joergen's Elf
 // @match        https://snowball2.kringlecastle.com/*
-// @grant        GM_cookie
+// @grant        none
 // ==/UserScript==
 
 (function() {
@@ -13,7 +13,7 @@
     var fl=document.getElementById("FriendlyLookout");
     if(fl){
       if(fl.innerHTML.includes('Redacted')){ // Impossible Game
-        setTimeout(main,1000);
+        setTimeout(connect,1000);
       }
     }
 
@@ -30,12 +30,6 @@ function inc(){
   if(x<0){ x++; y++; }
 }
 
-function main(){
-    var result=prompt("Enter Cookie");
-    GM_cookie('set', { domain: "snowball2.kringlecastle.com", name: "WhitewashCookie", value: result, path: "/ws", session: true });
-    connect();
-}
-
 function connect(){
     var myws=new WebSocket('wss://snowball2.kringlecastle.com/ws');
     myws.onopen = function (event) {
@@ -48,7 +42,7 @@ function connect(){
       var messageIn = JSON.parse(event.data);
       var box;
       if (messageIn.Type == "SALUTE"){
-        console.log("Salut! Ca va?");
+        console.log("Salut! Ça va?");
         connected=true;
         if(mytargetx>=0){
           //document.getElementById('0,'+mytargetx+','+mytargety).style.backgroundColor="";
