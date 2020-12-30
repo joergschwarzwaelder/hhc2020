@@ -32,7 +32,7 @@ function inc(){
 
 function main(){
     var result=prompt("Enter Cookie");
-    GM_cookie('set', { domain: "snowball2.kringlecastle.com", name: "WhitewashCookie", value: result, path: "/ws" });
+    GM_cookie('set', { domain: "snowball2.kringlecastle.com", name: "WhitewashCookie", value: result, path: "/ws", session: true });
     connect();
 }
 
@@ -51,7 +51,7 @@ function connect(){
         console.log("Salut! Ca va?");
         connected=true;
         if(mytargetx>=0){
-          document.getElementById('0,'+mytargetx+','+mytargety).style.backgroundColor="";
+          //document.getElementById('0,'+mytargetx+','+mytargety).style.backgroundColor="";
           document.getElementById('0,'+mytargetx+','+mytargety).style.backgroundImage="";
           document.getElementById('0,'+mytargetx+','+mytargety).style.backgroundSize="";
           document.getElementById('0,'+mytargetx+','+mytargety).style.transform="";
@@ -66,7 +66,7 @@ function connect(){
       }
       if (messageIn.Type == "Incoming"){
         if(mytargetx>=0){
-          document.getElementById('0,'+mytargetx+','+mytargety).style.backgroundColor="";
+          //document.getElementById('0,'+mytargetx+','+mytargety).style.backgroundColor="";
           document.getElementById('0,'+mytargetx+','+mytargety).style.backgroundImage="";
           document.getElementById('0,'+mytargetx+','+mytargety).style.backgroundSize="";
           document.getElementById('0,'+mytargetx+','+mytargety).style.transform="";
