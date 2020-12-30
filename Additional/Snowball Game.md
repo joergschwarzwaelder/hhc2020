@@ -35,10 +35,11 @@ Here is a [video](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Add
 A [second Tampermonkey script](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/showball3-tampermonkey.js) was created which does not launch a new game in a second browser tab. Instead the script itself establishes the second game Web Socket and plays in the background without being visible.
 
 
-For approach 2 also a [Tampermonkey script](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/snowball2-tampermonkey.js) is available. Also a [video](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/Holiday%20Hack%20Challenge%202020%20-%20Snowball%20-%20Marie%20on%20Steroids.webm) of Marie in action is available for this second approach.
+For approach 2 also a [Tampermonkey script](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/snowball2-tampermonkey.js) is available. This script does also only work in the background. A second tab is not opened. Also a [video](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/Holiday%20Hack%20Challenge%202020%20-%20Snowball%20-%20Marie%20on%20Steroids.webm) of Marie in action is available for this second approach.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg5NjQ0NTE1LC0xMjM2ODE3NzU2LDkxMz
-gzODY4MiwtNjY1MDQ4MTU1LDE5NDQxMDc3NzgsLTE0MTQ3MTY1
-OTAsLTU0Mjk5NTAsLTUwODk2MDE0LDM1OTYzMDU4MywtMTEyMT
-kzOTU0LC0yMDE3MzE4MjY5LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTY2NDUwMTE3Myw3ODk2NDQ1MTUsLTEyMz
+Y4MTc3NTYsOTEzODM4NjgyLC02NjUwNDgxNTUsMTk0NDEwNzc3
+OCwtMTQxNDcxNjU5MCwtNTQyOTk1MCwtNTA4OTYwMTQsMzU5Nj
+MwNTgzLC0xMTIxOTM5NTQsLTIwMTczMTgyNjksNzMwOTk4MTE2
+XX0=
 -->
