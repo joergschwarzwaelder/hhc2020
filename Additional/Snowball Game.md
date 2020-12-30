@@ -33,9 +33,10 @@ WhitewashCookie=.eJyVUctugzAQ_BeffVgbcCzOtEqlqoc2NysHK3EaJCARhINV9d9rBkIeSinVSiN
 A [Tampermonkey script](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/snowball.tampermonkey) was created to automate approach 1.
 Here is a [video](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/Holiday%20Hack%20Challenge%202020%20-%20Snowball%20-%20Marie.webm) of Marie in action solving the game on "impossible".
 
-For approach 2 also a [Tampermonkey script](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/snowball2.tampermonkey) is available for semi automation (you have to capture a cookie and paste it into the popup box). Also a [video of Marie is action](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/Holiday%20Hack%20Challenge%202020%20-%20Snowball%20-%20Marie%20on%20Steroids.webm) is available for this second approach.
+For approach 2 also a [Tampermonkey script](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/snowball2.tampermonkey) is available for semi automation (you have to manually capture the cookie (as this is not accessible to Javascript) and paste it into the popup box). Also a [video of Marie is action](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/Holiday%20Hack%20Challenge%202020%20-%20Snowball%20-%20Marie%20on%20Steroids.webm) is available for this second approach.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2NTA0ODE1NSwxOTQ0MTA3Nzc4LC0xND
-E0NzE2NTkwLC01NDI5OTUwLC01MDg5NjAxNCwzNTk2MzA1ODMs
-LTExMjE5Mzk1NCwtMjAxNzMxODI2OSw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbOTEzODM4NjgyLC02NjUwNDgxNTUsMTk0ND
+EwNzc3OCwtMTQxNDcxNjU5MCwtNTQyOTk1MCwtNTA4OTYwMTQs
+MzU5NjMwNTgzLC0xMTIxOTM5NTQsLTIwMTczMTgyNjksNzMwOT
+k4MTE2XX0=
 -->
