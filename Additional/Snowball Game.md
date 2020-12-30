@@ -16,7 +16,7 @@ This next random value is the seed of the board layout.
 Using this seed value on level "easy" in a new browser tab gives information about the board layout. Every hit on "easy" is then manually also replicated on the level "impossible".
 
 ## Approach 2: Web Socket Vulnerability
-It seems that the secret for the board layout is hidden in the WhitewashCookie. So the following steps can be taken to win the game on "impossible":
+It seems that the secret for the board layout is hidden in the WhitewashCookie. This cookie is used to transfer the game status of the "normal" HTTP world into the Web Socket. So the following steps can be taken to win the game on "impossible":
  - Setup Burp suite to intercept your traffic to the Snowball game
  - Open two browser tabs with the Snowball game start page (to get the achievement the first tab has to be the in-game Snowball game).
  - On tab 1: Start the game on "impossible". When you see the HTTP request for establishing the Game panel `/game`, take note of the value of the `WhitewashCookie` like:
@@ -35,10 +35,11 @@ Here is a [video](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Add
 A [second Tampermonkey script](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/showball3-tampermonkey.js) was created which does not launch a new game in a second browser tab. Instead the script itself establishes the second game Web Socket and plays in the background without being visible.
 
 
-For approach 2 also a [Tampermonkey script](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/snowball2-tampermonkey.js) is available. Also a [video](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/Holiday%20Hack%20Challenge%202020%20-%20Snowball%20-%20Marie%20on%20Steroids.webm) of Marie in action is available for this second approach.
+For approach 2 also a [Tampermonkey script](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/snowball2-tampermonkey.js) is available. This script does also only work in the background. A second tab is not opened. Also a [video](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/Holiday%20Hack%20Challenge%202020%20-%20Snowball%20-%20Marie%20on%20Steroids.webm) of Marie in action is available for this second approach.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg5NjQ0NTE1LC0xMjM2ODE3NzU2LDkxMz
-gzODY4MiwtNjY1MDQ4MTU1LDE5NDQxMDc3NzgsLTE0MTQ3MTY1
-OTAsLTU0Mjk5NTAsLTUwODk2MDE0LDM1OTYzMDU4MywtMTEyMT
-kzOTU0LC0yMDE3MzE4MjY5LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbMzg2MzkyOTgyLDc4OTY0NDUxNSwtMTIzNj
+gxNzc1Niw5MTM4Mzg2ODIsLTY2NTA0ODE1NSwxOTQ0MTA3Nzc4
+LC0xNDE0NzE2NTkwLC01NDI5OTUwLC01MDg5NjAxNCwzNTk2Mz
+A1ODMsLTExMjE5Mzk1NCwtMjAxNzMxODI2OSw3MzA5OTgxMTZd
+fQ==
 -->
