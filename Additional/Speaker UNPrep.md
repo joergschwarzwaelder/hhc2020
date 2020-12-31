@@ -65,7 +65,7 @@ Catchpoint 1 (call to syscall read), 0x00007ffff7ebe142 in __GI___libc_read (fd=
 (gdb) x/20s 0x555555599d90
 0x555555599d90:	"password: E$ed633d885dcb9b2f3f0118361de4d57752712c27c5316a95d9e5e5b124\nname: elf-technician\n"
 ```
-Lateron the breakpoint is reached again when the program is waiting for the user input. At this time at exactly the same memory location the decrypted password can be found:
+Lateron the breakpoint is reached again, when the program is waiting for the user input. At this time at exactly the same memory location the decrypted password can be found:
 
 ```
 (gdb) x/20s 0x555555599d90
@@ -221,7 +221,7 @@ user    0m0.139s
 sys     0m0.069s
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTI1MDg2OTk0LDE2NDE5Mjc3MTAsLTQ4NT
+eyJoaXN0b3J5IjpbMzYyMDAwMTMyLDE2NDE5Mjc3MTAsLTQ4NT
 Y5NzQyMCwxOTI2MjY1OTczLDcyNDUyNTI1NiwtNTkyMjc0Njkz
 LC01MTc2Nzg1MTEsMTI2MzM1NDk4LDExMzAwMTIxNzIsLTUwMT
 M4NTIxLDc1MTI2NjU4MSwtMTY4OTk5MzAzNCwxMTk3OTIzMzU1
