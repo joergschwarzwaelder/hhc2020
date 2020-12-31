@@ -31,7 +31,7 @@ The application `lights` shows this message after startup:
 
     >>> CONFIGURATION FILE LOADED, SELECT FIELDS DECRYPTED:
 
-This is an indicator that this application does not hash the passwords - they are encrypted instead. And it seems that the password gets unencrypted upon start, so that the password is in clear text in the process memory.
+This is an indicator, that this application does not hash the passwords - they are encrypted instead. And it seems that the password gets unencrypted upon start, so that the password is in clear text in the process memory.
 
 By using the script [get_lights_password.sh](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/get_lights_password.sh) it was possible to dump the process memory and to find the password in clear text.
 
@@ -221,11 +221,11 @@ user    0m0.139s
 sys     0m0.069s
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0NDEzNzk5MCwxNjQxOTI3NzEwLC00OD
-U2OTc0MjAsMTkyNjI2NTk3Myw3MjQ1MjUyNTYsLTU5MjI3NDY5
-MywtNTE3Njc4NTExLDEyNjMzNTQ5OCwxMTMwMDEyMTcyLC01MD
-EzODUyMSw3NTEyNjY1ODEsLTE2ODk5OTMwMzQsMTE5NzkyMzM1
-NSwxNzg1Mzc1MTAzLC01NDMwNjk5NTksLTE0NjI3OTUyMjUsND
-Q4NDEzMDA0LDE5NTMyMDgxNTgsLTQxODI4MTg2MywtMTY1NzE3
-ODU0MF19
+eyJoaXN0b3J5IjpbNzc0MTA4NjAyLDE2NDE5Mjc3MTAsLTQ4NT
+Y5NzQyMCwxOTI2MjY1OTczLDcyNDUyNTI1NiwtNTkyMjc0Njkz
+LC01MTc2Nzg1MTEsMTI2MzM1NDk4LDExMzAwMTIxNzIsLTUwMT
+M4NTIxLDc1MTI2NjU4MSwtMTY4OTk5MzAzNCwxMTk3OTIzMzU1
+LDE3ODUzNzUxMDMsLTU0MzA2OTk1OSwtMTQ2Mjc5NTIyNSw0ND
+g0MTMwMDQsMTk1MzIwODE1OCwtNDE4MjgxODYzLC0xNjU3MTc4
+NTQwXX0=
 -->
