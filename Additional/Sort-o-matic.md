@@ -1,6 +1,8 @@
 # Sort-o-matic
 Location: Workshop
 
+The objective is to become familiar with Regular Expressions
+
 1. Matches at least one digit:
 `\d`
 2. Matches 3 alpha a-z characters ignoring case:
@@ -19,5 +21,5 @@ Location: Workshop
 `^([0][1-9]|[12][0-9]|3[01])[/\.-](0[1-9]|1[0-2])[/\.-]\d{4}$`
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzNzE0OTgxMiwtMzY4OTc3NDQ2XX0=
+eyJoaXN0b3J5IjpbLTIxMDc5NzY1MTYsLTM2ODk3NzQ0Nl19
 -->
