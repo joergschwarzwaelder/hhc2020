@@ -58,7 +58,7 @@ The program was started in GDB with a breakpoint set to the `read` syscall:
 Catchpoint 1 (syscall 'read' [0])
 (gdb) run
 ```
-After several stops it is visible that the `lights.conf` file is read into memory:
+After several stops it is visible, that the `lights.conf` file is read into memory:
 ```
 Catchpoint 1 (call to syscall read), 0x00007ffff7ebe142 in __GI___libc_read (fd=3, buf=0x555555599d90, nbytes=8192) at ../sysdeps/unix/sysv/linux/read.c:26
 26	in ../sysdeps/unix/sysv/linux/read.c
@@ -221,11 +221,11 @@ user    0m0.139s
 sys     0m0.069s
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU2ODY3OTgsMTY0MTkyNzcxMCwtNDg1Nj
-k3NDIwLDE5MjYyNjU5NzMsNzI0NTI1MjU2LC01OTIyNzQ2OTMs
-LTUxNzY3ODUxMSwxMjYzMzU0OTgsMTEzMDAxMjE3MiwtNTAxMz
-g1MjEsNzUxMjY2NTgxLC0xNjg5OTkzMDM0LDExOTc5MjMzNTUs
-MTc4NTM3NTEwMywtNTQzMDY5OTU5LC0xNDYyNzk1MjI1LDQ0OD
-QxMzAwNCwxOTUzMjA4MTU4LC00MTgyODE4NjMsLTE2NTcxNzg1
-NDBdfQ==
+eyJoaXN0b3J5IjpbNTI1MDg2OTk0LDE2NDE5Mjc3MTAsLTQ4NT
+Y5NzQyMCwxOTI2MjY1OTczLDcyNDUyNTI1NiwtNTkyMjc0Njkz
+LC01MTc2Nzg1MTEsMTI2MzM1NDk4LDExMzAwMTIxNzIsLTUwMT
+M4NTIxLDc1MTI2NjU4MSwtMTY4OTk5MzAzNCwxMTk3OTIzMzU1
+LDE3ODUzNzUxMDMsLTU0MzA2OTk1OSwtMTQ2Mjc5NTIyNSw0ND
+g0MTMwMDQsMTk1MzIwODE1OCwtNDE4MjgxODYzLC0xNjU3MTc4
+NTQwXX0=
 -->
