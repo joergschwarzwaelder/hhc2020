@@ -34,6 +34,24 @@ player@95bbb6f62400:~$ ls -l /etc/shadow
 -rw-r--r-- 1 root root 243 Dec 30 18:07 /etc/shadow
 player@95bbb6f62400:~$ su -
 Password: 
+root@95bbb6f62400:~# cat /var/www/html/index.php 
+<?php
+
+# We found the bug!!
+#
+#         \   /
+#         .\-/.
+#     /\ ()   ()
+#       \/~---~\.-~^-.
+# .-~^-./   |   \---.
+#      {    |    }   \
+#    .-~\   |   /~-.
+#   /    \  A  /    \
+#         \/ \/
+# 
+
+echo "Something is wrong with this page! Please use http://localhost/maintenance.php to see if you can figure out what's going on"
+?>
 root@95bbb6f62400:~# cat /etc/runtoanswer.yaml 
 # This is the config file for runtoanswer, where you can set up your challenge!
 ---
@@ -42,6 +60,6 @@ root@95bbb6f62400:~# cat /etc/runtoanswer.yaml
 key: 4ec1769f83fd212bcb9d22b2316d8706
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2MzQ1MjQwMSwyODg2OTcwMTksNDc4OT
-U5MjY3LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbOTE0NzAzNjY1LC01NjM0NTI0MDEsMjg4Nj
+k3MDE5LDQ3ODk1OTI2Nyw3MzA5OTgxMTZdfQ==
 -->
