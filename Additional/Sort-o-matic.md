@@ -9,11 +9,15 @@ Location: Workshop
 `[a-z0-9]{2}`
 4. Matches any 2 chars not uppercase A-L or 1-5:
 `[^A-L1-5]{2}`
-5: ^\d{3,}$
-6: ^(0?[0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]$
-7: ^([A-Fa-f0-9]{2}:){5}[A-Fa-f0-9]{2}$
-8: ^([0][1-9]|[12][0-9]|3[01])[/\.-](0[1-9]|1[0-2])[/\.-]\d{4}$
+5. Matches three or more digits only:
+`^\d{3,}$`
+6. Matches multiple hour:minute:second time formats only:
+`^(0?[0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]$`
+7. Matches MAC address format only while ignoring case:
+`^([A-Fa-f0-9]{2}:){5}[A-Fa-f0-9]{2}$`
+8. Matches multiple day, month and year date formats only:
+: ^([0][1-9]|[12][0-9]|3[01])[/\.-](0[1-9]|1[0-2])[/\.-]\d{4}$
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzNDM3NjU1OSwtMzY4OTc3NDQ2XX0=
+eyJoaXN0b3J5IjpbLTE5NTgyMTg4LC0zNjg5Nzc0NDZdfQ==
 -->
