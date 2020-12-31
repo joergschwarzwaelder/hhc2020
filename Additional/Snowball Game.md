@@ -23,7 +23,7 @@ It seems that the secret for the board layout is hidden in the WhitewashCookie. 
 ```
 WhitewashCookie=.eJyVUctugzAQ_BeffVgbcCzOtEqlqoc2NysHK3EaJCARhINV9d9rBkIeSinVSiN7dlizM18sy3e7fNMWJ89S4uypcqV_tf7QnlhqDPG-BArnNR_Zq5rFXk8QI_OYpT9Z-oUVY0392XrY9WOfH5tuVaO5ClrNE2AMjIAyqI2JwSVABVwE7DqEG-FLClN6tYBaQC3ARXgh7hTh-ec6d9W2eOD2fF_nbMqN-Ad7mzhmT8y983rK7fO6F8PVYGUCVMAFUMMuCU6iL6GVIZCucx9SzxFu4iYyQggEw1dtXbGUHQvrXc34cHjJArdsP_fvtmoOZVb7ZmsLN_bfbOmCQkoVJaR1HLHvH9LexR0.X-tZMQ.cIwH76HVoT1cll7VMVZo1Nux3Uk
 ```
- - On tab 2: Start the game on "impossible". When you see the HTTP request for establishing the Web Socket in Burp suite, inject the cookie value of the previous step
+ - On tab 2: Start the game on "impossible". When you see the HTTP request for establishing the Web Socket in Burp suite, inject the cookie value of the previous step.
  - Your two game sessions will now have the same board layout.
  - You can now systematically check all fields on tab 2 and replicate all hits to tab 1.
  - When you lose the game on tab 2, just restart the game injecting again the noted cookie and continue where you left off.
@@ -37,9 +37,9 @@ A [second Tampermonkey script](https://github.com/joergschwarzwaelder/hhc2020/bl
 
 For approach 2 also a [Tampermonkey script](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/snowball2-tampermonkey.js) is available. This script does also only work in the background. A second tab is not opened. Also a [video](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/Holiday%20Hack%20Challenge%202020%20-%20Snowball%20-%20Marie%20on%20Steroids.webm) of Marie in action is available for this second approach.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTg1OTE2NjYsMzg2MzkyOTgyLDc4OT
-Y0NDUxNSwtMTIzNjgxNzc1Niw5MTM4Mzg2ODIsLTY2NTA0ODE1
-NSwxOTQ0MTA3Nzc4LC0xNDE0NzE2NTkwLC01NDI5OTUwLC01MD
-g5NjAxNCwzNTk2MzA1ODMsLTExMjE5Mzk1NCwtMjAxNzMxODI2
-OSw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTQ2NDQzNTIzNCwzODYzOTI5ODIsNzg5Nj
+Q0NTE1LC0xMjM2ODE3NzU2LDkxMzgzODY4MiwtNjY1MDQ4MTU1
+LDE5NDQxMDc3NzgsLTE0MTQ3MTY1OTAsLTU0Mjk5NTAsLTUwOD
+k2MDE0LDM1OTYzMDU4MywtMTEyMTkzOTU0LC0yMDE3MzE4MjY5
+LDczMDk5ODExNl19
 -->
