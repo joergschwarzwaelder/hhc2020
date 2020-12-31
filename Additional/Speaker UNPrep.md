@@ -16,7 +16,7 @@ So this password is **Op3nTheD00r**.
 
 ## lights
 **Approach 1**:
-Following the hint of the Elf to check what happens if the name in the config file gets changed to an encrypted value the name was replaced with the encrypted password in the lab environment:
+Following the hint of the Elf to check, what happens if the name in the config file gets changed to an encrypted value, the name was replaced with the encrypted password in the lab environment:
 ```
 elf@6f3d31105c18 ~/lab $ cat lights.conf 
 password: E$ed633d885dcb9b2f3f0118361de4d57752712c27c5316a95d9e5e5b124
@@ -221,11 +221,11 @@ user    0m0.139s
 sys     0m0.069s
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0MTkyNzcxMCwtNDg1Njk3NDIwLDE5Mj
-YyNjU5NzMsNzI0NTI1MjU2LC01OTIyNzQ2OTMsLTUxNzY3ODUx
-MSwxMjYzMzU0OTgsMTEzMDAxMjE3MiwtNTAxMzg1MjEsNzUxMj
-Y2NTgxLC0xNjg5OTkzMDM0LDExOTc5MjMzNTUsMTc4NTM3NTEw
-MywtNTQzMDY5OTU5LC0xNDYyNzk1MjI1LDQ0ODQxMzAwNCwxOT
-UzMjA4MTU4LC00MTgyODE4NjMsLTE2NTcxNzg1NDAsNDA3MzM4
-NzRdfQ==
+eyJoaXN0b3J5IjpbLTk0NDEzNzk5MCwxNjQxOTI3NzEwLC00OD
+U2OTc0MjAsMTkyNjI2NTk3Myw3MjQ1MjUyNTYsLTU5MjI3NDY5
+MywtNTE3Njc4NTExLDEyNjMzNTQ5OCwxMTMwMDEyMTcyLC01MD
+EzODUyMSw3NTEyNjY1ODEsLTE2ODk5OTMwMzQsMTE5NzkyMzM1
+NSwxNzg1Mzc1MTAzLC01NDMwNjk5NTksLTE0NjI3OTUyMjUsND
+Q4NDEzMDA0LDE5NTMyMDgxNTgsLTQxODI4MTg2MywtMTY1NzE3
+ODU0MF19
 -->
