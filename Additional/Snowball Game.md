@@ -19,7 +19,7 @@ Using this seed value on level "easy" in a new browser tab gives information abo
 It seems that the secret for the board layout is hidden in the WhitewashCookie. This cookie is used to transfer the game status of the "normal" HTTP world into the Web Socket. So the following steps can be taken to win the game on "impossible":
  - Setup Burp suite to intercept your traffic to the Snowball game
  - Open two browser tabs with the Snowball game start page (to get the achievement the first tab has to be the in-game Snowball game).
- - On tab 1: Start the game on "impossible". When you see the HTTP request for establishing the Game panel `/game`, take note of the value of the `WhitewashCookie` like:
+ - On tab 1: Start the game on "impossible". When you see the HTTP request for establishing the Game panel `/game` in Burp suite, take note of the value of the `WhitewashCookie` like:
 ```
 WhitewashCookie=.eJyVUctugzAQ_BeffVgbcCzOtEqlqoc2NysHK3EaJCARhINV9d9rBkIeSinVSiN7dlizM18sy3e7fNMWJ89S4uypcqV_tf7QnlhqDPG-BArnNR_Zq5rFXk8QI_OYpT9Z-oUVY0392XrY9WOfH5tuVaO5ClrNE2AMjIAyqI2JwSVABVwE7DqEG-FLClN6tYBaQC3ARXgh7hTh-ec6d9W2eOD2fF_nbMqN-Ad7mzhmT8y983rK7fO6F8PVYGUCVMAFUMMuCU6iL6GVIZCucx9SzxFu4iYyQggEw1dtXbGUHQvrXc34cHjJArdsP_fvtmoOZVb7ZmsLN_bfbOmCQkoVJaR1HLHvH9LexR0.X-tZMQ.cIwH76HVoT1cll7VMVZo1Nux3Uk
 ```
@@ -37,9 +37,9 @@ A [second Tampermonkey script](https://github.com/joergschwarzwaelder/hhc2020/bl
 
 For approach 2 also a [Tampermonkey script](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/snowball2-tampermonkey.js) is available. This script does also only work in the background. A second tab is not opened. Also a [video](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/Holiday%20Hack%20Challenge%202020%20-%20Snowball%20-%20Marie%20on%20Steroids.webm) of Marie in action is available for this second approach.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzg2MzkyOTgyLDc4OTY0NDUxNSwtMTIzNj
-gxNzc1Niw5MTM4Mzg2ODIsLTY2NTA0ODE1NSwxOTQ0MTA3Nzc4
-LC0xNDE0NzE2NTkwLC01NDI5OTUwLC01MDg5NjAxNCwzNTk2Mz
-A1ODMsLTExMjE5Mzk1NCwtMjAxNzMxODI2OSw3MzA5OTgxMTZd
-fQ==
+eyJoaXN0b3J5IjpbLTE2NDc4NjU5MDIsMzg2MzkyOTgyLDc4OT
+Y0NDUxNSwtMTIzNjgxNzc1Niw5MTM4Mzg2ODIsLTY2NTA0ODE1
+NSwxOTQ0MTA3Nzc4LC0xNDE0NzE2NTkwLC01NDI5OTUwLC01MD
+g5NjAxNCwzNTk2MzA1ODMsLTExMjE5Mzk1NCwtMjAxNzMxODI2
+OSw3MzA5OTgxMTZdfQ==
 -->
