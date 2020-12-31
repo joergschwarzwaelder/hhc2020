@@ -104,7 +104,7 @@ ssize_t read(int fd, void *buf, size_t count){
 }
 elf@7e18ebefca11 ~/lab $ gcc -fPIC -shared -o read.so read.c -ldl
 elf@7e18ebefca11 ~/lab $ cat lights.conf 
-password: abc123
+password: Marie
 name: elf-technician
 elf@7e18ebefca11 ~/lab $ LD_PRELOAD=$PWD/read.so ../lights
 The speaker unpreparedness room sure is dark, you're thinking (assuming
@@ -118,7 +118,7 @@ You wonder how to turn the lights on? If only you had some kind of hin---
 
 The terminal just blinks: Welcome back, elf-technician
 
-What do you enter? > abc123
+What do you enter? > Marie
 
 Checking......
 
@@ -221,11 +221,11 @@ user    0m0.139s
 sys     0m0.069s
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzYyMDAwMTMyLDE2NDE5Mjc3MTAsLTQ4NT
-Y5NzQyMCwxOTI2MjY1OTczLDcyNDUyNTI1NiwtNTkyMjc0Njkz
-LC01MTc2Nzg1MTEsMTI2MzM1NDk4LDExMzAwMTIxNzIsLTUwMT
-M4NTIxLDc1MTI2NjU4MSwtMTY4OTk5MzAzNCwxMTk3OTIzMzU1
-LDE3ODUzNzUxMDMsLTU0MzA2OTk1OSwtMTQ2Mjc5NTIyNSw0ND
-g0MTMwMDQsMTk1MzIwODE1OCwtNDE4MjgxODYzLC0xNjU3MTc4
-NTQwXX0=
+eyJoaXN0b3J5IjpbOTYwMzU2NDQsMTY0MTkyNzcxMCwtNDg1Nj
+k3NDIwLDE5MjYyNjU5NzMsNzI0NTI1MjU2LC01OTIyNzQ2OTMs
+LTUxNzY3ODUxMSwxMjYzMzU0OTgsMTEzMDAxMjE3MiwtNTAxMz
+g1MjEsNzUxMjY2NTgxLC0xNjg5OTkzMDM0LDExOTc5MjMzNTUs
+MTc4NTM3NTEwMywtNTQzMDY5OTU5LC0xNDYyNzk1MjI1LDQ0OD
+QxMzAwNCwxOTUzMjA4MTU4LC00MTgyODE4NjMsLTE2NTcxNzg1
+NDBdfQ==
 -->
