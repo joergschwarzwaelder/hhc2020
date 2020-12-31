@@ -16,8 +16,8 @@ Location: Workshop
 7. Matches MAC address format only while ignoring case:
 `^([A-Fa-f0-9]{2}:){5}[A-Fa-f0-9]{2}$`
 8. Matches multiple day, month and year date formats only:
-: ^([0][1-9]|[12][0-9]|3[01])[/\.-](0[1-9]|1[0-2])[/\.-]\d{4}$
+`^([0][1-9]|[12][0-9]|3[01])[/\.-](0[1-9]|1[0-2])[/\.-]\d{4}$`
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTgyMTg4LC0zNjg5Nzc0NDZdfQ==
+eyJoaXN0b3J5IjpbMTIzNzE0OTgxMiwtMzY4OTc3NDQ2XX0=
 -->
