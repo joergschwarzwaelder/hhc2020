@@ -76,11 +76,11 @@ When navigating as Santa through the Santa image in the Entry hall the character
    Tmux](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/Unescape%20Tmux.md)
 
 ## Holiday Eggs
-Two [Holiday Eggs](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Holiday%20Eggs.md) were discovered.
+Three [Holiday Eggs](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Holiday%20Eggs.md) were discovered.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2MDQwNzQ4MiwtMjAzMTA5MzYyMiwtNz
-U0MTE5NjczLDEyMDQzNzMxNTAsLTE1NzE0NjQ5ODksLTIxNDMz
-OTkxOTQsLTE2NjIwOTc1ODUsLTEyMTUxMTgwNDgsLTIwNzQ2Mj
-k2MjksNDQ2MjA5MDgyLC01ODUyNDg1LDE0Mjk0ODUzNzVdfQ==
-
+eyJoaXN0b3J5IjpbLTEyNTMxNzY3MTYsLTk2MDQwNzQ4MiwtMj
+AzMTA5MzYyMiwtNzU0MTE5NjczLDEyMDQzNzMxNTAsLTE1NzE0
+NjQ5ODksLTIxNDMzOTkxOTQsLTE2NjIwOTc1ODUsLTEyMTUxMT
+gwNDgsLTIwNzQ2Mjk2MjksNDQ2MjA5MDgyLC01ODUyNDg1LDE0
+Mjk0ODUzNzVdfQ==
 -->
