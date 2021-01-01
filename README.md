@@ -17,6 +17,7 @@ featuring KringleCon 3: French Hens**
 [Map of the Game](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Map.md)
 
 [Location of the relevant Elf characters](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Elf%20Directory.md)
+
 [List of Game Items](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Items.md)
 
 To the left of the workshop, protected by the HID lock, is a dark room with a labyrinth. If you navigate through this room to the bottom, the game character transforms to Santa and moves to the Entry hall. Some objectives are only accessible being Santa.
@@ -77,7 +78,7 @@ When navigating as Santa through the Santa image in the Entry hall the character
 ## Holiday Eggs
 Two [Holiday Eggs](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Holiday%20Eggs.md) were discovered.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5NjI2NzE4OCwtMjAzMTA5MzYyMiwtNz
+eyJoaXN0b3J5IjpbLTk2MDQwNzQ4MiwtMjAzMTA5MzYyMiwtNz
 U0MTE5NjczLDEyMDQzNzMxNTAsLTE1NzE0NjQ5ODksLTIxNDMz
 OTkxOTQsLTE2NjIwOTc1ODUsLTEyMTUxMTgwNDgsLTIwNzQ2Mj
 k2MjksNDQ2MjA5MDgyLC01ODUyNDg1LDE0Mjk0ODUzNzVdfQ==
