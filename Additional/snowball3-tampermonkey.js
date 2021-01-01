@@ -35,11 +35,12 @@
            var n=e.match(/\d+/);
            if(n){
              MT[g]=untemper(n[0]);
-        g++;
+             g++;
            }
          });
          index=0;
          var rnd=extractNumber();
+	 // start second game on level easy with predicted seed
          post(rnd);
          setTimeout(connect,1000);
        }
