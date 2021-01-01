@@ -1,7 +1,8 @@
 # Holiday Eggs
 
-## Kringle Kiosk
-If you type `plant` the plant Jason is displayed.
+## Jason
+If you type `plant` in the Kringle Kiosk the plant Jason is displayed.
+Jason is also located on the scaffold.
 
 ## Santa Portait
 In the [Santa Portait](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/santa_portrait.jpg) in the Entry hall are [hidden characters](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Additional/santa_portrait_letters.jpg) for the phrase "NOW I SHALL BE OUT OF SIGHT".
@@ -11,5 +12,5 @@ There is a nail on the scaffold left to the entrance of the castle. This nail pr
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2Njg0MDg0OSwtMzQ4NDMwNDU5XX0=
+eyJoaXN0b3J5IjpbLTEzNzA5MDkyMzAsLTM0ODQzMDQ1OV19
 -->
