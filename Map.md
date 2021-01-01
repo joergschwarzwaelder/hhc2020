@@ -1,3 +1,4 @@
+# Map of the Game
 ```
  __       _    --------------
 |__)_  _ (_   | NetWars Room |                                               
@@ -36,5 +37,5 @@ __  __                              __  __
            ----------                                                        
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjcxMzUxODZdfQ==
+eyJoaXN0b3J5IjpbODk4ODAyODMxLC0xOTY3MTM1MTg2XX0=
 -->
