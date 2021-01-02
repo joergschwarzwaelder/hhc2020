@@ -17,7 +17,7 @@ to
 `if (1) {
 `
 
-in the Browser it is possible to use the Santavator without having Santa's fingerprint.
+in the browser it is possible to use the Santavator without having Santa's fingerprint.
 
 ![post-change](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-10/post-change.png)
 ## Approach 2
@@ -26,7 +26,7 @@ This is documented as [approach 2 of Objective 4](https://github.com/joergschwar
 ## Approach 3
 This is documented as [approach 3 of Objective 4](https://github.com/joergschwarzwaelder/hhc2020/tree/master/Objective-4).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzQ4MjM4OTksMTY2NjU5NDU2Niw1OT
-EzNjQ3MzgsODE1NjYzODcyLC0xODQxOTI2MzcwLDg1ODU0Njg4
-MSwtMTc0OTg5NjY3XX0=
+eyJoaXN0b3J5IjpbLTIyNjgwNzU0NywtMTIzNDgyMzg5OSwxNj
+Y2NTk0NTY2LDU5MTM2NDczOCw4MTU2NjM4NzIsLTE4NDE5MjYz
+NzAsODU4NTQ2ODgxLC0xNzQ5ODk2NjddfQ==
 -->
