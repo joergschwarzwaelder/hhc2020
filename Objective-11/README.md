@@ -29,8 +29,7 @@ The objective is to modify Jack Frosts block back from Nice to Naughty and to ma
 
 MD5 works using chunks of 64 bytes. It is possible increase a value at offset #9 of block #m without changing the MD5 hash by also decreasing the value at offset #9 of block #m+1 (entangled values) (this does not work in general; https://github.com/corkami/collisions/blob/master/unicoll.md and https://www.mdeditor.tw/pl/2YZs)
 With this information the naughty/nice value can be changed from "1" (Nice) to "0" (Naughty) and one specific value in the PDF document from "2" to "3" (to make the original naughty messages visible).
-Luckily both changes are at position #9 of an MD5 block.
-As compensating measure (to have the MD5 hash stay the same) the entangled values have to be changed accordingly.
+Luckily both changes are at position #9 of an MD5 block, so that as compensating measure (to have the MD5 hash stay the same) the entangled values can simply to be changed accordingly.
 
 Tampering the Naughty/Nice value
 > 163070 66 66 66 66 66 **31** 66 66 30 30 30 30 30 30 36 63
@@ -73,7 +72,7 @@ A browser based [toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/ma
 Screenshot of the toolbox:
 ![toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/Frostys-Toolbox.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzkwNzE3NDUsLTIwNjQwODc2ODQsLT
+eyJoaXN0b3J5IjpbLTIxMTY1MTk0OTIsLTIwNjQwODc2ODQsLT
 U5NTExMDA5OCw4OTU5ODk3NzgsMTE5OTIyMTg2NiwzNjEyNDc3
 MjYsLTE3OTMzOTc0ODAsNjgwMjU5Miw0NjYyOTQ3NjAsMzQ3NT
 M0NzM2LDQ3MzI5MDU2MCwxNDY4OTQ3MTgzLC05OTk3NjQ1MDcs
