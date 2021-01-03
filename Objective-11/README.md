@@ -28,8 +28,8 @@ The nonce prediction can be performed with the modified [mt19937 script](https:/
 The objective is to modify Jack Frosts block back from Nice to Naughty and to make available the hidden PDF pages by changing only four bytes.
 
 MD5 works using chunks of 64 bytes. It is possible increase a value at offset #9 of block #m without changing the MD5 hash by also decreasing the value at offset #9 of block #m+1 (entangled values) (this does not work in general; https://github.com/corkami/collisions/blob/master/unicoll.md and https://www.mdeditor.tw/pl/2YZs)
-With this information the naughty/nice value can be changed from "1" (Nice) to "0" (Naughty) and one specific value in the PDF document from "2" to "3" (to make the original naughty messages visible).
-Luckily both changes are at position #9 of an MD5 block, so that as compensating measure (to have the MD5 hash stay the same) the entangled values can simply to be changed accordingly.
+With this information the naughty/nice value can be changed from "1" (Nice) to "0" (Naughty) (offset #9 in MD5 block #1) and one specific value in the PDF document from "2" to "3" (to make the original naughty messages visible) (offset #9 in MD5 block #4).
+Luckily both changes are at position #9 of an MD5 block, so that as compensating measure (to have the MD5 hash stay the same) the entangled values can simply to be changed accordingly (position #9 in MD5 blocks #2 and #5).
 
 Tampering the Naughty/Nice value
 > 163070 66 66 66 66 66 **31** 66 66 30 30 30 30 30 30 36 63
@@ -51,8 +51,6 @@ and the entangled value with an offset of 64 bytes
 
 > 163170 03 b9 ef 95 99 **1b** 5b 49 9f 86 dc 85 39 85 90 99
 
-Basically for tampering the PDF document it would also have been possible to use the position in the previous 64 byte block as entangled value. Unfortunately this position holds the lowest byte of the length field for the PDF document, so changing *only* this value (as an entangled value) would destroy the Blockchain.
-
 The original and reverted files can be found in the below table.
 In addition the [hex dump diff](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/blockchain-naughty-nice-diff.dump) is provided.
 
@@ -72,9 +70,10 @@ A browser based [toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/ma
 Screenshot of the toolbox:
 ![toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/Frostys-Toolbox.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTY1MTk0OTIsLTIwNjQwODc2ODQsLT
-U5NTExMDA5OCw4OTU5ODk3NzgsMTE5OTIyMTg2NiwzNjEyNDc3
-MjYsLTE3OTMzOTc0ODAsNjgwMjU5Miw0NjYyOTQ3NjAsMzQ3NT
-M0NzM2LDQ3MzI5MDU2MCwxNDY4OTQ3MTgzLC05OTk3NjQ1MDcs
-MTgwOTc4MzY2LDExMjc3MjI0NzYsMTc1NTg4ODU3MV19
+eyJoaXN0b3J5IjpbLTYwMTMwNTQzNywtMjExNjUxOTQ5MiwtMj
+A2NDA4NzY4NCwtNTk1MTEwMDk4LDg5NTk4OTc3OCwxMTk5MjIx
+ODY2LDM2MTI0NzcyNiwtMTc5MzM5NzQ4MCw2ODAyNTkyLDQ2Nj
+I5NDc2MCwzNDc1MzQ3MzYsNDczMjkwNTYwLDE0Njg5NDcxODMs
+LTk5OTc2NDUwNywxODA5NzgzNjYsMTEyNzcyMjQ3NiwxNzU1OD
+g4NTcxXX0=
 -->
