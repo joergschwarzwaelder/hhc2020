@@ -29,14 +29,14 @@ The objective is to modify Jack Frosts block back from Nice to Naughty and to ma
 
 MD5 works using chunks of 64 bytes. It is possible increase a value at offset #9 of block #m without changing the MD5 hash by also decreasing the value at offset #9 of block #m+1 (entangled values) (this does not work in general; https://github.com/corkami/collisions/blob/master/unicoll.md and https://www.mdeditor.tw/pl/2YZs)
 With this information the naughty/nice value can be changed from "1" (Nice) to "0" (Naughty) (offset #9 in MD5 block #1) and one specific value in the PDF document from "2" to "3" (to make the original naughty messages visible) (offset #9 in MD5 block #4).
-Luckily both changes are at position #9 of an MD5 block, so that as compensating measure (to have the MD5 hash stay the same) the entangled values can simply to be changed accordingly (position #9 in MD5 blocks #2 and #5).
+Luckily both changes are at position #9 of an MD5 block, so that as compensating measure (to have the MD5 hash stay the same) the entangled positions can simply to be changed accordingly (position #9 in MD5 blocks #2 and #5).
 
 Tampering the Naughty/Nice value
 > 163070 66 66 66 66 66 **31** 66 66 30 30 30 30 30 30 36 63
 
 > 163070 66 66 66 66 66 **30** 66 66 30 30 30 30 30 30 36 63
 
-and the entangled value with an offset of 64 bytes:
+and the entangled position with an offset of 64 bytes:
 > 1630b0 6f cb 0f 18 8d **d6** 03 88 bf 20 35 0f 2a 91 c2 9d
 
 > 1630b0 6f cb 0f 18 8d **d7** 03 88 bf 20 35 0f 2a 91 c2 9d
@@ -46,7 +46,7 @@ Tampering the PDF making available the hidden content
 
 > 163130 61 67 65 73 20 **33** 20 30 20 52 20 20 20 20 20 20
 
-and the entangled value with an offset of 64 bytes
+and the entangled position with an offset of 64 bytes
 > 163170 03 b9 ef 95 99 **1c** 5b 49 9f 86 dc 85 39 85 90 99
 
 > 163170 03 b9 ef 95 99 **1b** 5b 49 9f 86 dc 85 39 85 90 99
@@ -70,7 +70,7 @@ A browser based [toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/ma
 Screenshot of the toolbox:
 ![toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/Frostys-Toolbox.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwMTMwNTQzNywtMjExNjUxOTQ5MiwtMj
+eyJoaXN0b3J5IjpbMTk5ODA5MjQ1MSwtMjExNjUxOTQ5MiwtMj
 A2NDA4NzY4NCwtNTk1MTEwMDk4LDg5NTk4OTc3OCwxMTk5MjIx
 ODY2LDM2MTI0NzcyNiwtMTc5MzM5NzQ4MCw2ODAyNTkyLDQ2Nj
 I5NDc2MCwzNDc1MzQ3MzYsNDczMjkwNTYwLDE0Njg5NDcxODMs
