@@ -27,7 +27,7 @@ The nonce prediction can be performed with the modified [mt19937 script](https:/
 
 The objective is to modify Jack Frosts block back from Nice to Naughty and to make available the hidden PDF pages by changing only four bytes.
 
-MD5 works using chunks of 64 bytes. It is possible increase a value at offset #n of block #m without changing the MD5 hash by also decreasing the value at offset #n of block #m+1 (entangled values) (this does not work in general; it is only possible for certain byte offsets and bit positions https://github.com/corkami/collisions/blob/master/unicoll.md)
+MD5 works using chunks of 64 bytes. It is possible increase a value at offset #9 of block #m without changing the MD5 hash by also decreasing the value at offset #9 of block #m+1 (entangled values) (this does not work in general; https://github.com/corkami/collisions/blob/master/unicoll.md and )
 With this information the naughty/nice value can be changed from "1" (Nice) to "0" (Naughty) and one specific value in the PDF document from "2" to "3" (to make the original naughty messages visible).
 As compensating measure (to have the MD5 hash stay the same) the entangled values have to be changed accordingly.
 
@@ -72,9 +72,9 @@ A browser based [toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/ma
 Screenshot of the toolbox:
 ![toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/Frostys-Toolbox.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjQwODc2ODQsLTU5NTExMDA5OCw4OT
-U5ODk3NzgsMTE5OTIyMTg2NiwzNjEyNDc3MjYsLTE3OTMzOTc0
-ODAsNjgwMjU5Miw0NjYyOTQ3NjAsMzQ3NTM0NzM2LDQ3MzI5MD
-U2MCwxNDY4OTQ3MTgzLC05OTk3NjQ1MDcsMTgwOTc4MzY2LDEx
-Mjc3MjI0NzYsMTc1NTg4ODU3MV19
+eyJoaXN0b3J5IjpbMTcwODA0MTk2LC0yMDY0MDg3Njg0LC01OT
+UxMTAwOTgsODk1OTg5Nzc4LDExOTkyMjE4NjYsMzYxMjQ3NzI2
+LC0xNzkzMzk3NDgwLDY4MDI1OTIsNDY2Mjk0NzYwLDM0NzUzND
+czNiw0NzMyOTA1NjAsMTQ2ODk0NzE4MywtOTk5NzY0NTA3LDE4
+MDk3ODM2NiwxMTI3NzIyNDc2LDE3NTU4ODg1NzFdfQ==
 -->
