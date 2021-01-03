@@ -62,7 +62,7 @@ In addition the [hex dump diff](https://github.com/joergschwarzwaelder/hhc2020/b
 
 The modified block (#129459) has the same MD5 hash (so that the Blockchain is still healthy) and a SHA256 hash of **fff054f33c2134e0230efb29dad515064ac97aa8c68d33c58c01213a0d408afb**.
 
-A Perl script automating all this work is described above.
+A Perl script automating all this work is described in part one.
 
 ## Fun Zone
 
@@ -70,7 +70,7 @@ A browser based [toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/ma
 Screenshot of the toolbox:
 ![toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/Frostys-Toolbox.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxMjc4NDYyNCwxOTk4MDkyNDUxLC0yMT
+eyJoaXN0b3J5IjpbLTY5Nzg1NTAzMywxOTk4MDkyNDUxLC0yMT
 E2NTE5NDkyLC0yMDY0MDg3Njg0LC01OTUxMTAwOTgsODk1OTg5
 Nzc4LDExOTkyMjE4NjYsMzYxMjQ3NzI2LC0xNzkzMzk3NDgwLD
 Y4MDI1OTIsNDY2Mjk0NzYwLDM0NzUzNDczNiw0NzMyOTA1NjAs
