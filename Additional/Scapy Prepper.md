@@ -96,7 +96,7 @@ Correct! Here is some really nice list comprehension that will grab all the raw 
 
 The ICMP_PACKETS variable contains a packet list of several icmp echo-request and icmp echo-reply packets. Submit only the ICMP chksum value from the second packet in the ICMP_PACKETS list.
 
->>> task.submit(0x4c44)
+>>> task.submit(ICMP_PACKETS[1][ICMP].chksum)
 Correct! You can access the ICMP chksum value from the second packet using ICMP_PACKETS[1][ICMP].chksum .
 
 Submit the number of the choice below that would correctly create a ICMP echo request packet with a destination IP of 127.0.0.1 stored in the variable named "pkt"
@@ -168,6 +168,6 @@ Great, you prepared all the present packets!
 Congratulations, all pretty present packets properly prepared for processing!
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2OTg4MDIwMywxMzI4MjYwMTE3LC0xOT
-gwNDgyNjk1LC04MjA2NDE4ODldfQ==
+eyJoaXN0b3J5IjpbLTE1MjI1NDM3MTYsLTI2OTg4MDIwMywxMz
+I4MjYwMTE3LC0xOTgwNDgyNjk1LC04MjA2NDE4ODldfQ==
 -->

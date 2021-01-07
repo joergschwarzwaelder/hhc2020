@@ -77,10 +77,13 @@ When navigating as Santa through the Santa image in the Entry hall the character
 
 ## Holiday Eggs
 Three [Holiday Eggs](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Holiday%20Eggs.md) were discovered.
+
+## Group Picture
+![Team's Group Picture](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Group%20Picture.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTMxNzY3MTYsLTk2MDQwNzQ4MiwtMj
-AzMTA5MzYyMiwtNzU0MTE5NjczLDEyMDQzNzMxNTAsLTE1NzE0
-NjQ5ODksLTIxNDMzOTkxOTQsLTE2NjIwOTc1ODUsLTEyMTUxMT
-gwNDgsLTIwNzQ2Mjk2MjksNDQ2MjA5MDgyLC01ODUyNDg1LDE0
-Mjk0ODUzNzVdfQ==
+eyJoaXN0b3J5IjpbLTM0MjY0MTE5OSwtMTI1MzE3NjcxNiwtOT
+YwNDA3NDgyLC0yMDMxMDkzNjIyLC03NTQxMTk2NzMsMTIwNDM3
+MzE1MCwtMTU3MTQ2NDk4OSwtMjE0MzM5OTE5NCwtMTY2MjA5Nz
+U4NSwtMTIxNTExODA0OCwtMjA3NDYyOTYyOSw0NDYyMDkwODIs
+LTU4NTI0ODUsMTQyOTQ4NTM3NV19
 -->
