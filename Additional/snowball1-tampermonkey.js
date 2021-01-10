@@ -2,7 +2,7 @@
 // @name         Snowball
 // @namespace    http://tampermonkey.net/
 // @version      2.71828189
-// @description  KringleCon 2020: Win Snowball Impossible
+// @description  KringleCon 2020: Win Snowball Impossible using seed prediction and two browser tabs
 // @author       joergen's Elf
 // @match        https://snowball2.kringlecastle.com/*
 // @grant    GM_openInTab
