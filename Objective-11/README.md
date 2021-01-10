@@ -66,14 +66,14 @@ A Perl script automating all this work is described in part one.
 
 ## Fun Zone
 
-A browser based [toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/Frostys-Toolbox.html) for analyzing and tampering this Blockchain (which also allows the download of the full tampered Blockchain and every single evidence) is available.
+A browser based [toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/Frostys-Toolbox.html) for analyzing and tampering this Blockchain (which also allows the download of the full tampered Blockchain and every single evidence) is available [here](https://joergschwarzwaelder.github.io/Frostys-Toolbox.html).
 Screenshot of the toolbox:
 ![toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/Frostys-Toolbox.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5Nzg1NTAzMywxOTk4MDkyNDUxLC0yMT
-E2NTE5NDkyLC0yMDY0MDg3Njg0LC01OTUxMTAwOTgsODk1OTg5
-Nzc4LDExOTkyMjE4NjYsMzYxMjQ3NzI2LC0xNzkzMzk3NDgwLD
-Y4MDI1OTIsNDY2Mjk0NzYwLDM0NzUzNDczNiw0NzMyOTA1NjAs
-MTQ2ODk0NzE4MywtOTk5NzY0NTA3LDE4MDk3ODM2NiwxMTI3Nz
-IyNDc2LDE3NTU4ODg1NzFdfQ==
+eyJoaXN0b3J5IjpbMjMyNjM1MDEsLTY5Nzg1NTAzMywxOTk4MD
+kyNDUxLC0yMTE2NTE5NDkyLC0yMDY0MDg3Njg0LC01OTUxMTAw
+OTgsODk1OTg5Nzc4LDExOTkyMjE4NjYsMzYxMjQ3NzI2LC0xNz
+kzMzk3NDgwLDY4MDI1OTIsNDY2Mjk0NzYwLDM0NzUzNDczNiw0
+NzMyOTA1NjAsMTQ2ODk0NzE4MywtOTk5NzY0NTA3LDE4MDk3OD
+M2NiwxMTI3NzIyNDc2LDE3NTU4ODg1NzFdfQ==
 -->
