@@ -7,7 +7,7 @@ Each single block has this data structure:
 
 ![data structure ](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/Blockchain%20Definition.png)
 
-Interestingly all the data fields in the blocks (except the documents and the hashes) are strings of the hex representation of the value, e.g. the serial 0x000000000001f9b3 is added as string `000000000001f9b3`, i.e. 16 ASCII digits instead of making use of the full 2^128 bits available.
+Interestingly all the data fields in the blocks (except the documents) are strings of the hex representation of the value, e.g. the serial 0x000000000001f9b3 is added as string `000000000001f9b3`, i.e. 16 ASCII digits instead of making use of the full 2^128 bits available.
 
 ## Objective 11a: Part 1
 
@@ -74,11 +74,11 @@ A browser based [toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/ma
 Screenshot of the toolbox:
 ![toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/Frostys-Toolbox.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTMxODIwNjA5LDE3MzU4NjExMzEsLTIwOD
-M3NzgwMjYsNDIwMzAyNDkzLC0xNTYzODkxMDEwLDIzMjYzNTAx
-LC02OTc4NTUwMzMsMTk5ODA5MjQ1MSwtMjExNjUxOTQ5MiwtMj
-A2NDA4NzY4NCwtNTk1MTEwMDk4LDg5NTk4OTc3OCwxMTk5MjIx
-ODY2LDM2MTI0NzcyNiwtMTc5MzM5NzQ4MCw2ODAyNTkyLDQ2Nj
-I5NDc2MCwzNDc1MzQ3MzYsNDczMjkwNTYwLDE0Njg5NDcxODNd
-fQ==
+eyJoaXN0b3J5IjpbLTE2MDExMzQ0OTMsNTMxODIwNjA5LDE3Mz
+U4NjExMzEsLTIwODM3NzgwMjYsNDIwMzAyNDkzLC0xNTYzODkx
+MDEwLDIzMjYzNTAxLC02OTc4NTUwMzMsMTk5ODA5MjQ1MSwtMj
+ExNjUxOTQ5MiwtMjA2NDA4NzY4NCwtNTk1MTEwMDk4LDg5NTk4
+OTc3OCwxMTk5MjIxODY2LDM2MTI0NzcyNiwtMTc5MzM5NzQ4MC
+w2ODAyNTkyLDQ2NjI5NDc2MCwzNDc1MzQ3MzYsNDczMjkwNTYw
+XX0=
 -->
