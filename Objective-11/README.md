@@ -64,7 +64,7 @@ The modified block (#129459) has the same MD5 hash (so that the Blockchain is st
 
 A Perl script automating all this work is described in part one.
 
-Comment:
+**Comment:**
 Interestingly the Elf states that the Jack's score is 4.294.935.958 (0xffff8596) whereas in the Blockchain the score is 0xffffffff. I assume that this is just a mistake.
 
 ## Fun Zone
@@ -73,7 +73,7 @@ A browser based [toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/ma
 Screenshot of the toolbox:
 ![toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/Frostys-Toolbox.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzY3MzM5NjEzLC0xNTYzODkxMDEwLDIzMj
+eyJoaXN0b3J5IjpbNDIwMzAyNDkzLC0xNTYzODkxMDEwLDIzMj
 YzNTAxLC02OTc4NTUwMzMsMTk5ODA5MjQ1MSwtMjExNjUxOTQ5
 MiwtMjA2NDA4NzY4NCwtNTk1MTEwMDk4LDg5NTk4OTc3OCwxMT
 k5MjIxODY2LDM2MTI0NzcyNiwtMTc5MzM5NzQ4MCw2ODAyNTky
