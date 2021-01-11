@@ -26,7 +26,6 @@ The nonce prediction can be performed with the modified [mt19937 script](https:/
 ## Objective 11b: Part 2
 
 The objective is to modify Jack Frosts block back from Nice to Naughty and to make available the hidden PDF pages by changing only four bytes.
-Interestingly the Elf states that the Jack's score is 4,294,935,958 (0xffff8596) whereas in the Blockchain the score is 0xffffffff. I assume t
 
 MD5 works using chunks of 64 bytes. It is possible increase a value at offset #9 of MD5 block #m without changing the MD5 hash by also decreasing the value at offset #9 of MD5 block #m+1 (entangled positions) (this does not work in general; https://github.com/corkami/collisions#unicoll-md5 and https://www.mdeditor.tw/pl/2YZs)
 With this information the naughty/nice value can be changed from "1" (Nice) to "0" (Naughty) (offset #9 in MD5 block #1) and one specific value in the PDF document from "2" to "3" (to make the original naughty messages visible; PDF Page Catalog) (offset #9 in MD5 block #4).
@@ -65,17 +64,20 @@ The modified block (#129459) has the same MD5 hash (so that the Blockchain is st
 
 A Perl script automating all this work is described in part one.
 
+Comment:
+Interestingly the Elf states that the Jack's score is 4.294.935.958 (0xffff8596) whereas in the Blockchain the score is 0xffffffff. I assume that this is just a mistake.
+
 ## Fun Zone
 
 A browser based [toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/Frostys-Toolbox.html) for analyzing and tampering this Blockchain (which also allows the download of the full tampered Blockchain and every single evidence) is available [here](https://joergschwarzwaelder.github.io/Frostys-Toolbox.html).
 Screenshot of the toolbox:
 ![toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/Frostys-Toolbox.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODY4ODUzODQsLTE1NjM4OTEwMTAsMj
-MyNjM1MDEsLTY5Nzg1NTAzMywxOTk4MDkyNDUxLC0yMTE2NTE5
-NDkyLC0yMDY0MDg3Njg0LC01OTUxMTAwOTgsODk1OTg5Nzc4LD
-ExOTkyMjE4NjYsMzYxMjQ3NzI2LC0xNzkzMzk3NDgwLDY4MDI1
-OTIsNDY2Mjk0NzYwLDM0NzUzNDczNiw0NzMyOTA1NjAsMTQ2OD
-k0NzE4MywtOTk5NzY0NTA3LDE4MDk3ODM2NiwxMTI3NzIyNDc2
-XX0=
+eyJoaXN0b3J5IjpbNzY3MzM5NjEzLC0xNTYzODkxMDEwLDIzMj
+YzNTAxLC02OTc4NTUwMzMsMTk5ODA5MjQ1MSwtMjExNjUxOTQ5
+MiwtMjA2NDA4NzY4NCwtNTk1MTEwMDk4LDg5NTk4OTc3OCwxMT
+k5MjIxODY2LDM2MTI0NzcyNiwtMTc5MzM5NzQ4MCw2ODAyNTky
+LDQ2NjI5NDc2MCwzNDc1MzQ3MzYsNDczMjkwNTYwLDE0Njg5ND
+cxODMsLTk5OTc2NDUwNywxODA5NzgzNjYsMTEyNzcyMjQ3Nl19
+
 -->
