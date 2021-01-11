@@ -6,7 +6,7 @@ It uses MD5 as hashing algorithm. Some Elves saw that Jack Frost's entry in this
 Each single block has this data structure:
 
 ![data structure ](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/Blockchain%20Definition.png)
-
+Interestingly all the data fields in the blocks, except the documents and the hashes) are hex numbers 
 
 ## Objective 11a: Part 1
 
@@ -73,11 +73,11 @@ A browser based [toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/ma
 Screenshot of the toolbox:
 ![toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/Frostys-Toolbox.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczNTg2MTEzMSwtMjA4Mzc3ODAyNiw0Mj
-AzMDI0OTMsLTE1NjM4OTEwMTAsMjMyNjM1MDEsLTY5Nzg1NTAz
-MywxOTk4MDkyNDUxLC0yMTE2NTE5NDkyLC0yMDY0MDg3Njg0LC
-01OTUxMTAwOTgsODk1OTg5Nzc4LDExOTkyMjE4NjYsMzYxMjQ3
-NzI2LC0xNzkzMzk3NDgwLDY4MDI1OTIsNDY2Mjk0NzYwLDM0Nz
-UzNDczNiw0NzMyOTA1NjAsMTQ2ODk0NzE4MywtOTk5NzY0NTA3
+eyJoaXN0b3J5IjpbLTIwNzI1NTYzMSwxNzM1ODYxMTMxLC0yMD
+gzNzc4MDI2LDQyMDMwMjQ5MywtMTU2Mzg5MTAxMCwyMzI2MzUw
+MSwtNjk3ODU1MDMzLDE5OTgwOTI0NTEsLTIxMTY1MTk0OTIsLT
+IwNjQwODc2ODQsLTU5NTExMDA5OCw4OTU5ODk3NzgsMTE5OTIy
+MTg2NiwzNjEyNDc3MjYsLTE3OTMzOTc0ODAsNjgwMjU5Miw0Nj
+YyOTQ3NjAsMzQ3NTM0NzM2LDQ3MzI5MDU2MCwxNDY4OTQ3MTgz
 XX0=
 -->
