@@ -29,7 +29,7 @@ The objective is to modify Jack Frosts block back from Nice to Naughty and to ma
 
 MD5 works using chunks of 64 bytes. It is possible increase a value at offset #9 of MD5 block #m without changing the MD5 hash by also decreasing the value at offset #9 of MD5 block #m+1 (entangled positions) (this does not work in general; https://github.com/corkami/collisions#unicoll-md5 and https://www.mdeditor.tw/pl/2YZs)
 With this information the naughty/nice value can be changed from "1" (Nice) to "0" (Naughty) (offset #9 in MD5 block #1) and one specific value in the PDF document from "2" to "3" (to make the original naughty messages visible; PDF Page Catalog) (offset #9 in MD5 block #4).
-Luckily both changes are at position #9 of an MD5 block, so that as compensating measure (to have the MD5 hash stay the same) the entangled positions can simply to be changed accordingly (position #9 in MD5 blocks #2 and #5).
+Luckily both changes are at position #9 of an MD5 block, so that as compensating measure (to have the MD5 hash stay the same) the entangled positions can simply be changed accordingly (position #9 in MD5 blocks #2 and #5).
 
 Tampering the Naughty/Nice value
 > 163070 66 66 66 66 66 **31** 66 66 30 30 30 30 30 30 36 63
@@ -73,11 +73,11 @@ A browser based [toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/ma
 Screenshot of the toolbox:
 ![toolbox](https://github.com/joergschwarzwaelder/hhc2020/blob/master/Objective-11/Frostys-Toolbox.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDIwMzAyNDkzLC0xNTYzODkxMDEwLDIzMj
-YzNTAxLC02OTc4NTUwMzMsMTk5ODA5MjQ1MSwtMjExNjUxOTQ5
-MiwtMjA2NDA4NzY4NCwtNTk1MTEwMDk4LDg5NTk4OTc3OCwxMT
-k5MjIxODY2LDM2MTI0NzcyNiwtMTc5MzM5NzQ4MCw2ODAyNTky
-LDQ2NjI5NDc2MCwzNDc1MzQ3MzYsNDczMjkwNTYwLDE0Njg5ND
-cxODMsLTk5OTc2NDUwNywxODA5NzgzNjYsMTEyNzcyMjQ3Nl19
+eyJoaXN0b3J5IjpbMzI3MDQ1NjgwLDQyMDMwMjQ5MywtMTU2Mz
+g5MTAxMCwyMzI2MzUwMSwtNjk3ODU1MDMzLDE5OTgwOTI0NTEs
+LTIxMTY1MTk0OTIsLTIwNjQwODc2ODQsLTU5NTExMDA5OCw4OT
+U5ODk3NzgsMTE5OTIyMTg2NiwzNjEyNDc3MjYsLTE3OTMzOTc0
+ODAsNjgwMjU5Miw0NjYyOTQ3NjAsMzQ3NTM0NzM2LDQ3MzI5MD
+U2MCwxNDY4OTQ3MTgzLC05OTk3NjQ1MDcsMTgwOTc4MzY2XX0=
 
 -->
